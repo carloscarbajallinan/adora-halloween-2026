@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADORA | Catálogo de Halloween 2026 & Votación de Favoritos</title>
+  <meta name="description" content="Explora las 49 propuestas exclusivas de ramos florales de ADORA para Halloween 2026 y vota por tus favoritos para decidir cuáles se lanzarán al mercado.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Floating Ambient Particles (Embers & Petals) -->
+  <div class="ambient-particles" id="ambient-particles" aria-hidden="true"></div>
+
+  <!-- Main Container -->
+  <div class="app-container">
+
+    <!-- Hero Header -->
+    <header class="hero">
+      <div class="brand-badge">
+        <span>✨</span> ADORA • Florería & Experiencias Botánicas
+      </div>
+      <h1 class="hero-title">Colección Halloween 2026</h1>
+      <p class="hero-subtitle">
+        Diseñamos <span class="hero-highlight">49 propuestas botánicas de alta costura</span> con flores del mercado tradicional de Lima y envoltura Clean Layers. <br>
+        <strong>¡Vota por tus ramos favoritos y ayúdanos a elegir los lanzamientos oficiales! 🎃💐</strong>
+      </p>
+
+      <!-- Live Top 3 Podium Preview -->
+      <div class="podium-bar" id="podium-bar" aria-label="Top 3 Más Votados en Tiempo Real">
+        <!-- Injected via JavaScript -->
+      </div>
+    </header>
+
+    <!-- Controls Bar (Filter, Search, Sort) -->
+    <nav class="controls-bar" aria-label="Filtros y Búsqueda de Ramos">
+      
+      <!-- Search & Sort Row -->
+      <div class="search-sort-row">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input 
+            type="search" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Buscar por personaje, flor o SKU (ej. Merlina, Gojo, Girasoles)..."
+            aria-label="Buscar ramos en el catálogo"
+          />
+        </div>
+
+        <div class="sort-group">
+          <label for="sort-select" class="sort-label">Ordenar:</label>
+          <select id="sort-select" class="sort-select" aria-label="Criterio de ordenación">
+            <option value="votes-desc">🏆 Más Votados Primero</option>
+            <option value="price-asc">💵 Menor Precio a Mayor</option>
+            <option value="price-desc">💎 Mayor Precio a Menor</option>
+            <option value="name-asc">🔤 Nombre Alfabético</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="filter-pills" role="toolbar" aria-label="Filtrar por colección">
+        <button type="button" class="pill-btn active" data-filter="all">Todos los Ramos (49)</button>
+        <button type="button" class="pill-btn" data-filter="halloween">🎃 Halloween Tradicional (3)</button>
+        <button type="button" class="pill-btn" data-filter="gothic">🖤 Gótico & Terror (12)</button>
+        <button type="button" class="pill-btn" data-filter="anime">⚔️ Anime & Shonen (11)</button>
+        <button type="button" class="pill-btn" data-filter="pop">🎮 Pop & Gaming (14)</button>
+        <button type="button" class="pill-btn" data-filter="harrypotter">🧙‍♂️ Harry Potter (4)</button>
+        <button type="button" class="pill-btn" data-filter="retro">✨ Retro & Dúos (5)</button>
+      </div>
+
+    </nav>
+
+    <!-- Product Grid -->
+    <main class="catalog-grid" id="catalog-grid" aria-live="polite">
+      <!-- Injected dynamically via app.js -->
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="footer-brand">ADORA • Florería & Experiencias Botánicas</div>
+      <p>Catálogo Oficial de Validación Comercial • Carlos Carbajal | Lima, Perú 2026</p>
+      <p style="margin-top: 0.5rem; color: var(--text-dim); font-size: 0.78rem;">
+        Flores 100% cotizadas en el Mercado Mayorista de Acho / Santa Rosa • Costeo Unitario en Google Sheets
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- Floating WhatsApp Share Button -->
+  <a 
+    id="whatsapp-share-btn" 
+    class="whatsapp-floating" 
+    href="https://wa.me/?text=Hola%20Carlos" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    title="Compartir mis votos con Carlos por WhatsApp"
+  >
+    <svg class="whatsapp-icon" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+    <span>Compartir Votos</span>
+  </a>
+
+  <!-- Product Detail Lightbox Modal (HTML5 <dialog>) -->
+  <dialog id="detail-modal" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar detalles">✕</button>
+      
+      <div class="modal-media">
+        <img id="modal-img" src="" alt="Vista previa del ramo">
+      </div>
+
+      <div class="modal-details">
+        <div>
+          <h2 class="modal-title" id="modal-title">Nombre del Ramo</h2>
+          <div class="modal-subtitle" id="modal-subtitle">SKU • Colección</div>
+
+          <div class="modal-section">
+            <div class="modal-section-title">Composición Botánica (Flores de Acho)</div>
+            <p class="modal-recipe-text" id="modal-recipe">Receta floral...</p>
+          </div>
+
+          <div class="modal-section">
+            <div class="modal-section-title">Público Objetivo & Ocasión</div>
+            <p class="modal-recipe-text" id="modal-persona" style="font-style: italic;">Público...</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="modal-price-box">
+            <div>
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--accent-gold); letter-spacing: 0.05em;">PVP Sugerido</div>
+              <div class="modal-price-amount" id="modal-price">S/ 0.00</div>
+            </div>
+            <span style="font-size: 0.85rem; color: var(--text-muted);">Margen ~55%</span>
+          </div>
+
+          <div class="modal-actions">
+            <button type="button" class="modal-vote-btn" id="modal-vote-btn">
+              🎃 Votar por este Ramo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- JavaScript (Zero-dependency, works directly via file:// and http://) -->
+  <script src="./products-data.js"></script>
+  <script src="./app.js"></script>
+
+</body>
+</html>
