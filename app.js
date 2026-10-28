@@ -356,6 +356,12 @@ function updateModalContent(product) {
       ? 'rgba(255, 255, 255, 0.15)' 
       : 'linear-gradient(135deg, var(--accent-pumpkin), #b53805)';
   }
+
+  // Inject dynamic delivery & WhatsApp checkout module
+  const deliveryContainer = document.getElementById('modal-delivery-container');
+  if (deliveryContainer && typeof window.injectDeliverySection === 'function') {
+    window.injectDeliverySection(deliveryContainer, product);
+  }
 }
 
 // Global click handler for vote button
