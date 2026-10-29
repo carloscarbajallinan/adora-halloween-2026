@@ -37,6 +37,11 @@
       <div class="podium-bar" id="podium-bar" aria-label="Top 3 Más Votados en Tiempo Real">
         <!-- Injected via JavaScript -->
       </div>
+      <div style="text-align:center; margin-top: 10px;">
+        <a href="./galeria.html" class="nav-editorial-btn">
+          🌸 Ver Galería Visual Editorial con Carruseles (Pantalla Completa) &rarr;
+        </a>
+      </div>
     </header>
 
     <!-- Controls Bar (Filter, Search, Sort) -->
@@ -99,7 +104,7 @@
   <a 
     id="whatsapp-share-btn" 
     class="whatsapp-floating" 
-    href="https://wa.me/?text=Hola%20Carlos" 
+    href="https://wa.me/51975369266?text=Hola%20Carlos" 
     target="_blank" 
     rel="noopener noreferrer"
     title="Compartir mis votos con Carlos por WhatsApp"
@@ -115,7 +120,11 @@
     <div class="modal-card">
       <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar detalles">✕</button>
       
-      <div class="modal-media">
+      <div class="modal-media" style="position:relative;">
+        <div class="modal-toggle-pills" id="modal-toggle-pills" style="display:none;">
+          <button type="button" class="modal-toggle-tab active" id="modal-tab-char" onclick="window.switchModalTab('char')">👤 Personaje</button>
+          <button type="button" class="modal-toggle-tab" id="modal-tab-arr" onclick="window.switchModalTab('arr')">💐 Ramo Floral</button>
+        </div>
         <img id="modal-img" src="" alt="Vista previa del ramo">
       </div>
 

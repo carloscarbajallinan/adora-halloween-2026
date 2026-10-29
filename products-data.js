@@ -17,7 +17,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/01_Gryffindor_El_Rugido_Escarlata.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1qlfJmQuL6KX-6NLsQ09-BrYOHbtOL3k4",
     "driveUrl": "https://drive.google.com/file/d/1qlfJmQuL6KX-6NLsQ09-BrYOHbtOL3k4/view",
-    "votes": 4
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HP-01_Gryffindor_El_Rugido_Escarlata.jpg"
   },
   {
     "id": "HP-02",
@@ -36,7 +38,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/02_Slytherin_La_Ambicion_Esmeralda.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1-sbzaZherjjVnPsAUMVWAKFIeBKOOP6X",
     "driveUrl": "https://drive.google.com/file/d/1-sbzaZherjjVnPsAUMVWAKFIeBKOOP6X/view",
-    "votes": 4
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HP-02_Slytherin_La_Ambicion_Esmeralda.jpg"
   },
   {
     "id": "HP-03",
@@ -55,7 +59,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/03_Ravenclaw_El_Vuelo_Del_Intelecto.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1KSZlVxZVKA4eNomhLbkFCPcoU9waS3b0",
     "driveUrl": "https://drive.google.com/file/d/1KSZlVxZVKA4eNomhLbkFCPcoU9waS3b0/view",
-    "votes": 7
+    "votes": 7,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HP-03_Ravenclaw_El_Vuelo_Del_Intelecto.jpg"
   },
   {
     "id": "HP-04",
@@ -74,7 +80,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/04_Hufflepuff_La_Lealtad_Dorada.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1s-Oue80XLeLYrraufj4Qf3-aaaHdCA-N",
     "driveUrl": "https://drive.google.com/file/d/1s-Oue80XLeLYrraufj4Qf3-aaaHdCA-N/view",
-    "votes": 3
+    "votes": 3,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HP-04_Hufflepuff_La_Lealtad_Dorada.jpg"
   },
   {
     "id": "HW-01",
@@ -93,7 +101,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/01_Halloween_Spooky_Chic.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1uXKbo_3OWpUa1o41FQDzHD3_I6vUeFvu",
     "driveUrl": "https://drive.google.com/file/d/1uXKbo_3OWpUa1o41FQDzHD3_I6vUeFvu/view",
-    "votes": 4
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HW-01_Halloween_Spooky_Chic.jpg"
   },
   {
     "id": "HW-02",
@@ -112,7 +122,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/02_Halloween_Mystery_Bloom.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/15CDLEuPq-odi0bjHFh5INEyGyMRQLBG7",
     "driveUrl": "https://drive.google.com/file/d/15CDLEuPq-odi0bjHFh5INEyGyMRQLBG7/view",
-    "votes": 3
+    "votes": 3,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HW-02_Halloween_Mystery_Bloom.jpg"
   },
   {
     "id": "HW-03",
@@ -131,7 +143,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/03_Halloween_Detalle_Dark_Cono.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1UOaplsJyQvnzH1wAnabieSkbxOIP1SRl",
     "driveUrl": "https://drive.google.com/file/d/1UOaplsJyQvnzH1wAnabieSkbxOIP1SRl/view",
-    "votes": 9
+    "votes": 9,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HW-03_Halloween_Detalle_Dark.jpg"
   },
   {
     "id": "POP-01",
@@ -150,7 +164,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/01_Wicked_Elphaba_Glinda.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1ExFi1qVVLlzIgM3WcQgry1459PAriSpj",
     "driveUrl": "https://drive.google.com/file/d/1ExFi1qVVLlzIgM3WcQgry1459PAriSpj/view",
-    "votes": 4
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-01_D_o_Hechizo_Elphaba_Glinda_Wicked_.jpg"
   },
   {
     "id": "POP-02",
@@ -169,7 +185,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/02_Kpop_Demon_Hunters.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1t1lQFkpc9tvU275Rvj_QiCPMD9F1SLij",
     "driveUrl": "https://drive.google.com/file/d/1t1lQFkpc9tvU275Rvj_QiCPMD9F1SLij/view",
-    "votes": 8
+    "votes": 8,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-02_Mystery_Violet_K_Pop_Demon_Hunters_.jpg"
   },
   {
     "id": "POP-03",
@@ -188,7 +206,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/03_Demon_Slayer.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/17vwhp4uOUZhUa5_euFcmNwyrODz9s7ke",
     "driveUrl": "https://drive.google.com/file/d/17vwhp4uOUZhUa5_euFcmNwyrODz9s7ke/view",
-    "votes": 9
+    "votes": 9,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-03_DemonSlayer_Tanjiro_Respiracion_Fuego.jpg"
   },
   {
     "id": "POP-04",
@@ -207,7 +227,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/04_Pokemon_Spooky.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1fnkfkFX4Hmn5nVa7jd392TEzPc9osDby",
     "driveUrl": "https://drive.google.com/file/d/1fnkfkFX4Hmn5nVa7jd392TEzPc9osDby/view",
-    "votes": 4
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-04_Pikachu_Gengar_Spooky_Bloom_Pokemon_.jpg"
   },
   {
     "id": "POP-05",
@@ -226,7 +248,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/05_One_Piece.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1L71iMtC60bZjI71XL_bIclnEHQTpQT96",
     "driveUrl": "https://drive.google.com/file/d/1L71iMtC60bZjI71XL_bIclnEHQTpQT96/view",
-    "votes": 5
+    "votes": 5,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-05_El_Sombrero_de_Paja_Luffy_One_Piece_.jpg"
   },
   {
     "id": "POP-06",
@@ -245,7 +269,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/06_Merlina_Addams.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/179Ju3tNMs-sNS3hVEV_ERkngECdymitA",
     "driveUrl": "https://drive.google.com/file/d/179Ju3tNMs-sNS3hVEV_ERkngECdymitA/view",
-    "votes": 3
+    "votes": 3,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-06_Merlina_Addams_Monocromo.jpg"
   },
   {
     "id": "POP-07",
@@ -264,7 +290,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/07_Boku_No_Hero.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/12NzLEhiWyBVqFsK-SjDeU4iQ_i1wQVaJ",
     "driveUrl": "https://drive.google.com/file/d/12NzLEhiWyBVqFsK-SjDeU4iQ_i1wQVaJ/view",
-    "votes": 9
+    "votes": 9,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-07_Plus_Ultra_Deku_vs_Bakugo_Boku_no_Hero_.jpg"
   },
   {
     "id": "POP-08",
@@ -283,7 +311,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/08_Ladybug.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1jeNn8h1qqjOHCquu4qqQr7ageKSbV9f-",
     "driveUrl": "https://drive.google.com/file/d/1jeNn8h1qqjOHCquu4qqQr7ageKSbV9f-/view",
-    "votes": 7
+    "votes": 7,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-08_El_Amuleto_M_gico_Miraculous_Ladybug_.jpg"
   },
   {
     "id": "POP-09",
@@ -302,7 +332,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/09_Black_Clover.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1t2d8YwtgkqXtOkDGXMIdHAoAMEBhGqde",
     "driveUrl": "https://drive.google.com/file/d/1t2d8YwtgkqXtOkDGXMIdHAoAMEBhGqde/view",
-    "votes": 8
+    "votes": 8,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-09_Toro_Negro_Antimagia_Asta_Black_Clover_.jpg"
   },
   {
     "id": "POP-10",
@@ -321,7 +353,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/10_Minecraft.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1_aQh_QB3utNCV_lQacb7v5yx72a_4Pbt",
     "driveUrl": "https://drive.google.com/file/d/1_aQh_QB3utNCV_lQacb7v5yx72a_4Pbt/view",
-    "votes": 4
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-10_Bloque_Dorado_Creeper_Gold_Minecraft_.jpg"
   },
   {
     "id": "POP-11",
@@ -340,7 +374,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/11_Beetlejuice_Lydia.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1WHwtvRhAXOyC2W4JYNmwDFBcQMlCkAfZ",
     "driveUrl": "https://drive.google.com/file/d/1WHwtvRhAXOyC2W4JYNmwDFBcQMlCkAfZ/view",
-    "votes": 9
+    "votes": 9,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-11_Vestido_de_Novia_Rojo_Lydia_Deetz_Beetlejuice_2_.jpg"
   },
   {
     "id": "POP-12",
@@ -359,7 +395,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/12_Beetlejuice_Stripes.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1rFcN6MFzZ7d2JPcLl8iFFlNGBTGHRm3c",
     "driveUrl": "https://drive.google.com/file/d/1rFcN6MFzZ7d2JPcLl8iFFlNGBTGHRm3c/view",
-    "votes": 4
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-12_Rayas_Fantasma_El_Bio_Exorcista_Beetlejuice_.jpg"
   },
   {
     "id": "POP-13",
@@ -378,7 +416,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/13_Deadpool.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1gcqo3nsMAJ__qlIsP78RQWz_fK8SqKGJ",
     "driveUrl": "https://drive.google.com/file/d/1gcqo3nsMAJ__qlIsP78RQWz_fK8SqKGJ/view",
-    "votes": 3
+    "votes": 3,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-13_Mercenario_Boc_n_Wade_Deadpool_.jpg"
   },
   {
     "id": "POP-14",
@@ -397,7 +437,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/14_Wolverine.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/12746TkEgr7B_hHPNV2utcxfhwuTSjA4T",
     "driveUrl": "https://drive.google.com/file/d/12746TkEgr7B_hHPNV2utcxfhwuTSjA4T/view",
-    "votes": 4
+    "votes": 4,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-15",
@@ -416,7 +458,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/15_InsideOut_Anxiety.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/12dK4BgRZFkwLFwWrq6gi01e9aFeNf29J",
     "driveUrl": "https://drive.google.com/file/d/12dK4BgRZFkwLFwWrq6gi01e9aFeNf29J/view",
-    "votes": 5
+    "votes": 5,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-16",
@@ -435,7 +479,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/16_InsideOut_Envy.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1NC4Y0EZohh5IDP8RvEC9wmM4OQjWvy7x",
     "driveUrl": "https://drive.google.com/file/d/1NC4Y0EZohh5IDP8RvEC9wmM4OQjWvy7x/view",
-    "votes": 7
+    "votes": 7,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-17",
@@ -454,7 +500,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/17_Jujutsu_Gojo.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1ZVKKsCJ9nYCCieXacUk1MNxwS77xatNC",
     "driveUrl": "https://drive.google.com/file/d/1ZVKKsCJ9nYCCieXacUk1MNxwS77xatNC/view",
-    "votes": 7
+    "votes": 7,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-17_Jujutsu_Gojo_El_Infinito.jpg"
   },
   {
     "id": "POP-18",
@@ -473,7 +521,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/18_Jujutsu_Sukuna.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1HsonaLVNNfRvjP4EOrXoB-G6iIegUizV",
     "driveUrl": "https://drive.google.com/file/d/1HsonaLVNNfRvjP4EOrXoB-G6iIegUizV/view",
-    "votes": 4
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-18_Jujutsu_Sukuna_Rey_Maldiciones.jpg"
   },
   {
     "id": "POP-19",
@@ -492,7 +542,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/19_Chainsaw_Makima.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1dyKrz5lfcproGYp6Sz5c6VNybXuyk8Ip",
     "driveUrl": "https://drive.google.com/file/d/1dyKrz5lfcproGYp6Sz5c6VNybXuyk8Ip/view",
-    "votes": 7
+    "votes": 7,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-19_Chainsaw_Makima_Control_Carmesi.jpg"
   },
   {
     "id": "POP-20",
@@ -511,7 +563,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/20_Chainsaw_Power.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1xVmqZj8yFEWqwGp9do7wKFunslVZyABq",
     "driveUrl": "https://drive.google.com/file/d/1xVmqZj8yFEWqwGp9do7wKFunslVZyABq/view",
-    "votes": 6
+    "votes": 6,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-20_Chainsaw_Power_Demonio_Sangre.jpg"
   },
   {
     "id": "POP-21",
@@ -530,7 +584,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/21_Naruto_Itachi.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1gXSeWAyNCOs5Ok9YJYoRPSnn_CyVY0Ql",
     "driveUrl": "https://drive.google.com/file/d/1gXSeWAyNCOs5Ok9YJYoRPSnn_CyVY0Ql/view",
-    "votes": 2
+    "votes": 2,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-22",
@@ -549,7 +605,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/22_SpyFamily_Anya.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/18xCaJBH6VBbGjS1u8c9OmrWKmXBmlihS",
     "driveUrl": "https://drive.google.com/file/d/18xCaJBH6VBbGjS1u8c9OmrWKmXBmlihS/view",
-    "votes": 7
+    "votes": 7,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-22_SpyFamily_Anya_Waku_Waku.jpg"
   },
   {
     "id": "POP-23",
@@ -568,7 +626,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/23_SpyFamily_Yor.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1nuxTQXDsa0pJrJMsU9KBzNXY2PMTqBbc",
     "driveUrl": "https://drive.google.com/file/d/1nuxTQXDsa0pJrJMsU9KBzNXY2PMTqBbc/view",
-    "votes": 8
+    "votes": 8,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-24",
@@ -587,7 +647,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/24_Arcane_Jinx.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1XvuEwxjjeIDlLC5z41Z_g5w8keHukciQ",
     "driveUrl": "https://drive.google.com/file/d/1XvuEwxjjeIDlLC5z41Z_g5w8keHukciQ/view",
-    "votes": 5
+    "votes": 5,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-25",
@@ -606,7 +668,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/25_Arcane_Vi.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1gVFY2ISPWI_9iTTmyUdAGPFnvvtaa6Ns",
     "driveUrl": "https://drive.google.com/file/d/1gVFY2ISPWI_9iTTmyUdAGPFnvvtaa6Ns/view",
-    "votes": 9
+    "votes": 9,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-26",
@@ -625,7 +689,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/26_Mario_Peach.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1SuqIbx-yy41GWvVw3K0PaMvC8rbujNoY",
     "driveUrl": "https://drive.google.com/file/d/1SuqIbx-yy41GWvVw3K0PaMvC8rbujNoY/view",
-    "votes": 6
+    "votes": 6,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-27",
@@ -644,7 +710,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/27_FNAF_Freddy.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/15sFMPYvhyeiSKkmcKhEE5AAHiSvfJgAX",
     "driveUrl": "https://drive.google.com/file/d/15sFMPYvhyeiSKkmcKhEE5AAHiSvfJgAX/view",
-    "votes": 8
+    "votes": 8,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-28",
@@ -663,7 +731,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/28_Genshin_HuTao.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1VtEsYDmrqmLlKu2NMampS_DmNVbTjZTc",
     "driveUrl": "https://drive.google.com/file/d/1VtEsYDmrqmLlKu2NMampS_DmNVbTjZTc/view",
-    "votes": 2
+    "votes": 2,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-29",
@@ -682,7 +752,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/29_NoviaCadaver_Emily.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1v1M9x4fdYLMT7VAn2fm39qRcekLZMyM7",
     "driveUrl": "https://drive.google.com/file/d/1v1M9x4fdYLMT7VAn2fm39qRcekLZMyM7/view",
-    "votes": 5
+    "votes": 5,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-30",
@@ -701,7 +773,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/30_Jack_Sally.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1-FNUU4yNiJUsoCE7qxoUrAtFMFg_ALJX",
     "driveUrl": "https://drive.google.com/file/d/1-FNUU4yNiJUsoCE7qxoUrAtFMFg_ALJX/view",
-    "votes": 7
+    "votes": 7,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-31",
@@ -720,7 +794,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/31_Scream_Ghostface.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1VBPNko0hojXxfflaeJdShp2dnhDmXLlD",
     "driveUrl": "https://drive.google.com/file/d/1VBPNko0hojXxfflaeJdShp2dnhDmXLlD/view",
-    "votes": 5
+    "votes": 5,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-32",
@@ -739,7 +815,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/32_IT_Pennywise.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/19VEKjw5G0APpCG3D1_HxHwP931xA8-_0",
     "driveUrl": "https://drive.google.com/file/d/19VEKjw5G0APpCG3D1_HxHwP931xA8-_0/view",
-    "votes": 4
+    "votes": 4,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-33",
@@ -758,7 +836,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/33_Addams_Morticia.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1NVHIUvdqbFJFEfGlET4nqC-3fbojAd47",
     "driveUrl": "https://drive.google.com/file/d/1NVHIUvdqbFJFEfGlET4nqC-3fbojAd47/view",
-    "votes": 2
+    "votes": 2,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-34",
@@ -777,7 +857,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/34_Catrina_Mexicana.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/13vx2cFHcYPsv2WEeDS7S_DB0SA80CUkR",
     "driveUrl": "https://drive.google.com/file/d/13vx2cFHcYPsv2WEeDS7S_DB0SA80CUkR/view",
-    "votes": 8
+    "votes": 8,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-35",
@@ -796,7 +878,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/35_Chucky_Tiffany.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1X010mo-TO0KXoYeDuNVVcnxx8scebSU6",
     "driveUrl": "https://drive.google.com/file/d/1X010mo-TO0KXoYeDuNVVcnxx8scebSU6/view",
-    "votes": 4
+    "votes": 4,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-36",
@@ -815,7 +899,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/36_Angel_Caido.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1aCnEJ09mfKhNrNwL7u7fJmrv3lwOLii-",
     "driveUrl": "https://drive.google.com/file/d/1aCnEJ09mfKhNrNwL7u7fJmrv3lwOLii-/view",
-    "votes": 7
+    "votes": 7,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-37",
@@ -834,7 +920,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/37_Diablita_Coquette.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1cnXSm8mA7ZZ8o2MxDzh1Nt5I4RK8qrKU",
     "driveUrl": "https://drive.google.com/file/d/1cnXSm8mA7ZZ8o2MxDzh1Nt5I4RK8qrKU/view",
-    "votes": 6
+    "votes": 6,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-38",
@@ -853,7 +941,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/38_Cosmo_Wanda.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1MVA-WW6g5sUjGLt7334RTethBXjTbOIo",
     "driveUrl": "https://drive.google.com/file/d/1MVA-WW6g5sUjGLt7334RTethBXjTbOIo/view",
-    "votes": 3
+    "votes": 3,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-39",
@@ -872,7 +962,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/39_Scooby_Doo.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/12Bj50IK8L-LAuYNXEDaxvMn76g5X7GKo",
     "driveUrl": "https://drive.google.com/file/d/12Bj50IK8L-LAuYNXEDaxvMn76g5X7GKo/view",
-    "votes": 6
+    "votes": 6,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-40",
@@ -891,7 +983,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/40_Barbie_Ken.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1oclVcvZ-exI_LDK9mtFaZ0gQDF-gyju_",
     "driveUrl": "https://drive.google.com/file/d/1oclVcvZ-exI_LDK9mtFaZ0gQDF-gyju_/view",
-    "votes": 6
+    "votes": 6,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-41",
@@ -910,7 +1004,9 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/41_Shrek_Fiona.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1peAZcJLfBFtFqYl2TP2XkFOjxf4Ez0IR",
     "driveUrl": "https://drive.google.com/file/d/1peAZcJLfBFtFqYl2TP2XkFOjxf4Ez0IR/view",
-    "votes": 4
+    "votes": 4,
+    "hasCharacter": false,
+    "characterImg": null
   },
   {
     "id": "POP-42",
@@ -929,9 +1025,8 @@ window.ADORA_PRODUCTS = [
     "imageLocal": "./images/42_Reina_Corazones.jpg",
     "imageOnline": "https://lh3.googleusercontent.com/d/1W37UqNC9XDDzI43IvtjNA8NiXCYP9aQ-",
     "driveUrl": "https://drive.google.com/file/d/1W37UqNC9XDDzI43IvtjNA8NiXCYP9aQ-/view",
-    "votes": 8
+    "votes": 8,
+    "hasCharacter": false,
+    "characterImg": null
   }
 ];
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = window.ADORA_PRODUCTS;
-}

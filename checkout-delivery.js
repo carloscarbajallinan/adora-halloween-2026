@@ -7,7 +7,7 @@ const ADORA_WORKSHOP = {
   name: "Taller Central ADORA (San Borja / Surco)",
   lat: -12.0975,
   lng: -77.0065,
-  phone: "51999999999" // Teléfono oficial de WhatsApp Business ADORA
+  phone: "51975369266" // Teléfono oficial de WhatsApp Business ADORA (Carlos Carbajal)
 };
 
 const LIMA_DISTRICTS = [

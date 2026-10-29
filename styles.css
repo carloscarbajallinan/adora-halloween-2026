@@ -726,3 +726,121 @@ dialog::backdrop {
   color: var(--accent-gold);
   margin-bottom: 0.5rem;
 }
+
+/* ==========================================================================
+   ADORA Carousel & Character Controls
+   ========================================================================== */
+.card-carousel-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 4px;
+  z-index: 5;
+  background: rgba(15, 17, 26, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 3px 6px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.card-tab-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  padding: 3px 8px;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.card-tab-btn.active {
+  background: var(--accent-pumpkin);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(243, 107, 33, 0.4);
+}
+
+.card-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(15, 17, 26, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 6;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.card-carousel-arrow:hover {
+  background: var(--accent-pumpkin);
+  border-color: var(--accent-pumpkin);
+}
+
+.card-carousel-arrow.prev { left: 8px; }
+.card-carousel-arrow.next { right: 8px; }
+
+/* Modal Toggle Pills */
+.modal-toggle-pills {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 6px;
+  z-index: 10;
+  background: rgba(15, 17, 26, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 4px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.modal-toggle-tab {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.modal-toggle-tab.active {
+  background: var(--accent-pumpkin);
+  color: #fff;
+}
+
+.nav-editorial-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  background: rgba(225, 29, 72, 0.15);
+  border: 1px solid rgba(225, 29, 72, 0.35);
+  color: #fb7185;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+  margin-top: 14px;
+}
+
+.nav-editorial-btn:hover {
+  background: #e11d48;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.4);
+}

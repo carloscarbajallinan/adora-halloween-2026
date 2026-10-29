@@ -1,3 +1,49 @@
+
+// Track current slide per product in catalog: 0 = character, 1 = arrangement
+const cardSlideStates = {};
+
+window.switchCardSlide = function(productId, slideIdx, evt) {
+  if (evt) evt.stopPropagation();
+  cardSlideStates[productId] = slideIdx;
+  const product = state.products.find(p => p.id === productId);
+  if (!product) return;
+  const img = document.getElementById('card-img-' + productId);
+  const card = document.querySelector('.card[data-id="' + productId + '"]');
+  if (img) {
+    img.src = (slideIdx === 0 && product.hasCharacter) ? product.characterImg : product.imageLocal;
+    img.onerror = () => { img.src = product.imageOnline; };
+  }
+  if (card) {
+    const tabs = card.querySelectorAll('.card-tab-btn');
+    tabs.forEach((tab, i) => tab.classList.toggle('active', i === slideIdx));
+  }
+};
+
+window.stepCardSlide = function(productId, delta, evt) {
+  if (evt) evt.stopPropagation();
+  const curr = cardSlideStates[productId] || 0;
+  const next = curr === 0 ? 1 : 0;
+  window.switchCardSlide(productId, next, evt);
+};
+
+window.switchModalTab = function(tab) {
+  if (!state.activeModalProduct) return;
+  const p = state.activeModalProduct;
+  const modalImg = document.getElementById('modal-img');
+  const btnChar = document.getElementById('modal-tab-char');
+  const btnArr = document.getElementById('modal-tab-arr');
+  if (tab === 'char' && p.hasCharacter) {
+    modalImg.src = p.characterImg;
+    if (btnChar) btnChar.classList.add('active');
+    if (btnArr) btnArr.classList.remove('active');
+  } else {
+    modalImg.src = p.imageLocal;
+    modalImg.onerror = () => { modalImg.src = p.imageOnline; };
+    if (btnChar) btnChar.classList.remove('active');
+    if (btnArr) btnArr.classList.add('active');
+  }
+};
+
 // ==========================================================================
 // ADORA — Halloween & Pop Culture 2026 Interactive Voting Engine
 // ==========================================================================
@@ -249,14 +295,30 @@ function renderCatalog() {
     const hasVoted = state.userVotes.has(product.id);
     return `
       <article class="card" data-id="${product.id}">
-        <div class="card-media-wrapper" onclick="window.openDetailModal('${product.id}')">
+        <div class="card-media-wrapper" style="position:relative;">
           <span class="card-badge badge-${product.badgeColor}">${product.categoryTag}</span>
           <span class="card-sku">${product.sku}</span>
+
+          ${product.hasCharacter ? `
+            <div class="card-carousel-controls" onclick="event.stopPropagation()">
+              <button type="button" class="card-tab-btn ${(cardSlideStates[product.id] === 0 || cardSlideStates[product.id] === undefined) ? 'active' : ''}" onclick="window.switchCardSlide('${product.id}', 0, event)">👤 Personaje</button>
+              <button type="button" class="card-tab-btn ${cardSlideStates[product.id] === 1 ? 'active' : ''}" onclick="window.switchCardSlide('${product.id}', 1, event)">💐 Ramo</button>
+            </div>
+            <div class="card-carousel-arrow prev" onclick="window.stepCardSlide('${product.id}', -1, event)">&#8249;</div>
+            <div class="card-carousel-arrow next" onclick="window.stepCardSlide('${product.id}', 1, event)">&#8250;</div>
+          ` : `
+            <div class="card-carousel-controls" onclick="event.stopPropagation()">
+              <span class="card-tab-btn active" style="background:rgba(245,158,11,0.2); color:#fbbf24;">💐 Ramo Floral</span>
+            </div>
+          `}
+
           <img 
+            id="card-img-${product.id}"
             class="card-img" 
-            src="${product.imageLocal}" 
+            src="${(product.hasCharacter && (cardSlideStates[product.id] === 0 || cardSlideStates[product.id] === undefined)) ? product.characterImg : product.imageLocal}" 
             alt="${product.name}" 
             loading="lazy"
+            onclick="window.openDetailModal('${product.id}')"
             onerror="this.onerror=null; this.src='${product.imageOnline}';"
           />
         </div>
@@ -339,6 +401,17 @@ function updateModalContent(product) {
   const modalPrice = document.getElementById('modal-price');
   const modalVoteBtn = document.getElementById('modal-vote-btn');
 
+  const modalTogglePills = document.getElementById('modal-toggle-pills');
+  if (modalTogglePills) {
+    if (product.hasCharacter) {
+      modalTogglePills.style.display = 'flex';
+      window.switchModalTab('char');
+    } else {
+      modalTogglePills.style.display = 'none';
+      window.switchModalTab('arr');
+    }
+  }
+
   if (modalImg) {
     modalImg.src = product.imageLocal;
     modalImg.onerror = () => { modalImg.src = product.imageOnline; };
@@ -390,7 +463,7 @@ function updateWhatsAppButton() {
   }
 
   const encoded = encodeURIComponent(msg);
-  waBtn.href = `https://wa.me/?text=${encoded}`;
+  waBtn.href = `https://wa.me/51975369266?text=${encoded}`;
 }
 
 // Ambient Floating Particles
