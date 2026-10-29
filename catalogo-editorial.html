@@ -4,53 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>ADORA | Florería Boutique & Experiencias Botánicas</title>
-  <meta name="description" content="Diseños florales de autor en Lima. Flores frescas de Acho, envoltura coreana bicapa y entregas a domicilio personalizadas.">
+  <meta name="description" content="Diseño floral de alta gama en Lima. Flores frescas de corte diario en Acho, envoltura coreana bicapa y entregas a domicilio personalizadas.">
 
-  <!-- Google Fonts: Editorial Luxury (Playfair Display, Cormorant Garamond & Plus Jakarta Sans) -->
+  <!-- Tipografía Editorial de Lujo (Playfair Display, Cormorant Garamond & Plus Jakarta Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* VARIABLES DINÁMICAS (CAMBIAN SEGÚN EL MODO CLÁSICO O HALLOWEEN) */
+    /* =========================================================
+       SISTEMA DE DISEÑO ADORA — INSPIRADO EN LA BOTÁNIKA
+       ========================================================= */
     :root {
-      /* MODO CLÁSICO (DEFAULT: LUMINOSO, EDITORIAL, MARFIL & AMOR) */
+      /* MODO CLÁSICO (LUMINOSO, MARFIL, ORO & AMOR) */
       --bg: #faf9f6;
       --bg-surface: #ffffff;
+      --bg-card: #ffffff;
       --bg-alt: #f3f1eb;
-      --text: #1a1a1a;
-      --text-dim: #666666;
-      --text-muted: #8c8c8c;
-      --border: #e8e5dc;
+      --text: #18181b;
+      --text-dim: #52525b;
+      --text-muted: #71717a;
+      --border: #e4e2db;
       --border-subtle: #eeece6;
-      --accent-main: #e11d48; /* Rosa Rubí Amor */
-      --accent-gold: #c59b27;
-      --theme-banner-bg: #111111;
-      --theme-banner-text: #f3f4f6;
-      --btn-primary: #111111;
-      --btn-primary-text: #ffffff;
-      --whatsapp: #25d366;
-      --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+      --accent-main: #e11d48; /* Rubí Amor */
+      --accent-gold: #b45309;
+      --nav-bg: rgba(255, 255, 255, 0.95);
+      --nav-text: #18181b;
+      --hero-bg: #f5f3ec;
+      --card-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      --card-hover-shadow: 0 12px 32px rgba(0,0,0,0.08);
+      --banner-bg: #18181b;
+      --banner-text: #f4f4f5;
+      --chip-bg: #edebe4;
+      --chip-text: #27272a;
+      --chip-active-bg: #18181b;
+      --chip-active-text: #ffffff;
+      --font-serif: 'Playfair Display', Georgia, serif;
       --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      --transition-theme: background 0.4s ease, color 0.4s ease, border-color 0.4s ease;
     }
 
     /* MODO HALLOWEEN (NOCTURNO, OBSIDIANA, CALABAZA & MISTERIO) */
     body.theme-halloween {
       --bg: #090a0f;
-      --bg-surface: #12141e;
-      --bg-alt: #161926;
-      --text: #f4f4f7;
-      --text-dim: #9aa1b5;
-      --text-muted: #676e82;
-      --border: rgba(255, 255, 255, 0.1);
+      --bg-surface: #12141f;
+      --bg-card: #151824;
+      --bg-alt: #1a1e2e;
+      --text: #f8fafc;
+      --text-dim: #94a3b8;
+      --text-muted: #64748b;
+      --border: rgba(255, 255, 255, 0.12);
       --border-subtle: rgba(255, 255, 255, 0.06);
       --accent-main: #f97316; /* Naranja Calabaza */
-      --accent-gold: #f59e0b;
-      --theme-banner-bg: #000000;
-      --theme-banner-text: #fed7aa;
-      --btn-primary: #f97316;
-      --btn-primary-text: #ffffff;
+      --accent-gold: #f59e0b; /* Luz de Vela */
+      --nav-bg: rgba(9, 10, 15, 0.95);
+      --nav-text: #f8fafc;
+      --hero-bg: #0d0f18;
+      --card-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      --card-hover-shadow: 0 12px 36px rgba(249, 115, 22, 0.18);
+      --banner-bg: #000000;
+      --banner-text: #fed7aa;
+      --chip-bg: #1e2233;
+      --chip-text: #cbd5e1;
+      --chip-active-bg: #f97316;
+      --chip-active-text: #ffffff;
     }
 
     * {
@@ -59,7 +75,7 @@
       padding: 0;
       font-family: var(--font-sans);
       -webkit-tap-highlight-color: transparent;
-      transition: var(--transition-theme);
+      transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
     }
 
     body {
@@ -67,12 +83,13 @@
       color: var(--text);
       min-height: 100vh;
       line-height: 1.5;
+      overflow-x: hidden;
     }
 
-    /* 1. TOP BANNER (ESTILO LA BOTÁNIKA) */
+    /* 1. TOP ANNOUNCEMENT BAR (ESTILO LA BOTÁNIKA) */
     .top-banner {
-      background: var(--theme-banner-bg);
-      color: var(--theme-banner-text);
+      background: var(--banner-bg);
+      color: var(--banner-text);
       font-size: 0.72rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
@@ -90,12 +107,13 @@
       color: inherit;
       text-decoration: underline;
       text-underline-offset: 3px;
-      opacity: 0.9;
+      font-weight: 700;
     }
 
-    /* 2. HEADER COMPLETO ESTILO LA BOTÁNIKA */
+    /* 2. HEADER Y NAVBAR EDITORIAL */
     .site-nav {
-      background: var(--bg-surface);
+      background: var(--nav-bg);
+      backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
@@ -105,17 +123,11 @@
     .nav-container {
       max-width: 1240px;
       margin: 0 auto;
-      padding: 16px 20px;
+      padding: 12px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
-    }
-
-    .nav-left {
-      display: flex;
-      align-items: center;
-      gap: 14px;
+      gap: 16px;
     }
 
     /* Botón "ENVÍOS PARA HOY" idéntico a La Botánika */
@@ -129,7 +141,9 @@
       padding: 8px 14px;
       border-radius: 4px;
       text-decoration: none;
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       white-space: nowrap;
       box-shadow: 0 2px 8px rgba(220, 38, 38, 0.3);
     }
@@ -139,387 +153,463 @@
       flex-direction: column;
       align-items: center;
       text-decoration: none;
+      color: inherit;
     }
 
     .nav-logo-img {
       height: 38px;
       object-fit: contain;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
     }
 
     body.theme-halloween .nav-logo-img {
       filter: brightness(0) invert(1);
     }
 
-    .nav-menu-links {
-      display: none;
-      align-items: center;
-      gap: 24px;
-      list-style: none;
-    }
-
-    @media (min-width: 900px) {
-      .nav-menu-links {
-        display: flex;
-      }
-    }
-
-    .nav-menu-links a {
-      color: var(--text);
-      text-decoration: none;
-      font-size: 0.78rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      font-weight: 600;
-      transition: color 0.2s;
-    }
-
-    .nav-menu-links a:hover {
-      color: var(--accent-main);
-    }
-
-    /* THEME SWITCHER TOGGLE (CLÁSICO ⇄ HALLOWEEN) */
+    /* SELECTOR DE COLECCIONES (CLÁSICOS VS HALLOWEEN) */
     .mode-switch-bar {
-      display: flex;
+      display: inline-flex;
       background: var(--bg-alt);
+      border: 1px solid var(--border);
       padding: 3px;
       border-radius: 9999px;
-      border: 1px solid var(--border);
     }
 
     .mode-btn {
-      background: transparent;
       border: none;
-      padding: 6px 14px;
-      border-radius: 9999px;
-      font-size: 0.75rem;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.76rem;
       font-weight: 700;
-      letter-spacing: 0.04em;
+      padding: 7px 15px;
+      border-radius: 9999px;
       cursor: pointer;
-      color: var(--text-dim);
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      gap: 5px;
-      transition: all 0.2s;
-      white-space: nowrap;
+      gap: 6px;
+      transition: all 0.25s ease;
     }
 
     .mode-btn.active {
-      background: var(--bg-surface);
-      color: var(--text);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      background: var(--chip-active-bg);
+      color: var(--chip-active-text);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     }
 
-    body.theme-halloween .mode-btn.active {
-      background: var(--accent-main);
-      color: #ffffff;
-      box-shadow: 0 2px 8px rgba(249, 115, 22, 0.4);
-    }
-
-    /* 3. HERO EDITORIAL CON BOTÓN DE BIENVENIDA (ÚNICO BOTÓN PRINCIPAL) */
-    .editorial-hero {
-      max-width: 900px;
-      margin: 40px auto 20px auto;
+    /* 3. HEROES DINÁMICOS CON FOTOGRAFÍAS REALES */
+    .hero-container {
+      max-width: 1240px;
+      margin: 20px auto 0 auto;
       padding: 0 20px;
-      text-align: center;
     }
 
-    .hero-eyebrow {
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent-main);
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .hero-title {
-      font-family: var(--font-serif);
-      font-size: 2.6rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      line-height: 1.15;
-      color: var(--text);
-      margin-bottom: 12px;
-    }
-
-    .hero-lead {
-      color: var(--text-dim);
-      font-size: 0.95rem;
-      max-width: 620px;
-      margin: 0 auto 20px auto;
-      line-height: 1.6;
-    }
-
-    /* EL BOTÓN ÚNICO DE LA VISTA INICIAL */
-    .hero-cta-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--whatsapp);
-      color: #052e16;
-      font-size: 0.88rem;
-      font-weight: 800;
-      padding: 12px 24px;
-      border-radius: 9999px;
-      text-decoration: none;
-      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
-      transition: transform 0.2s, background 0.2s;
-    }
-
-    .hero-cta-btn:hover {
-      transform: translateY(-2px);
-      background: #1ebd5a;
-    }
-
-    /* 4. SECCIÓN LA HISTORIA DE ADORO (HISTORIA DE AMOR Y MASCOTA DE LA MARCA) */
-    .brand-story-section {
-      max-width: 1100px;
-      margin: 40px auto 60px auto;
-      padding: 30px 20px;
-      background: var(--bg-surface);
-      border-radius: 16px;
+    /* HERO MODO CLÁSICO (ADORO & HISTORIA DE AMOR) */
+    .hero-classic {
+      background: var(--hero-bg);
       border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 28px;
       display: grid;
       grid-template-columns: 1fr;
-      gap: 30px;
+      gap: 28px;
       align-items: center;
     }
 
-    @media (min-width: 768px) {
-      .brand-story-section {
-        grid-template-columns: 1fr 1.2fr;
-        padding: 40px;
+    @media (min-width: 860px) {
+      .hero-classic {
+        grid-template-columns: 1.1fr 1fr;
+        padding: 48px 44px;
+        gap: 48px;
       }
     }
 
-    .story-media-wrap {
-      position: relative;
-      border-radius: 12px;
-      overflow: hidden;
-      background: var(--bg-alt);
-      aspect-ratio: 1/1;
+    .hero-classic-content {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: column;
+      gap: 16px;
     }
 
-    .story-media-wrap img {
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent-main);
+    }
+
+    .hero-classic-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3.8vw, 2.8rem);
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--text);
+    }
+
+    .hero-classic-desc {
+      color: var(--text-dim);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .hero-classic-media {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .hero-img-box {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      aspect-ratio: 4/5;
+      background: var(--bg-surface);
+    }
+
+    .hero-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* HERO MODO HALLOWEEN CON MOSAICO VISUAL */
+    .hero-halloween {
+      background: linear-gradient(135deg, #12141f 0%, #0d0f18 100%);
+      border: 1px solid rgba(249, 115, 22, 0.25);
+      border-radius: 16px;
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      gap: 20px;
+    }
+
+    .halloween-banner-images {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .halloween-preview-thumb {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid var(--accent-main);
+      box-shadow: 0 0 16px rgba(249, 115, 22, 0.35);
+    }
+
+    @media (min-width: 600px) {
+      .halloween-preview-thumb {
+        width: 88px;
+        height: 88px;
+      }
+    }
+
+    .halloween-preview-thumb img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
-    .story-content {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .story-badge {
-      display: inline-block;
-      font-size: 0.72rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: var(--accent-main);
-    }
-
-    .story-title {
+    .halloween-title {
       font-family: var(--font-serif);
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 1.2;
-      color: var(--text);
+      font-size: clamp(2rem, 4.2vw, 3rem);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.04em;
+      line-height: 1.15;
     }
 
-    .story-p {
-      color: var(--text-dim);
-      font-size: 0.9rem;
-      line-height: 1.7;
+    .halloween-subtitle {
+      color: #fed7aa;
+      font-size: 0.98rem;
+      max-width: 640px;
+      line-height: 1.6;
     }
 
-    /* 5. GRILLA DE PRODUCTOS ESTILO EDITORIAL (SIN CAJAS PESADAS NI BOTONES REPETITIVOS) */
-    .catalog-section {
+    /* EL ÚNICO BOTÓN PRINCIPAL DE LA VISTA INICIAL */
+    .hero-single-cta {
+      background: var(--accent-main);
+      color: #ffffff !important;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      padding: 13px 26px;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-top: 4px;
+    }
+
+    .hero-single-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    /* 4. CHIPS DE CATEGORÍAS (SIN DROPDOWN INVISIBLE NI FALLOS DE CONTRASTE) */
+    .filter-bar-container {
       max-width: 1240px;
-      margin: 0 auto 60px auto;
+      margin: 32px auto 16px auto;
       padding: 0 20px;
     }
 
-    .catalog-header-row {
+    .filter-chips-scroll {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      scrollbar-width: thin;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .filter-chips-scroll::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    .filter-chips-scroll::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 4px;
+    }
+
+    .cat-chip {
+      white-space: nowrap;
+      background: var(--chip-bg);
+      color: var(--chip-text);
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .cat-chip:hover {
+      border-color: var(--accent-main);
+    }
+
+    .cat-chip.active {
+      background: var(--chip-active-bg);
+      color: var(--chip-active-text);
+      border-color: var(--chip-active-bg);
+      font-weight: 700;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .cat-chip-count {
+      font-size: 0.7rem;
+      opacity: 0.8;
+    }
+
+    /* Respaldo explícito para cualquier elemento <select> */
+    select, option {
+      background-color: #1a1e2e !important;
+      color: #ffffff !important;
+    }
+
+    /* 5. GRILLA DE PRODUCTOS EDITORIAL (2 FOTOS POR FILA EN MÓVIL) */
+    .catalog-section {
+      max-width: 1240px;
+      margin: 10px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .catalog-header-bar {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      padding-bottom: 16px;
+      padding-bottom: 12px;
       margin-bottom: 24px;
       border-bottom: 1px solid var(--border);
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 8px;
     }
 
-    .catalog-section-title {
+    .catalog-header-title {
       font-family: var(--font-serif);
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: 600;
-      letter-spacing: 0.05em;
       color: var(--text);
     }
 
-    .catalog-count-label {
-      font-size: 0.82rem;
+    .catalog-header-count {
+      font-size: 0.8rem;
       color: var(--text-muted);
     }
 
+    /* GRILLA RESPONSIVA: 2 EN MÓVIL, 3 EN TABLET, 4 EN DESKTOP */
     .products-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 28px 16px;
+      gap: 24px 14px;
     }
 
     @media (min-width: 768px) {
       .products-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 40px 24px;
+        gap: 36px 22px;
       }
     }
 
     @media (min-width: 1024px) {
       .products-grid {
         grid-template-columns: repeat(4, 1fr);
-        gap: 48px 30px;
+        gap: 44px 28px;
       }
     }
 
-    /* TARJETA EDITORIAL AL AIRE (SIN MARCOS) */
+    /* TARJETA EDITORIAL AL AIRE (SIN MARCOS REPETITIVOS NI BOTONES SATURADOS) */
     .product-card {
       display: flex;
       flex-direction: column;
       cursor: pointer;
+      position: relative;
+      background: transparent;
     }
 
-    /* FOTOGRAFÍA CON HOVER AUTOMÁTICO */
-    .media-box {
+    /* CONTENEDOR FOTOGRÁFICO CON HOVER AUTOMÁTICO */
+    .card-media-wrap {
       position: relative;
       width: 100%;
       aspect-ratio: 9/14;
-      background: var(--bg-alt);
-      border-radius: 6px;
+      border-radius: 10px;
       overflow: hidden;
+      background: var(--bg-alt);
+      box-shadow: var(--card-shadow);
       margin-bottom: 12px;
     }
 
-    .media-box img {
+    .card-img-primary,
+    .card-img-secondary {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
-      transition: opacity 0.35s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 0.4s ease, transform 0.5s ease;
     }
 
-    .img-primary {
-      position: absolute;
-      inset: 0;
-      z-index: 2;
+    .card-img-primary {
       opacity: 1;
-    }
-
-    .img-secondary {
-      position: absolute;
-      inset: 0;
       z-index: 1;
-      opacity: 0;
     }
 
-    /* Hover automático en computadoras */
+    .card-img-secondary {
+      opacity: 0;
+      z-index: 2;
+    }
+
+    /* Al acercar el cursor (desktop) se muestra automáticamente el ramo */
     @media (hover: hover) {
-      .product-card:hover .img-primary.has-alt {
-        opacity: 0;
+      .product-card:hover .card-img-primary {
+        transform: scale(1.04);
       }
-      .product-card:hover .img-secondary.has-alt {
+      .product-card:hover .card-img-secondary {
         opacity: 1;
         transform: scale(1.04);
       }
     }
 
-    /* Toque táctil en móviles */
-    .img-primary.touch-flipped {
-      opacity: 0 !important;
-    }
-    .img-secondary.touch-flipped {
-      opacity: 1 !important;
-      z-index: 3 !important;
-    }
-
-    .tag-hover {
+    /* En móvil: botón táctil sutil para alternar vista */
+    .touch-view-pill {
       position: absolute;
       bottom: 8px;
       right: 8px;
-      background: rgba(0, 0, 0, 0.55);
-      backdrop-filter: blur(4px);
+      z-index: 3;
+      background: rgba(0, 0, 0, 0.65);
       color: #ffffff;
-      font-size: 0.6rem;
-      font-weight: 600;
-      padding: 2px 6px;
+      backdrop-filter: blur(4px);
+      padding: 3px 8px;
       border-radius: 4px;
-      z-index: 4;
+      font-size: 0.65rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 600;
       pointer-events: none;
     }
 
-    /* DATOS AL AIRE (SIN CAJAS NI SKU) */
-    .item-meta {
-      font-size: 0.68rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      font-weight: 600;
-      margin-bottom: 2px;
+    /* TEXTOS DE LA TARJETA (SIN SKU) */
+    .card-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
     }
 
-    .item-title {
+    .card-category {
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent-gold);
+    }
+
+    .card-title {
       font-family: var(--font-serif);
       font-size: 1.05rem;
       font-weight: 600;
       color: var(--text);
       line-height: 1.3;
-      margin-bottom: 4px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
-    .item-price {
-      font-size: 0.95rem;
-      font-weight: 700;
+    .card-price {
+      font-size: 1rem;
+      font-weight: 800;
       color: var(--accent-main);
-      letter-spacing: 0.02em;
+      margin-top: 2px;
     }
 
-    /* 6. SECCIÓN EDITORIAL: FLORES EN HALLOWEEN & OCASIONES (IMAGEN 1 REFERENCIA) */
+    /* 6. PILARES EDITORIALES (RÉPLICA EXACTA DE LA BOTÁNIKA) */
     .editorial-value-section {
-      max-width: 1040px;
-      margin: 60px auto 40px auto;
-      padding: 48px 20px;
+      background: var(--bg-surface);
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      text-align: center;
+      padding: 64px 20px;
+      margin: 40px 0;
     }
 
     .value-headline {
       font-family: var(--font-serif);
-      font-size: 1.85rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
+      font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 48px;
+      letter-spacing: 0.05em;
       color: var(--text);
-      margin-bottom: 36px;
     }
 
     .pillars-grid {
+      max-width: 1100px;
+      margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr;
-      gap: 32px;
+      gap: 36px;
     }
 
     @media (min-width: 768px) {
       .pillars-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
+        gap: 32px;
       }
     }
 
@@ -527,106 +617,177 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
       gap: 12px;
     }
 
-    .pillar-icon {
-      font-size: 2.2rem;
-      line-height: 1;
+    .pillar-icon-svg {
+      width: 44px;
+      height: 44px;
+      stroke: var(--text);
+      stroke-width: 1.5;
+      fill: none;
+      margin-bottom: 8px;
     }
 
     .pillar-title {
       font-family: var(--font-serif);
-      font-size: 1.08rem;
-      letter-spacing: 0.08em;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
-      font-weight: 600;
       color: var(--text);
+      line-height: 1.35;
     }
 
     .pillar-desc {
-      font-size: 0.88rem;
       color: var(--text-dim);
+      font-size: 0.88rem;
       line-height: 1.6;
-      max-width: 320px;
     }
 
-    /* 7. TARIFARIO DE DELIVERY (IMAGEN 2 REFERENCIA LA BOTÁNIKA) */
+    /* 7. NUESTRO PROCESO A PEDIDO (4 PASOS) */
+    .process-section {
+      max-width: 1100px;
+      margin: 40px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .process-title {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .process-subtitle {
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .steps-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .step-card {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 18px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .step-number {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+    }
+
+    .step-head {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .step-text {
+      font-size: 0.82rem;
+      color: var(--text-dim);
+      line-height: 1.5;
+    }
+
+    /* 8. TARIFARIO DE DELIVERY (RÉPLICA EXACTA DE LA BOTÁNIKA) */
     .delivery-section {
-      max-width: 860px;
-      margin: 60px auto 40px auto;
+      max-width: 900px;
+      margin: 0 auto 70px auto;
       padding: 0 20px;
     }
 
     .delivery-card {
       background: var(--bg-surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 16px;
       padding: 36px 28px;
+      box-shadow: var(--card-shadow);
     }
 
     .delivery-head {
-      text-align: center;
       font-family: var(--font-serif);
       font-size: 1.8rem;
-      letter-spacing: 0.1em;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-align: center;
+      margin-bottom: 28px;
       text-transform: uppercase;
       color: var(--text);
-      margin-bottom: 24px;
     }
 
     .rates-list {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 14px;
-      font-size: 0.88rem;
+      gap: 12px;
+      margin-bottom: 24px;
     }
 
     .rate-item {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      gap: 16px;
       padding-bottom: 10px;
       border-bottom: 1px dashed var(--border);
+      font-size: 0.9rem;
+      gap: 16px;
     }
 
     .rate-districts {
       color: var(--text);
-      line-height: 1.45;
+      line-height: 1.5;
     }
 
     .rate-price {
       font-weight: 800;
       color: var(--accent-main);
-      font-size: 0.98rem;
       white-space: nowrap;
+      font-size: 0.95rem;
     }
 
     .rate-notice {
-      margin-top: 24px;
-      text-align: center;
       font-size: 0.85rem;
       color: var(--text-dim);
+      text-align: center;
+      line-height: 1.6;
     }
 
     .rate-notice a {
-      color: #16a34a;
+      color: var(--accent-main);
       font-weight: 700;
       text-decoration: underline;
     }
 
-    /* 8. BOTTOM SHEET DE DETALLE (DONDE SÍ APARECE EL BOTÓN DE WHATSAPP) */
+    /* 9. BOTTOM SHEET DE DETALLE (DONDE ESTÁ EL BOTÓN DE COMPRA) */
     .sheet-overlay {
       position: fixed;
       inset: 0;
       background: rgba(0, 0, 0, 0.7);
-      backdrop-filter: blur(8px);
-      z-index: 1000;
+      backdrop-filter: blur(4px);
+      z-index: 200;
       opacity: 0;
       pointer-events: none;
-      transition: opacity 0.3s;
+      transition: opacity 0.3s ease;
     }
 
     .sheet-overlay.active {
@@ -642,13 +803,15 @@
       background: var(--bg-surface);
       border-top: 1px solid var(--border);
       border-radius: 20px 20px 0 0;
-      z-index: 1001;
+      z-index: 210;
       max-height: 90vh;
       display: flex;
       flex-direction: column;
       transform: translateY(100%);
       transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
       box-shadow: 0 -10px 40px rgba(0,0,0,0.4);
+      max-width: 640px;
+      margin: 0 auto;
     }
 
     .bottom-sheet.active {
@@ -670,21 +833,46 @@
     }
 
     .sheet-body {
-      padding: 12px 24px 36px 24px;
+      padding: 10px 24px 32px 24px;
       overflow-y: auto;
       display: flex;
       flex-direction: column;
       gap: 16px;
     }
 
+    /* Switch de imágenes en el detalle */
+    .sheet-media-tabs {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .sheet-tab-btn {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      cursor: pointer;
+    }
+
+    .sheet-tab-btn.active {
+      background: var(--chip-active-bg);
+      color: var(--chip-active-text);
+      border-color: var(--chip-active-bg);
+    }
+
     .sheet-media-box {
       width: 100%;
-      max-width: 280px;
-      aspect-ratio: 9/14;
+      max-width: 300px;
+      aspect-ratio: 9/13;
       margin: 0 auto;
-      border-radius: 8px;
+      border-radius: 10px;
       overflow: hidden;
       background: var(--bg-alt);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
     }
 
     .sheet-media-box img {
@@ -696,9 +884,10 @@
 
     .sheet-item-title {
       font-family: var(--font-serif);
-      font-size: 1.4rem;
+      font-size: 1.45rem;
       font-weight: 600;
       color: var(--text);
+      line-height: 1.25;
     }
 
     .sheet-item-price {
@@ -712,7 +901,7 @@
       background: var(--bg-alt);
       border: 1px solid var(--border);
       padding: 14px;
-      border-radius: 8px;
+      border-radius: 10px;
       font-size: 0.85rem;
     }
 
@@ -725,10 +914,10 @@
       margin-bottom: 4px;
     }
 
-    /* BOTÓN PRINCIPAL DE WHATSAPP EN EL DETALLE */
+    /* ÚNICO BOTÓN DE COMPRA EN EL DETALLE */
     .btn-sheet-wa {
-      background: var(--whatsapp);
-      color: #052e16;
+      background: #25d366;
+      color: #052e16 !important;
       font-size: 1rem;
       font-weight: 800;
       padding: 16px 20px;
@@ -738,9 +927,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
+      gap: 10px;
       box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35);
-      transition: transform 0.2s;
+      transition: transform 0.2s ease;
     }
 
     .btn-sheet-wa:active {
@@ -757,9 +946,23 @@
       border-radius: 8px;
       cursor: pointer;
     }
+
+    /* 10. PIE DE PÁGINA */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      background: var(--bg-surface);
+      padding: 36px 20px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+    }
   </style>
 </head>
-<body>
+<body class="theme-halloween">
 
   <!-- 1. TOP ANNOUNCEMENT BANNER -->
   <aside class="top-banner">
@@ -767,74 +970,125 @@
     <a href="#tarifario">Ver tarifario de delivery &darr;</a>
   </aside>
 
-  <!-- 2. HEADER EDITORIAL COMPLETO ESTILO LA BOTÁNIKA -->
+  <!-- 2. NAVBAR EDITORIAL (LA BOTÁNIKA) -->
   <nav class="site-nav">
     <div class="nav-container">
-      <div class="nav-left">
-        <a href="https://wa.me/51975369266?text=¡Hola%20Carlos!%20🌸%20Quisiera%20consultar%20por%20envíos%20de%20flores%20para%20hoy%20en%20Lima." target="_blank" class="btn-today-delivery">
-          ENVÍOS PARA HOY
-        </a>
-      </div>
-
-      <a href="#" class="nav-logo-wrap" onclick="setMode('classics', event)">
-        <img src="./images/brand/logo_adora.png" alt="ADORA" class="nav-logo-img" />
+      <a href="https://wa.me/51975369266?text=%C2%A1Hola%20Carlos!%20%F0%9F%8C%B8%20Quisiera%20consultar%20por%20env%C3%ADos%20de%20flores%20para%20hoy%20en%20Lima." target="_blank" class="btn-today-delivery">
+        ENVÍOS PARA HOY
       </a>
 
-      <!-- TOGGLE DE MUNDOS: CLÁSICOS 🌸 ⇄ HALLOWEEN 🎃 -->
+      <a href="#" class="nav-logo-wrap" onclick="toggleMode('classics', event)">
+        <img src="./images/brand/logo_adora_nav.png" alt="ADORA" class="nav-logo-img" onerror="this.src='./images/brand/logo_adora.png'" />
+      </a>
+
+      <!-- SWITCHER DINÁMICO DE MUNDOS: CLÁSICOS 🌸 ⇄ HALLOWEEN 🎃 -->
       <div class="mode-switch-bar">
-        <button type="button" class="mode-btn active" id="btnModeClassics" onclick="setMode('classics', event)">
-          🌸 Clásicos & Amor
+        <button type="button" class="mode-btn" id="btnModeClassics" onclick="toggleMode('classics', event)">
+          🌸 Clásicos & Adoro
         </button>
-        <button type="button" class="mode-btn" id="btnModeHalloween" onclick="setMode('halloween', event)">
-          🎃 Edición Halloween
+        <button type="button" class="mode-btn active" id="btnModeHalloween" onclick="toggleMode('halloween', event)">
+          🎃 Halloween (49)
         </button>
       </div>
     </div>
   </nav>
 
-  <!-- 3. HERO EDITORIAL (CON EL ÚNICO BOTÓN PRINCIPAL DE LA VISTA INICIAL) -->
-  <header class="editorial-hero">
-    <div class="hero-eyebrow" id="heroEyebrow">EXPERIENCIAS BOTÁNICAS &bull; LIMA, PERÚ</div>
-    <h1 class="hero-title" id="heroTitle">Diseño Floral de Alta Gama</h1>
-    <p class="hero-lead" id="heroLead">
-      Tallos seleccionados cada madrugada en el Mercado de Flores de Acho, envoltura coreana bicapa y confección artesanal a pedido.
-    </p>
-    <a 
-      href="https://wa.me/51975369266?text=¡Hola%20Carlos!%20🌸%20Vi%20el%20catálogo%20de%20ADORA%20y%20quiero%20coordinar%20un%20pedido%20personalizado." 
-      target="_blank" 
-      class="hero-cta-btn"
-    >
-      💬 Coordinar Pedido con Carlos por WhatsApp
-    </a>
-  </header>
+  <!-- 3. HEROES VISUALES -->
+  <div class="hero-container">
 
-  <!-- 4. SECCIÓN LA HISTORIA DE ADORO (SE MUESTRA PRINCIPALMENTE EN MODO CLÁSICO) -->
-  <section class="brand-story-section" id="storySection">
-    <div class="story-media-wrap">
-      <img src="./images/brand/pareja_adoro.png" alt="Adoro y su historia de amor" id="storyImg" />
-    </div>
-    <div class="story-content">
-      <span class="story-badge">El Origen de Nuestra Inspiración</span>
-      <h2 class="story-title">Adoro y el Lenguaje de las Flores</h2>
-      <p class="story-p">
-        ADORA nació de una convicción sincera: que las palabras a veces se quedan cortas cuando se ama con intensidad. Inspirado en <strong>Adoro</strong>, el personaje y guardián de nuestro taller, cada uno de nuestros ramos representa una promesa viva, un cómplice silencioso que convierte cualquier momento cotidiano en un recuerdo inolvidable.
+    <!-- HERO HALLOWEEN (CON FOTOS REALES Y ALTO IMPACTO) -->
+    <header class="hero-halloween" id="heroHalloween">
+      <div class="halloween-banner-images">
+        <div class="halloween-preview-thumb">
+          <img src="./images/contexto/SLIDE2_POP-06_Merlina_Monocromo_Nevermore.jpg" alt="Merlina" />
+        </div>
+        <div class="halloween-preview-thumb">
+          <img src="./images/contexto/SLIDE2_HP-01_Gryffindor_El_Rugido_Escarlata.jpg" alt="Gryffindor" />
+        </div>
+        <div class="halloween-preview-thumb">
+          <img src="./images/contexto/SLIDE2_HW-01_Spooky_Chic_Pack_1.jpg" alt="Spooky Chic" />
+        </div>
+        <div class="halloween-preview-thumb">
+          <img src="./images/contexto/SLIDE2_ANM-07_Demon_Slayer_Rengoku_Flama_Eterna.jpg" alt="Rengoku" />
+        </div>
+      </div>
+
+      <div class="hero-badge">🎃 EDICIÓN ESPECIAL LIMITADA 2026</div>
+      <h1 class="halloween-title">Catálogo Halloween de Autor</h1>
+      <p class="halloween-subtitle">
+        49 Composiciones florales únicas inspiradas en tus personajes favoritos. Flores frescas de corte diario confeccionadas artesanalmente a pedido.
       </p>
-      <p class="story-p">
-        No trabajamos flores en serie ni acumulamos stock en cámaras frías. Cada composición es creada por encargo, con la frescura que merecen las personas que más valoras.
-      </p>
-    </div>
-  </section>
 
-  <!-- 5. CATÁLOGO DE PRODUCTOS (SIN BOTONES REPETITIVOS NI SKU) -->
-  <section class="catalog-section" id="catalogo">
-    <div class="catalog-header-row">
-      <h2 class="catalog-section-title" id="catalogSectionTitle">Colección Clásica de Autor</h2>
-      <span class="catalog-count-label" id="catalogCountLabel">4 Ramos Disponibles</span>
+      <a href="https://wa.me/51975369266?text=%C2%A1Hola%20Carlos!%20%F0%9F%8E%83%20Quiero%20coordinar%20un%20ramo%20de%20la%20colecci%C3%B3n%20Halloween%202026." target="_blank" class="hero-single-cta">
+        💬 Pedir Ramo de Halloween por WhatsApp
+      </a>
+    </header>
+
+    <!-- HERO CLÁSICO (LA HISTORIA DE AMOR DE ADORO Y LAS FLORES) -->
+    <header class="hero-classic" id="heroClassic" style="display: none;">
+      <div class="hero-classic-content">
+        <div class="hero-badge">🌸 EL ALMA DE ADORA</div>
+        <h1 class="hero-classic-title">Adoro y el Lenguaje Eterno de las Flores</h1>
+        <p class="hero-classic-desc">
+          En ADORA creemos que el amor no se expresa con palabras comunes. Inspirados en <strong>Adoro</strong>, el duende guardián de nuestro taller botánico y en su eterna historia de amor, seleccionamos cada tallo al amanecer en Acho para crear arreglos puros, frescos e inolvidables.
+        </p>
+        <div>
+          <a href="https://wa.me/51975369266?text=%C2%A1Hola%20Carlos!%20%F0%9F%8C%B8%20Deseo%20coordinar%20un%20ramo%20cl%C3%A1sico%20de%20rosas%20de%20alta%20gama." target="_blank" class="hero-single-cta">
+            💬 Coordinar Ramo Clásico por WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="hero-classic-media">
+        <div class="hero-img-box">
+          <img src="./images/brand/pareja_adoro.jpg" alt="Historia de amor de Adoro" />
+        </div>
+        <div class="hero-img-box">
+          <img src="./images/brand/original_adoro.jpg" alt="Adoro Guardián Botánico" />
+        </div>
+      </div>
+    </header>
+
+  </div>
+
+  <!-- 4. BARRA DE FILTROS EN CHIPS HORIZONTALES (CERO PROBLEMAS DE CONTRASTE) -->
+  <div class="filter-bar-container" id="filterBarWrap">
+    <div class="filter-chips-scroll" id="chipsScroll">
+      <button type="button" class="cat-chip active" data-cat="all" onclick="filterCategory('all')">
+        ✨ Todos <span class="cat-chip-count">(49)</span>
+      </button>
+      <button type="button" class="cat-chip" data-cat="Harry Potter" onclick="filterCategory('Harry Potter')">
+        ⚡ Harry Potter <span class="cat-chip-count">(4)</span>
+      </button>
+      <button type="button" class="cat-chip" data-cat="Halloween Tradicional" onclick="filterCategory('Halloween Tradicional')">
+        🎃 Halloween Clásico <span class="cat-chip-count">(3)</span>
+      </button>
+      <button type="button" class="cat-chip" data-cat="Anime & Shonen" onclick="filterCategory('Anime & Shonen')">
+        ⚔️ Anime & Shonen <span class="cat-chip-count">(11)</span>
+      </button>
+      <button type="button" class="cat-chip" data-cat="Cine & Streaming" onclick="filterCategory('Cine & Streaming')">
+        🎬 Cine & Streaming <span class="cat-chip-count">(8)</span>
+      </button>
+      <button type="button" class="cat-chip" data-cat="Gaming & Pop" onclick="filterCategory('Gaming & Pop')">
+        🎮 Gaming & Pop <span class="cat-chip-count">(8)</span>
+      </button>
+      <button type="button" class="cat-chip" data-cat="Gótico & Terror" onclick="filterCategory('Gótico & Terror')">
+        🖤 Gótico & Terror <span class="cat-chip-count">(10)</span>
+      </button>
+      <button type="button" class="cat-chip" data-cat="Retro & Dúos" onclick="filterCategory('Retro & Dúos')">
+        🕶️ Retro & Dúos <span class="cat-chip-count">(5)</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 5. GRILLA DE PRODUCTOS EDITORIAL -->
+  <section class="catalog-section">
+    <div class="catalog-header-bar">
+      <h2 class="catalog-header-title" id="gridTitle">Colección Halloween 2026</h2>
+      <span class="catalog-header-count" id="gridCount">Mostrando 49 ramos</span>
     </div>
 
-    <!-- Grilla de productos limpia al aire -->
     <main class="products-grid" id="productsGrid">
-      <!-- Generado dinámicamente -->
+      <!-- Tarjetas inyectadas dinámicamente -->
     </main>
   </section>
 
@@ -843,33 +1097,78 @@
     <h2 class="value-headline" id="valueHeadline">Flores en Halloween & Ocasiones Especiales</h2>
 
     <div class="pillars-grid">
+      <!-- Pilar 1 -->
       <div class="pillar-box">
-        <div class="pillar-icon">🎁</div>
+        <svg class="pillar-icon-svg" viewBox="0 0 24 24">
+          <path d="M20 12v10H4V12"/>
+          <path d="M2 7h20v5H2z"/>
+          <path d="M12 22V7"/>
+          <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+          <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+        </svg>
         <h3 class="pillar-title">Expresa Sentimientos de Manera Diferente</h3>
         <p class="pillar-desc">
-          Un ramo de autor es una forma divertida y especial de expresar amor, complicidad o aprecio, combinando lo sentimental con lo estético.
+          Un ramo temático de autor es una forma divertida y especial de expresar amor, complicidad o aprecio, combinando lo sentimental con lo estético.
         </p>
       </div>
 
+      <!-- Pilar 2 -->
       <div class="pillar-box">
-        <div class="pillar-icon">🌿</div>
+        <svg class="pillar-icon-svg" viewBox="0 0 24 24">
+          <path d="M12 22v-9"/>
+          <path d="M9 7a3 3 0 0 1 6 0c0 3-3 6-3 6s-3-3-3-6z"/>
+          <path d="M6 16c1-2 3-3 6-3s5 1 6 3"/>
+        </svg>
         <h3 class="pillar-title">Versatilidad Decorativa</h3>
         <p class="pillar-desc">
-          Pueden ser usados como el detalle estelar de una cita, centros de mesa exclusivos para celebraciones, o para ambientar el hogar con aroma fresco.
+          Pueden ser usados como el detalle estelar de una cita, centros de mesa exclusivos para fiestas, o para ambientar el hogar con aroma fresco y elegancia botánica.
         </p>
       </div>
 
+      <!-- Pilar 3 -->
       <div class="pillar-box">
-        <div class="pillar-icon">🌾</div>
-        <h3 class="pillar-title">Flores Frescas de Corte Diario</h3>
+        <svg class="pillar-icon-svg" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 7v5l3 3"/>
+        </svg>
+        <h3 class="pillar-title">Flores Frescas de Corte en Acho</h3>
         <p class="pillar-desc">
-          Adquiridas la misma madrugada en el Mercado Mayorista Santa Rosa de Acho (Rímac). Cero flor envejecida; garantizamos hasta 14 días de vida.
+          Seleccionadas al alba en el Mercado Mayorista Santa Rosa de Acho (Rímac). Cero flor envejecida; garantizamos máxima duración y apertura natural en florero.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- 7. TARIFARIO DE DELIVERY (RÉPLICA EXACTA LA BOTÁNIKA) -->
+  <!-- 7. NUESTRO PROCESO ARTESANAL A PEDIDO -->
+  <section class="process-section">
+    <h2 class="process-title">Confección Artesanal a Pedido</h2>
+    <p class="process-subtitle">Cada arreglo se arma exclusivamente para ti con flores cortadas el mismo día</p>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">01</div>
+        <div class="step-head">Eliges tu Diseño</div>
+        <div class="step-text">Explora nuestros 49 ramos de Halloween o nuestra colección clásica inspirada en Adoro.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-number">02</div>
+        <div class="step-head">Taller Artesanal</div>
+        <div class="step-text">Nuestros floristas preparan los tallos frescos en envoltura coreana impermeable bicapa.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-number">03</div>
+        <div class="step-head">Dedicatoria & Foto</div>
+        <div class="step-text">Coordinamos por WhatsApp el mensaje de la tarjeta y te enviamos foto previa del ramo listo.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-number">04</div>
+        <div class="step-head">Entrega a Domicilio</div>
+        <div class="step-text">Delivery seguro en vehículo climatizado directo a la dirección y horario indicado.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. TARIFARIO DE DELIVERY (RÉPLICA EXACTA LA BOTÁNIKA) -->
   <section class="delivery-section" id="tarifario">
     <div class="delivery-card">
       <h2 class="delivery-head">Tarifario de Delivery</h2>
@@ -906,100 +1205,118 @@
       </ul>
 
       <p class="rate-notice">
-        Si su distrito no se encuentra en la lista favor comunicarse al <a href="https://wa.me/51975369266?text=¡Hola%20Carlos!%20🌸%20Quisiera%20consultar%20la%20tarifa%20de%20delivery%20para%20mi%20distrito." target="_blank">+51 975369266</a> para poder brindarle una tarifa y horario exclusivo.
+        Si su distrito no se encuentra en la lista favor comunicarse al <a href="https://wa.me/51975369266?text=%C2%A1Hola%20Carlos!%20%F0%9F%8C%B8%20Quisiera%20consultar%20la%20tarifa%20de%20delivery%20para%20mi%20distrito." target="_blank">+51 975369266</a> para poder brindarle una tarifa y horario exclusivo.
       </p>
     </div>
   </section>
 
-  <!-- 8. BOTTOM SHEET DE DETALLE (DONDE ESTÁ EL BOTÓN DE COMPRA) -->
+  <!-- 9. BOTTOM SHEET DE DETALLE (ÚNICO BOTÓN DE COMPRA) -->
   <div class="sheet-overlay" id="sheetOverlay" onclick="closeDetail()"></div>
   <div class="bottom-sheet" id="bottomSheet">
     <div class="sheet-handle-row" onclick="closeDetail()">
       <div class="sheet-handle-pill"></div>
     </div>
     <div class="sheet-body">
+      <!-- Media Tabs para alternar entre Ramo y Personaje en móvil -->
+      <div class="sheet-media-tabs" id="sheetMediaTabs">
+        <button type="button" class="sheet-tab-btn active" id="tabBtnCharacter" onclick="switchDetailMedia('character')">
+          👤 Personaje
+        </button>
+        <button type="button" class="sheet-tab-btn" id="tabBtnBouquet" onclick="switchDetailMedia('bouquet')">
+          💐 Ramo de Flores
+        </button>
+      </div>
+
       <div class="sheet-media-box">
-        <img id="detailImg" src="" alt="Detalle" />
+        <img id="detailImg" src="" alt="Detalle del Ramo" />
       </div>
 
       <div>
-        <div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-muted); font-weight:700;" id="detailCollection">COLECCIÓN</div>
+        <div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-muted); font-weight:700;" id="detailCategory">CATEGORÍA</div>
         <h3 class="sheet-item-title" id="detailTitle">Nombre del Ramo</h3>
         <div class="sheet-item-price" id="detailPrice">S/ 0.00</div>
       </div>
 
       <div class="sheet-recipe-box">
-        <div class="sheet-recipe-title">🌾 Composición Botánica (Acho)</div>
+        <div class="sheet-recipe-title">🌾 Composición Botánica & Confección</div>
         <p style="color:var(--text-dim); line-height:1.5;" id="detailRecipe"></p>
         <div style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">
-          📦 Envoltura coreana impermeable bicapa + fajín horizontal + lazo de satén.
+          📦 Envoltura coreana impermeable bicapa + fajín de diseño + lazo de satén + tarjeta de dedicatoria.
         </div>
       </div>
 
-      <!-- BOTÓN DE COMPRA DIRECTO POR WHATSAPP EN EL DETALLE -->
+      <!-- BOTÓN PRINCIPAL DE WHATSAPP DIRECTO CON CARLOS -->
       <a id="detailWaBtn" href="#" target="_blank" class="btn-sheet-wa">
         💬 Pedir por WhatsApp (Delivery en Lima)
       </a>
 
       <button type="button" class="btn-sheet-close" onclick="closeDetail()">
-        Cerrar
+        Cerrar Detalle
       </button>
     </div>
   </div>
 
+  <!-- 10. FOOTER -->
+  <footer class="site-footer">
+    <p><strong>ADORA • Florería Boutique & Experiencias Botánicas</strong></p>
+    <p>Confección floral a pedido en Lima, Perú • Consultas y pedidos directos al +51 975 369 266</p>
+    <p style="opacity: 0.6; font-size: 0.72rem; margin-top: 4px;">&copy; 2026 ADORA. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- JAVASCRIPT: DATA & INTERACTIVIDAD -->
   <script>
     const CLASSICS_DATA = [
   {
     "id": "ADR-01",
-    "name": "Romance Imperial (12 Rosas Rojas Seleccionadas)",
+    "name": "Romance Imperial (12 Rosas Rojas de Exportación)",
     "collection": "Colección Clásica",
     "categoryTag": "Clásicos ADORA",
-    "recipe": "12 Rosas rojas de corte mayorista de primera calidad + Follaje de eucalipto cinerea + Ruscus italiano",
-    "persona": "Aniversarios, declaraciones de amor, romance apasionado",
-    "pvp": "89.00",
+    "recipe": "12 Rosas rojas terciopelo de corte mayorista de Acho + Eucalipto cinerea fresco + Ruscus italiano + Envoltura coreana grafito bicapa y lazo de satén carmesí.",
+    "persona": "Aniversarios, declaraciones de amor verdadero y romance apasionado.",
+    "pvp": "120.00",
     "hasCharacter": true,
-    "characterImg": "./images/brand/perfil_adoro.png",
-    "imageLocal": "./images/brand/ramo_12_rosas_rojas.png",
-    "imageOnline": "./images/brand/ramo_12_rosas_rojas.png"
+    "characterImg": "./images/brand/perfil_adoro.jpg",
+    "imageLocal": "./images/brand/ramo_12_rosas_rojas.jpg",
+    "imageOnline": "./images/brand/ramo_12_rosas_rojas.jpg"
   },
   {
     "id": "ADR-02",
-    "name": "Suspiro Pastel (12 Rosas Rosadas de Alta Gama)",
+    "name": "Suspiro Pastel (12 Rosas Rosadas Baby Pink)",
     "collection": "Colección Clásica",
     "categoryTag": "Clásicos ADORA",
-    "recipe": "12 Rosas rosadas baby pink de exportación + Gypsophila blanca + Eucalipto cinerea fresco",
-    "persona": "Cumpleaños, detalles de agradecimiento, ternura y delicadeza",
-    "pvp": "89.00",
+    "recipe": "12 Rosas rosadas baby pink de exportación + Gypsophila blanca nupcial + Eucalipto cinerea aromático + Envoltura coreana marfil y lazo rosa pastel.",
+    "persona": "Cumpleaños, detalles románticos de agradecimiento, ternura y delicadeza.",
+    "pvp": "120.00",
     "hasCharacter": true,
-    "characterImg": "./images/brand/original_adoro.png",
-    "imageLocal": "./images/brand/ramo_12_rosas_rosadas.png",
-    "imageOnline": "./images/brand/ramo_12_rosas_rosadas.png"
+    "characterImg": "./images/brand/original_adoro.jpg",
+    "imageLocal": "./images/brand/ramo_12_rosas_rosadas.jpg",
+    "imageOnline": "./images/brand/ramo_12_rosas_rosadas.jpg"
   },
   {
     "id": "ADR-03",
-    "name": "The Signature Red Luxury (24 Rosas Terciopelo)",
+    "name": "The Signature Red Luxury (24 Rosas Rojas Gala)",
     "collection": "Colección Clásica",
     "categoryTag": "Clásicos ADORA",
-    "recipe": "24 Rosas rojas terciopelo seleccionadas una a una en Acho + Abanico de eucalipto baby blue + Doble papel coreano grafito",
-    "persona": "Pedidas de mano, fechas inolvidables, máxima expresión de amor y lujo",
-    "pvp": "165.00",
+    "recipe": "24 Rosas rojas terciopelo seleccionadas una a una en Acho + Abanico de eucalipto baby blue + Doble papel coreano impermeable grafito y lazo de seda rojo gala.",
+    "persona": "Pedidas de mano, fechas inolvidables y máxima expresión de amor y lujo.",
+    "pvp": "210.00",
     "hasCharacter": true,
-    "characterImg": "./images/brand/pareja_adoro.png",
-    "imageLocal": "./images/brand/ramo_24_rosas_rojas.png",
-    "imageOnline": "./images/brand/ramo_24_rosas_rojas.png"
+    "characterImg": "./images/brand/pareja_adoro.jpg",
+    "imageLocal": "./images/brand/ramo_24_rosas_rojas.jpg",
+    "imageOnline": "./images/brand/ramo_24_rosas_rojas.jpg"
   },
   {
     "id": "ADR-04",
-    "name": "The Signature Pink Elegance (24 Rosas Rosadas)",
+    "name": "The Signature Pink Elegance (24 Rosas Rosadas Sublime)",
     "collection": "Colección Clásica",
     "categoryTag": "Clásicos ADORA",
-    "recipe": "24 Rosas rosadas premium en degradé suave + Alstroemerias blancas + Ruscus y lazo de satén marfil",
-    "persona": "Graduaciones, celebraciones especiales, amor puro y sofisticación",
-    "pvp": "165.00",
+    "recipe": "24 Rosas rosadas premium en suave degradé + Alstroemerias blancas de exportación + Ruscus de floristería y lazo de satén marfil.",
+    "persona": "Graduaciones, aniversarios de plata, amor puro y alta sofisticación floral.",
+    "pvp": "210.00",
     "hasCharacter": true,
     "characterImg": "./images/brand/adoro_1.jpg",
-    "imageLocal": "./images/brand/ramo_24_rosas_rosadas.png",
-    "imageOnline": "./images/brand/ramo_24_rosas_rosadas.png"
+    "imageLocal": "./images/brand/ramo_24_rosas_rosadas.jpg",
+    "imageOnline": "./images/brand/ramo_24_rosas_rosadas.jpg"
   }
 ];
     const HALLOWEEN_DATA = [
@@ -2034,123 +2351,177 @@
   }
 ];
 
-    let currentMode = 'classics'; // 'classics' | 'halloween'
+    let currentMode = 'halloween'; // 'halloween' o 'classics'
+    let currentFilter = 'all';
+    let currentActiveItem = null;
 
-    function setMode(mode, evt) {
+    // Inicialización al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+      // Permitir modo desde URL hash si existe (#clasicos)
+      if (window.location.hash === '#clasicos') {
+        toggleMode('classics');
+      } else {
+        toggleMode('halloween');
+      }
+    });
+
+    function toggleMode(mode, evt) {
       if (evt) evt.preventDefault();
       currentMode = mode;
 
-      const isHalloween = mode === 'halloween';
-      document.body.classList.toggle('theme-halloween', isHalloween);
+      const body = document.body;
+      const btnHalloween = document.getElementById('btnModeHalloween');
+      const btnClassics = document.getElementById('btnModeClassics');
+      const heroHalloween = document.getElementById('heroHalloween');
+      const heroClassic = document.getElementById('heroClassic');
+      const filterBarWrap = document.getElementById('filterBarWrap');
+      const gridTitle = document.getElementById('gridTitle');
+      const gridCount = document.getElementById('gridCount');
+      const valueHeadline = document.getElementById('valueHeadline');
 
-      document.getElementById('btnModeClassics').classList.toggle('active', !isHalloween);
-      document.getElementById('btnModeHalloween').classList.toggle('active', isHalloween);
+      if (mode === 'classics') {
+        body.classList.remove('theme-halloween');
+        btnClassics.classList.add('active');
+        btnHalloween.classList.remove('active');
 
-      // Hero Text Updates
-      const eyebrow = document.getElementById('heroEyebrow');
-      const title = document.getElementById('heroTitle');
-      const lead = document.getElementById('heroLead');
-      const sectionTitle = document.getElementById('catalogSectionTitle');
-      const storySec = document.getElementById('storySection');
+        heroClassic.style.display = 'grid';
+        heroHalloween.style.display = 'none';
+        filterBarWrap.style.display = 'none';
 
-      if (isHalloween) {
-        eyebrow.textContent = 'EDICIÓN ESPECIAL HALLOWEEN & POP 2026';
-        title.textContent = '49 Ramos de Autor';
-        lead.textContent = 'Inspirados en tus historias, personajes y universos favoritos, confeccionados con flores frescas de Acho y envoltura coreana.';
-        sectionTitle.textContent = 'Catálogo Halloween & Cultura Pop';
-        storySec.style.display = 'none'; // En Halloween se enfoca directo en los 49 ramos
+        gridTitle.textContent = 'Colección Clásica de Rosas de Exportación';
+        gridCount.textContent = '4 Arreglos de Autor';
+        valueHeadline.textContent = 'Flores en Ocasiones Especiales';
+
+        renderGrid(CLASSICS_DATA);
       } else {
-        eyebrow.textContent = 'EXPERIENCIAS BOTÁNICAS &bull; LIMA, PERÚ';
-        title.textContent = 'Diseño Floral de Alta Gama';
-        lead.textContent = 'Tallos seleccionados cada madrugada en el Mercado de Flores de Acho, envoltura coreana bicapa y confección artesanal a pedido.';
-        sectionTitle.textContent = 'Colección Clásica de Autor';
-        storySec.style.display = 'grid'; // En Clásicos se luce la historia de Adoro
-      }
+        body.classList.add('theme-halloween');
+        btnHalloween.classList.add('active');
+        btnClassics.classList.remove('active');
 
-      renderGrid();
+        heroHalloween.style.display = 'flex';
+        heroClassic.style.display = 'none';
+        filterBarWrap.style.display = 'block';
+
+        gridTitle.textContent = 'Colección Halloween 2026';
+        valueHeadline.textContent = 'Flores en Halloween & Ocasiones Especiales';
+
+        filterCategory(currentFilter);
+      }
     }
 
-    function renderGrid() {
+    function filterCategory(cat) {
+      currentFilter = cat;
+      // Actualizar chips visuales
+      document.querySelectorAll('.cat-chip').forEach(btn => {
+        if (btn.getAttribute('data-cat') === cat) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      let filtered = HALLOWEEN_DATA;
+      if (cat !== 'all') {
+        filtered = HALLOWEEN_DATA.filter(item => item.categoryTag === cat);
+      }
+
+      document.getElementById('gridCount').textContent = `Mostrando ${filtered.length} de ${HALLOWEEN_DATA.length} ramos`;
+      renderGrid(filtered);
+    }
+
+    function renderGrid(items) {
       const grid = document.getElementById('productsGrid');
-      const countLabel = document.getElementById('catalogCountLabel');
+      grid.innerHTML = '';
 
-      const items = currentMode === 'halloween' ? HALLOWEEN_DATA : CLASSICS_DATA;
-      countLabel.textContent = items.length + ' Ramos Disponibles';
+      items.forEach(item => {
+        const card = document.createElement('article');
+        card.className = 'product-card';
+        card.onclick = () => openDetail(item);
 
-      grid.innerHTML = items.map(p => {
-        const hasAlt = p.hasCharacter && p.characterImg;
-        const pvpFormatted = parseFloat(p.pvp).toFixed(2);
+        const primaryImg = item.characterImg || item.imageLocal || item.imageOnline;
+        const secondaryImg = item.imageLocal || item.imageOnline || item.characterImg;
 
-        // Slide 1 y Slide 2 para Hover automático
-        const primImg = hasAlt ? p.characterImg : p.imageLocal;
-        const secImg = p.imageLocal;
-
-        return `
-        <article class="product-card" onclick="openDetail('${p.id}')">
-          <!-- MEDIA CON HOVER AUTOMÁTICO (SLIDE 1 -> SLIDE 2) -->
-          <div class="media-box" onclick="handleCardTouch('${p.id}', event)">
-            ${hasAlt ? `
-              <img class="img-primary has-alt" id="prim-${p.id}" src="${primImg}" alt="${p.name}" loading="lazy" />
-              <img class="img-secondary has-alt" id="sec-${p.id}" src="${secImg}" alt="${p.name}" loading="lazy" />
-              <span class="tag-hover">Hover / Toca</span>
-            ` : `
-              <img src="${p.imageLocal}" alt="${p.name}" loading="lazy" />
-            `}
+        card.innerHTML = `
+          <div class="card-media-wrap">
+            <img class="card-img-primary" src="${primaryImg}" alt="${item.name}" loading="lazy" />
+            <img class="card-img-secondary" src="${secondaryImg}" alt="${item.name} Ramo" loading="lazy" />
+            <span class="touch-view-pill">Tocar p/ Detalle</span>
           </div>
-
-          <!-- DATOS AL AIRE (SIN CAJAS NI SKU) -->
-          <div class="item-meta">${p.collection}</div>
-          <h3 class="item-title">${p.name}</h3>
-          <div class="item-price">S/ ${pvpFormatted}</div>
-        </article>
+          <div class="card-meta">
+            <span class="card-category">${item.categoryTag || item.collection}</span>
+            <h3 class="card-title">${item.name}</h3>
+            <span class="card-price">S/ ${parseFloat(item.pvp).toFixed(2)}</span>
+          </div>
         `;
-      }).join('');
+        grid.appendChild(card);
+      });
     }
 
-    // Touch flip en celulares
-    function handleCardTouch(id, evt) {
-      const prim = document.getElementById('prim-' + id);
-      const sec = document.getElementById('sec-' + id);
-      if (prim && sec) {
-        evt.stopPropagation();
-        prim.classList.toggle('touch-flipped');
-        sec.classList.toggle('touch-flipped');
+    function openDetail(item) {
+      currentActiveItem = item;
+      const overlay = document.getElementById('sheetOverlay');
+      const sheet = document.getElementById('bottomSheet');
+      const detailCategory = document.getElementById('detailCategory');
+      const detailTitle = document.getElementById('detailTitle');
+      const detailPrice = document.getElementById('detailPrice');
+      const detailRecipe = document.getElementById('detailRecipe');
+      const detailWaBtn = document.getElementById('detailWaBtn');
+      const mediaTabs = document.getElementById('sheetMediaTabs');
+
+      detailCategory.textContent = item.categoryTag || item.collection || 'ADORA';
+      detailTitle.textContent = item.name;
+      detailPrice.textContent = `S/ ${parseFloat(item.pvp).toFixed(2)}`;
+      detailRecipe.textContent = item.recipe || 'Flores frescas de corte de Acho en envoltura coreana impermeable bicapa.';
+
+      // Resetear a imagen de personaje o ramo
+      switchDetailMedia('character');
+
+      // Si no tiene personaje separado, ocultar tabs de media
+      if (!item.characterImg || item.characterImg === item.imageLocal) {
+        mediaTabs.style.display = 'none';
+      } else {
+        mediaTabs.style.display = 'flex';
       }
+
+      // Configurar mensaje directo a Carlos al 51975369266
+      const waMsg = encodeURIComponent(`¡Hola Carlos! 🌸 Me encantó este ramo de ADORA:
+
+✨ *${item.name}*
+💰 Precio: S/ ${parseFloat(item.pvp).toFixed(2)}
+🏷️ Colección: ${item.categoryTag || item.collection}
+
+Quisiera coordinar el pedido para delivery en Lima. ¿Tienen disponibilidad?`);
+
+      detailWaBtn.href = `https://wa.me/51975369266?text=${waMsg}`;
+
+      overlay.classList.add('active');
+      sheet.classList.add('active');
+      document.body.style.overflow = 'hidden';
     }
 
-    // Modal Bottom Sheet al hacer clic en el ramo
-    function openDetail(id) {
-      const items = currentMode === 'halloween' ? HALLOWEEN_DATA : CLASSICS_DATA;
-      const p = items.find(x => x.id === id);
-      if (!p) return;
+    function switchDetailMedia(type) {
+      if (!currentActiveItem) return;
+      const img = document.getElementById('detailImg');
+      const tabBtnChar = document.getElementById('tabBtnCharacter');
+      const tabBtnBouq = document.getElementById('tabBtnBouquet');
 
-      document.getElementById('detailCollection').textContent = p.collection;
-      document.getElementById('detailTitle').textContent = p.name;
-      document.getElementById('detailPrice').textContent = 'S/ ' + parseFloat(p.pvp).toFixed(2);
-      document.getElementById('detailRecipe').textContent = p.recipe;
-      document.getElementById('detailImg').src = p.imageLocal;
-
-      const pvpFormatted = parseFloat(p.pvp).toFixed(2);
-      const waText = '¡Hola Carlos! 🌸 Quiero pedir el ramo "' + p.name + '" de S/. ' + pvpFormatted + ' para delivery en Lima.';
-      document.getElementById('detailWaBtn').href = 'https://wa.me/51975369266?text=' + encodeURIComponent(waText);
-
-      document.getElementById('sheetOverlay').classList.add('active');
-      document.getElementById('bottomSheet').classList.add('active');
-      document.body.style.overflow = 'hidden';
+      if (type === 'bouquet') {
+        img.src = currentActiveItem.imageLocal || currentActiveItem.imageOnline;
+        tabBtnBouq.classList.add('active');
+        tabBtnChar.classList.remove('active');
+      } else {
+        img.src = currentActiveItem.characterImg || currentActiveItem.imageLocal;
+        tabBtnChar.classList.add('active');
+        tabBtnBouq.classList.remove('active');
+      }
     }
 
     function closeDetail() {
       document.getElementById('sheetOverlay').classList.remove('active');
       document.getElementById('bottomSheet').classList.remove('active');
       document.body.style.overflow = '';
+      currentActiveItem = null;
     }
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeDetail();
-    });
-
-    // Start in Classics Mode (Adoro)
-    setMode('classics');
   </script>
 </body>
 </html>
