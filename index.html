@@ -3,39 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Catálogo Halloween 2026 | ADORA</title>
-  <meta name="description" content="Catálogo Halloween 2026: 49 Ramos de Autor & Edición Limitada confeccionados en Lima. Pedidos directos por WhatsApp al 975369266.">
+  <title>ADORA | Experiencias Botánicas & Diseño Floral</title>
+  <meta name="description" content="Florería de alta gama en Lima. Diseños florales a pedido con flores frescas del Mercado Mayorista de Acho, empaque coreano y despacho a domicilio.">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Editorial Luxury (Playfair Display & Plus Jakarta Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg: #090a0f;
-      --surface: #121520;
-      --surface-card: #141724;
-      --surface-elevated: #1c2032;
-      --border: rgba(255, 255, 255, 0.08);
-      --border-focus: rgba(249, 115, 22, 0.4);
-      --text: #f3f4f8;
+      --bg: #0b0d13;
+      --bg-alt: #10131d;
+      --text: #f4f4f7;
       --text-dim: #9aa1b5;
-      --text-muted: #676e82;
-      --pumpkin: #f97316;
-      --pumpkin-glow: rgba(249, 115, 22, 0.25);
-      --gold: #f59e0b;
+      --text-muted: #697086;
+      --border-subtle: rgba(255, 255, 255, 0.07);
+      --accent-pumpkin: #ea580c;
+      --accent-gold: #d97706;
+      --accent-rose: #e11d48;
       --whatsapp: #25d366;
-      --whatsapp-dark: #128c7e;
-      --radius-card: 14px;
-      --radius-sm: 8px;
+      --whatsapp-hover: #1ebd5a;
+      --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: var(--font-sans);
       -webkit-tap-highlight-color: transparent;
     }
 
@@ -43,340 +40,534 @@
       background-color: var(--bg);
       color: var(--text);
       min-height: 100vh;
-      padding-bottom: 90px;
-      background-image: 
-        radial-gradient(ellipse 70% 30% at 50% 0%, rgba(249, 115, 22, 0.08), transparent 70%),
-        radial-gradient(circle 400px at 100% 40%, rgba(245, 158, 11, 0.04), transparent 60%);
+      line-height: 1.5;
     }
 
-    /* COMPACT MOBILE HEADER */
-    .header {
-      padding: 24px 16px 16px 16px;
+    /* 1. TOP ANNOUNCEMENT BANNER (ESTILO LA BOTÁNIKA) */
+    .top-banner {
+      background: #000000;
+      border-bottom: 1px solid var(--border-subtle);
+      color: #e5e7eb;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 8px 16px;
       text-align: center;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .brand-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 12px;
-      border-radius: 9999px;
-      background: rgba(249, 115, 22, 0.1);
-      border: 1px solid rgba(249, 115, 22, 0.25);
-      color: var(--pumpkin);
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      margin-bottom: 8px;
-    }
-
-    .header h1 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.85rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      color: #ffffff;
-      line-height: 1.2;
-      margin-bottom: 4px;
-    }
-
-    .header p {
-      color: var(--text-dim);
-      font-size: 0.88rem;
-      font-weight: 500;
-    }
-
-    /* COMPACT CONTROLS BAR (DROPDOWN + SEARCH) */
-    .controls-bar {
-      padding: 8px 12px 14px 12px;
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .controls-row {
-      display: flex;
-      gap: 8px;
-      align-items: center;
-    }
-
-    .select-wrapper {
-      position: relative;
-      flex: 1.2;
-    }
-
-    .custom-select {
-      width: 100%;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 10px 32px 10px 14px;
-      color: var(--text);
-      font-size: 0.85rem;
       font-weight: 600;
-      outline: none;
-      appearance: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .top-banner a {
+      color: #fb923c;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s;
+    }
+
+    .top-banner a:hover {
+      color: #fed7aa;
+    }
+
+    /* 2. HEADER EDITORIAL LIMPIO (SIN CAJAS PESADAS) */
+    .main-header {
+      padding: 36px 20px 24px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .brand-title {
+      font-family: var(--font-serif);
+      font-size: 2.8rem;
+      letter-spacing: 0.18em;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 6px;
+      line-height: 1.1;
+    }
+
+    .brand-subtitle {
+      font-size: 0.8rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    /* TAB SELECTOR PRINCIPAL (CLÁSICOS VS HALLOWEEN) */
+    .main-nav-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 16px;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-dim);
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      letter-spacing: 0.06em;
       cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .custom-select:focus {
-      border-color: var(--pumpkin);
-      box-shadow: 0 0 0 2px var(--pumpkin-glow);
-    }
-
-    .select-arrow {
-      position: absolute;
-      right: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-      pointer-events: none;
-      color: var(--pumpkin);
-      font-size: 0.75rem;
-    }
-
-    .search-box {
+      padding: 6px 4px;
       position: relative;
-      flex: 1;
+      transition: color 0.2s;
     }
 
-    .search-input {
-      width: 100%;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 10px 12px 10px 34px;
-      color: var(--text);
-      font-size: 0.85rem;
-      outline: none;
-      transition: all 0.2s;
+    .tab-btn:hover {
+      color: #ffffff;
     }
 
-    .search-input:focus {
-      border-color: var(--pumpkin);
-      box-shadow: 0 0 0 2px var(--pumpkin-glow);
+    .tab-btn.active {
+      color: #ffffff;
+      font-weight: 600;
     }
 
-    .search-icon {
+    .tab-btn.active::after {
+      content: '';
       position: absolute;
-      left: 11px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      pointer-events: none;
+      bottom: -17px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #ea580c;
     }
 
-    .results-count {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      padding: 0 4px;
+    /* SUB-FILTER DROPDOWN & SEARCH */
+    .filter-bar {
+      max-width: 1200px;
+      margin: 0 auto 28px auto;
+      padding: 0 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
-    /* 2 COLUMNS MOBILE GRID */
-    .grid {
+    .sub-filter-select {
+      background: transparent;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      color: var(--text);
+      padding: 8px 28px 8px 12px;
+      font-size: 0.85rem;
+      font-family: var(--font-sans);
+      appearance: none;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%239aa1b5'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+      background-size: 16px;
+    }
+
+    .sub-filter-select:focus {
+      outline: none;
+      border-color: #ea580c;
+    }
+
+    .count-indicator {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* 3. PRODUCT GRID EDITORIAL (SIN MARCOS RECTANGULARES NI CAJAS PESADAS) */
+    .products-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      padding: 0 12px;
-      max-width: 1100px;
-      margin: 0 auto;
+      gap: 24px 16px;
     }
 
-    @media (min-width: 680px) {
-      .grid {
+    @media (min-width: 768px) {
+      .products-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-        padding: 0 16px;
+        gap: 36px 24px;
       }
     }
 
-    @media (min-width: 992px) {
-      .grid {
+    @media (min-width: 1024px) {
+      .products-grid {
         grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
+        gap: 40px 28px;
       }
     }
 
-    /* PRODUCT CARD */
-    .card {
-      background: var(--surface-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-card);
-      overflow: hidden;
+    /* PRODUCT ITEM EDITORIAL (CLEAN AIRY PRESENTATION) */
+    .product-item {
       display: flex;
       flex-direction: column;
       position: relative;
-      transition: transform 0.2s ease, border-color 0.2s ease;
     }
 
-    .card:active {
-      transform: scale(0.985);
-    }
-
-    /* IMAGE / CAROUSEL CONTAINER */
-    .card-media {
+    /* MEDIA CONTAINER CON HOVER AUTOMÁTICO */
+    .product-media {
       position: relative;
       width: 100%;
-      aspect-ratio: 9/15;
-      background: #0d0f17;
+      aspect-ratio: 9/14;
+      background: #0f121b;
+      border-radius: 8px;
       overflow: hidden;
       cursor: pointer;
     }
 
-    .card-media img {
+    .product-media img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: opacity 0.25s ease, transform 0.3s ease;
+      transition: opacity 0.35s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    /* MINIMAL BADGES */
-    .card-tag {
+    /* Slide 1 (Personaje) y Slide 2 (Arreglo) para Hover automático */
+    .media-primary {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      opacity: 1;
+    }
+
+    .media-secondary {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      opacity: 0;
+    }
+
+    /* HOVER EN COMPUTADORA: MUESTRA EL RAMO AUTOMÁTICAMENTE */
+    @media (hover: hover) {
+      .product-item:hover .media-primary.has-pair {
+        opacity: 0;
+      }
+      .product-item:hover .media-secondary.has-pair {
+        opacity: 1;
+        transform: scale(1.04);
+      }
+    }
+
+    /* EN DISPOSITIVOS TÁCTILES: TOUCH TOGGLE */
+    .media-primary.active-touch {
+      opacity: 0 !important;
+    }
+    .media-secondary.active-touch {
+      opacity: 1 !important;
+      z-index: 3 !important;
+    }
+
+    .sku-badge {
       position: absolute;
       top: 8px;
       left: 8px;
-      background: rgba(10, 12, 18, 0.8);
-      backdrop-filter: blur(6px);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(4px);
       color: #fff;
       font-size: 0.65rem;
-      font-weight: 800;
-      padding: 2px 7px;
-      border-radius: 6px;
-      letter-spacing: 0.3px;
-      z-index: 2;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      letter-spacing: 0.05em;
+      z-index: 4;
     }
 
-    /* TAP TO FLIP HINT & INDICATOR DOTS */
-    .card-carousel-bar {
+    .hover-hint {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 16px 8px 6px 8px;
-      background: linear-gradient(to top, rgba(9, 10, 15, 0.95), transparent);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 2;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      color: #fed7aa;
+      font-size: 0.62rem;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 4px;
+      z-index: 4;
       pointer-events: none;
     }
 
-    .slide-label {
-      font-size: 0.65rem;
-      font-weight: 700;
-      color: #e2e8f0;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-    }
-
-    .dots-container {
-      display: flex;
-      gap: 4px;
-      pointer-events: auto;
-    }
-
-    .dot {
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.35);
-      transition: all 0.2s;
-    }
-
-    .dot.active {
-      background: var(--pumpkin);
-      transform: scale(1.35);
-    }
-
-    /* CARD INFO COMPACT (ELEGANT & CLEAN) */
-    .card-info {
-      padding: 10px 10px 12px 10px;
+    /* DETALLES TIPOGRÁFICOS AL AIRE (SIN CAJAS) */
+    .product-details {
+      padding-top: 12px;
       display: flex;
       flex-direction: column;
-      flex: 1;
-      justify-content: space-between;
-      gap: 8px;
+      gap: 3px;
     }
 
-    .card-title-group {
+    .product-collection-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .product-name {
+      font-family: var(--font-serif);
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 1.3;
+      margin-top: 2px;
       cursor: pointer;
     }
 
-    .card-title {
-      font-size: 0.84rem;
+    .product-price {
+      font-size: 0.92rem;
       font-weight: 700;
-      color: #ffffff;
-      line-height: 1.25;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      margin-bottom: 3px;
+      color: #fb923c;
+      margin-top: 2px;
+      letter-spacing: 0.02em;
     }
 
-    .card-collection {
-      font-size: 0.68rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-    }
-
-    .card-action-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 6px;
-      padding-top: 6px;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    .card-price {
-      font-size: 0.95rem;
-      font-weight: 800;
-      color: #ffffff;
-      letter-spacing: -0.2px;
-      white-space: nowrap;
-    }
-
-    .card-price span {
-      font-size: 0.72rem;
-      color: var(--pumpkin);
-      font-weight: 700;
-      margin-right: 2px;
-    }
-
-    .btn-wa-card {
-      background: #25d366;
-      color: #052e16;
-      border: none;
-      border-radius: var(--radius-sm);
-      padding: 6px 9px;
+    .btn-wa-compact {
+      margin-top: 8px;
+      background: transparent;
+      border: 1px solid rgba(37, 211, 102, 0.4);
+      color: #4ade80;
+      padding: 6px 12px;
+      border-radius: 6px;
       font-size: 0.75rem;
-      font-weight: 800;
+      font-weight: 700;
       display: inline-flex;
       align-items: center;
-      gap: 4px;
+      justify-content: center;
+      gap: 6px;
       text-decoration: none;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.15s;
-      flex-shrink: 0;
+      transition: all 0.2s;
+      width: 100%;
     }
 
-    .btn-wa-card:active {
-      transform: scale(0.94);
+    .btn-wa-compact:hover {
+      background: var(--whatsapp);
+      color: #052e16;
+      border-color: var(--whatsapp);
     }
 
-    /* BOTTOM SHEET (MOBILE DETAIL PANEL) */
+    /* 4. SECCIÓN EDITORIAL: FLORES EN HALLOWEEN (ESTILO LA BOTÁNIKA) */
+    .editorial-value-section {
+      max-width: 1000px;
+      margin: 70px auto 40px auto;
+      padding: 40px 20px;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      text-align: center;
+    }
+
+    .section-headline {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 36px;
+    }
+
+    .value-pillars-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .value-pillars-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 36px;
+      }
+    }
+
+    .pillar-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .pillar-icon {
+      font-size: 2.2rem;
+      margin-bottom: 4px;
+      opacity: 0.9;
+    }
+
+    .pillar-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #f3f4f6;
+    }
+
+    .pillar-desc {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      line-height: 1.6;
+      max-width: 320px;
+    }
+
+    /* 5. SECCIÓN DE PROCESO ARTESANAL A PEDIDO */
+    .process-section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-top: 32px;
+    }
+
+    @media (min-width: 680px) {
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .process-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .process-step {
+      padding: 20px 16px;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .step-num {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      color: #fb923c;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .step-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 0.82rem;
+      color: var(--text-dim);
+      line-height: 1.5;
+    }
+
+    /* 6. TARIFARIO DE DELIVERY (RÉPLICA LIMPIA DE LA BOTÁNIKA) */
+    .delivery-section {
+      max-width: 860px;
+      margin: 60px auto 40px auto;
+      padding: 0 20px;
+    }
+
+    .delivery-box {
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 32px 24px;
+      background: var(--bg-alt);
+    }
+
+    .delivery-title {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      text-align: center;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+
+    .rates-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 0.88rem;
+    }
+
+    .rate-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed var(--border-subtle);
+    }
+
+    .rate-districts {
+      color: #d1d5db;
+      line-height: 1.4;
+    }
+
+    .rate-price {
+      font-weight: 800;
+      color: #fb923c;
+      white-space: nowrap;
+      font-size: 0.95rem;
+    }
+
+    .rate-special-note {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-dim);
+    }
+
+    .rate-special-note a {
+      color: #4ade80;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    /* 7. CTA FINAL DE ALTA CONVERSIÓN */
+    .final-cta-section {
+      text-align: center;
+      padding: 60px 20px 80px 20px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .final-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #25d366;
+      color: #052e16;
+      padding: 16px 32px;
+      border-radius: 9999px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
+      transition: transform 0.2s;
+    }
+
+    .final-cta-btn:hover {
+      background: #1ebd5a;
+      transform: translateY(-2px);
+    }
+
+    /* BOTTOM SHEET */
     .sheet-overlay {
       position: fixed;
       inset: 0;
@@ -385,7 +576,7 @@
       z-index: 1000;
       opacity: 0;
       pointer-events: none;
-      transition: opacity 0.3s ease;
+      transition: opacity 0.3s;
     }
 
     .sheet-overlay.active {
@@ -398,548 +589,1477 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: var(--surface-card);
-      border-top: 1px solid var(--border);
-      border-radius: 24px 24px 0 0;
+      background: #121520;
+      border-top: 1px solid var(--border-subtle);
+      border-radius: 20px 20px 0 0;
       z-index: 1001;
       max-height: 90vh;
       display: flex;
       flex-direction: column;
       transform: translateY(100%);
       transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-      box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.7);
     }
 
     .bottom-sheet.active {
       transform: translateY(0);
     }
 
-    .sheet-handle-bar {
-      padding: 12px;
-      display: flex;
-      justify-content: center;
-      cursor: pointer;
-    }
-
-    .sheet-handle {
-      width: 42px;
-      height: 4px;
-      border-radius: 9999px;
-      background: rgba(255, 255, 255, 0.25);
-    }
-
-    .sheet-content {
-      padding: 0 20px 24px 20px;
+    .sheet-body {
+      padding: 16px 20px 32px 20px;
       overflow-y: auto;
       display: flex;
       flex-direction: column;
       gap: 16px;
     }
 
-    .sheet-carousel {
-      position: relative;
+    .sheet-img-wrap {
       width: 100%;
-      max-width: 320px;
+      max-width: 280px;
       aspect-ratio: 9/14;
       margin: 0 auto;
-      border-radius: 16px;
+      border-radius: 8px;
       overflow: hidden;
       background: #090a0f;
     }
 
-    .sheet-carousel img {
+    .sheet-img-wrap img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
     }
 
-    .sheet-toggle-pills {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      display: flex;
-      gap: 6px;
-      background: rgba(10, 12, 18, 0.85);
-      backdrop-filter: blur(8px);
-      padding: 4px;
-      border-radius: 9999px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      z-index: 5;
-    }
-
-    .sheet-toggle-tab {
-      background: transparent;
-      border: none;
-      color: var(--text-dim);
-      padding: 4px 10px;
-      border-radius: 9999px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .sheet-toggle-tab.active {
-      background: var(--pumpkin);
-      color: #fff;
-    }
-
-    .sheet-header h2 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #ffffff;
-      line-height: 1.3;
-      margin-bottom: 4px;
-    }
-
-    .sheet-header .sheet-sub {
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--pumpkin);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .sheet-section {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 12px 14px;
-      font-size: 0.82rem;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .sheet-section-title {
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .sheet-recipe-text {
-      color: #cbd5e1;
-      line-height: 1.45;
-    }
-
-    .sheet-persona-text {
-      color: var(--text-muted);
-      font-size: 0.78rem;
-      font-style: italic;
-    }
-
-    .sheet-footer {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      padding-top: 8px;
-    }
-
-    .sheet-price-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 4px;
-    }
-
-    .sheet-price-val {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: #ffffff;
-    }
-
-    .sheet-price-val span {
-      color: var(--pumpkin);
-      font-size: 1.1rem;
-    }
-
     .btn-wa-sheet {
-      width: 100%;
       background: #25d366;
       color: #052e16;
       padding: 14px 20px;
-      border-radius: 14px;
+      border-radius: 9999px;
       font-size: 0.95rem;
       font-weight: 800;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
+      text-align: center;
       text-decoration: none;
-      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
-      transition: all 0.2s;
-    }
-
-    .btn-wa-sheet:active {
-      transform: scale(0.98);
-    }
-
-    .sheet-close-btn {
-      width: 100%;
-      background: transparent;
-      border: 1px solid var(--border);
-      color: var(--text-dim);
-      padding: 10px;
-      border-radius: 12px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    /* FLOATING WHATSAPP BUTTON (DIRECT ASSISTANCE) */
-    .floating-wa-direct {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25d366;
-      color: #052e16;
-      padding: 10px 16px;
-      border-radius: 9999px;
-      font-size: 0.85rem;
-      font-weight: 800;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      text-decoration: none;
-      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
-      z-index: 900;
-      transition: transform 0.2s;
-    }
-
-    .floating-wa-direct:active {
-      transform: scale(0.95);
-    }
-
-    .floating-wa-direct svg {
-      width: 20px;
-      height: 20px;
-      fill: currentColor;
+      display: block;
     }
   </style>
 </head>
 <body>
 
-  <!-- COMPACT MOBILE HEADER -->
-  <header class="header">
-    <div class="brand-pill">🎃 ADORA &bull; Lima, Perú</div>
-    <h1>Catálogo Halloween 2026</h1>
-    <p>49 Ramos de Autor & Edición Limitada</p>
+  <!-- 1. TOP BANNER -->
+  <aside class="top-banner">
+    <span>🌿 Envíos para hoy en Lima y Callao • Confección de flores frescas a pedido</span>
+    <a href="#tarifario">Ver tarifario de delivery &darr;</a>
+  </aside>
+
+  <!-- 2. HEADER EDITORIAL -->
+  <header class="main-header">
+    <h1 class="brand-title">ADORA</h1>
+    <div class="brand-subtitle">Experiencias Botánicas &bull; Flores de Alta Gama</div>
+
+    <!-- TABS DE NAVEGACIÓN PRINCIPAL -->
+    <nav class="main-nav-tabs">
+      <button type="button" class="tab-btn active" id="tabHalloween" onclick="switchCollection('halloween')">
+        🎃 Colección Halloween & Pop
+      </button>
+      <button type="button" class="tab-btn" id="tabClassics" onclick="switchCollection('classics')">
+        🌸 Clásicos ADORA
+      </button>
+      <button type="button" class="tab-btn" id="tabAll" onclick="switchCollection('all')">
+        Ver Todo (53)
+      </button>
+    </nav>
   </header>
 
-  <!-- CONTROLS BAR: COMPACT DROPDOWN + SEARCH -->
-  <nav class="controls-bar">
-    <div class="controls-row">
-      <div class="select-wrapper">
-        <select id="collectionSelect" class="custom-select" onchange="handleFilterChange()">
-          <option value="all">Todas las Colecciones (49)</option>
-          <option value="Harry Potter">🧙‍♂️ Harry Potter (4)</option>
-          <option value="Halloween Tradicional">🎃 Halloween Tradicional (3)</option>
-          <option value="Anime & Shonen">⚔️ Anime & Shonen (11)</option>
-          <option value="Cine & Streaming">🎬 Cine & Streaming (8)</option>
-          <option value="Gaming & Pop Icons">🎮 Gaming & Pop (8)</option>
-          <option value="Gótico & Terror">🖤 Gótico & Terror (10)</option>
-          <option value="Retro & Dúos">✨ Retro & Dúos (5)</option>
-        </select>
-        <span class="select-arrow">▼</span>
-      </div>
-
-      <div class="search-box">
-        <span class="search-icon">🔍</span>
-        <input 
-          type="text" 
-          id="searchInput" 
-          class="search-input" 
-          placeholder="Buscar..." 
-          oninput="handleFilterChange()" 
-        />
-      </div>
+  <!-- CONTROLES SECUNDARIOS Y FILTROS -->
+  <div class="filter-bar">
+    <div style="display:flex; align-items:center; gap:8px;">
+      <select id="subCategorySelect" class="sub-filter-select" onchange="renderCatalog()">
+        <option value="all">Todas las Categorías</option>
+        <option value="Harry Potter">Harry Potter</option>
+        <option value="Halloween Tradicional">Halloween Tradicional</option>
+        <option value="Anime & Shonen">Anime & Shonen</option>
+        <option value="Cine & Streaming">Cine & Streaming</option>
+        <option value="Gaming & Pop Icons">Gaming & Pop Icons</option>
+        <option value="Gótico & Terror">Gótico & Terror</option>
+        <option value="Retro & Dúos">Retro & Dúos</option>
+        <option value="Clásicos ADORA">Clásicos ADORA</option>
+      </select>
     </div>
 
-    <div class="results-count">
-      <span id="resultsLabel">Mostrando 49 ramos</span>
-      <span style="color:var(--pumpkin); font-weight:700;">Toca la foto para alternar 👤/💐</span>
-    </div>
-  </nav>
-
-  <!-- 2-COLUMN PRODUCT GRID -->
-  <main class="grid" id="productsGrid">
-    <!-- Generado dinámicamente -->
-  </main>
-
-  <!-- BOTTOM SHEET (PANEL DESLIZANTE DE DETALLE) -->
-  <div class="sheet-overlay" id="sheetOverlay" onclick="closeSheet()"></div>
-  <div class="bottom-sheet" id="bottomSheet">
-    <div class="sheet-handle-bar" onclick="closeSheet()">
-      <div class="sheet-handle"></div>
-    </div>
-    <div class="sheet-content">
-      <div class="sheet-carousel" id="sheetCarousel">
-        <div class="sheet-toggle-pills" id="sheetTogglePills">
-          <button type="button" class="sheet-toggle-tab active" id="sheetTabChar" onclick="switchSheetSlide('char')">👤 Personaje</button>
-          <button type="button" class="sheet-toggle-tab" id="sheetTabArr" onclick="switchSheetSlide('arr')">💐 Ramo</button>
-        </div>
-        <img id="sheetImg" src="" alt="Detalle" onclick="toggleSheetSlide()" />
-      </div>
-
-      <div class="sheet-header">
-        <div class="sheet-sub" id="sheetSub">SKU • Colección</div>
-        <h2 id="sheetTitle">Nombre del Ramo</h2>
-      </div>
-
-      <div class="sheet-section">
-        <div class="sheet-section-title">🌾 Composición Botánica (Flores de Acho)</div>
-        <p class="sheet-recipe-text" id="sheetRecipe">Receta...</p>
-        <div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;">
-          📦 Envoltura coreana bicapa + fajín horizontal + lazo de satén
-        </div>
-      </div>
-
-      <div class="sheet-section" id="sheetPersonaBox">
-        <div class="sheet-section-title">🎯 Recomendado Para</div>
-        <p class="sheet-persona-text" id="sheetPersona">Público...</p>
-      </div>
-
-      <div class="sheet-footer">
-        <div class="sheet-price-row">
-          <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; font-weight:700;">Inversión</div>
-          <div class="sheet-price-val" id="sheetPrice"><span>S/</span> 0.00</div>
-        </div>
-
-        <a id="sheetWaBtn" href="#" target="_blank" class="btn-wa-sheet">
-          💬 Pedir por WhatsApp
-        </a>
-
-        <button type="button" class="sheet-close-btn" onclick="closeSheet()">
-          Cerrar
-        </button>
-      </div>
+    <div class="count-indicator" id="catalogCount">
+      Mostrando 49 ramos
     </div>
   </div>
 
-  <!-- FLOATING WHATSAPP BUTTON -->
-  <a 
-    href="https://wa.me/51975369266?text=¡Hola%20Carlos!%20🌸%20Vi%20el%20Catálogo%20Halloween%202026%20de%20ADORA%20y%20quiero%20hacerte%20una%20consulta." 
-    target="_blank" 
-    class="floating-wa-direct"
-    title="Hablar con Carlos por WhatsApp"
-  >
-    <svg viewBox="0 0 24 24">
-      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-    </svg>
-    <span>WhatsApp</span>
-  </a>
+  <!-- 3. GRILLA EDITORIAL (HOVER AUTOMÁTICO EN DESKTOP & TAP EN MÓVIL) -->
+  <main class="products-grid" id="productsGrid">
+    <!-- Inyectado dinámicamente -->
+  </main>
 
-  <script src="./products-data.js"></script>
+  <!-- 4. SECCIÓN EDITORIAL: FLORES EN HALLOWEEN (ESTILO LA BOTÁNIKA) -->
+  <section class="editorial-value-section">
+    <h2 class="section-headline">Flores en Halloween & Ocasiones Especiales</h2>
+    
+    <div class="value-pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">🎁</div>
+        <h3 class="pillar-title">Expresa Sentimientos de Manera Diferente</h3>
+        <p class="pillar-desc">
+          Un ramo temático de autor es una forma memorable y especial de expresar amor, complicidad o aprecio, combinando la alta costura botánica con lo festivo.
+        </p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">🌿</div>
+        <h3 class="pillar-title">Versatilidad Decorativa</h3>
+        <p class="pillar-desc">
+          Pueden ser usados como el detalle estelar de una cita, centros de mesa para celebraciones o simplemente para ambientar el hogar con un aroma balsámico a eucalipto.
+        </p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">🌾</div>
+        <h3 class="pillar-title">Corte Diario en Acho</h3>
+        <p class="pillar-desc">
+          Cada flor es adquirida la misma madrugada en el Mercado Mayorista Santa Rosa (Rímac). Cero flor envejecida en vitrina; garantizamos hasta 14 días de frescura.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SECCIÓN PROCESO ARTESANAL A PEDIDO -->
+  <section class="process-section">
+    <h2 class="section-headline">Nuestro Proceso Artesanal a Pedido</h2>
+    <p style="color:var(--text-dim); max-width:640px; margin:0 auto; font-size:0.9rem;">
+      Todo trabajo es personalizado y elaborado exclusivamente bajo encargo para asegurar que tus flores lleguen radiantes a su destino.
+    </p>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <div class="step-title">Selección & WhatsApp</div>
+        <div class="step-desc">Eliges tu ramo favorito del catálogo o nos envías tu idea temática personalizada directo al WhatsApp 975369266.</div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <div class="step-title">Compra en Mercado Mayorista</div>
+        <div class="step-desc">Seleccionamos rosas de exportación, girasoles y follajes frescos en Acho para asegurar tallos recién cosechados.</div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <div class="step-title">Confección Clean Layers</div>
+        <div class="step-desc">Armado a mano con envoltura coreana bicapa lisa, reserva de agua oculta, fajín de kraft y lazo de satén de caída larga.</div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <div class="step-title">Despacho Cuidadoso</div>
+        <div class="step-desc">Entrega a domicilio en vehículo acondicionado para que el ramo llegue erguido y perfecto a la puerta de casa.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. TARIFARIO DE DELIVERY (RÉPLICA LA BOTÁNIKA) -->
+  <section class="delivery-section" id="tarifario">
+    <div class="delivery-box">
+      <div style="text-align:center; font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-muted); margin-bottom:4px;">
+        ADORA &bull; Logística Especializada
+      </div>
+      <h2 class="delivery-title">Tarifario de Delivery</h2>
+
+      <ul class="rates-list">
+        <li class="rate-item">
+          <span class="rate-districts">Miraflores, San Isidro, Barranco, Jesús María, Lince, Magdalena, Surquillo, San Borja, Surco, Pueblo Libre</span>
+          <span class="rate-price">S/. 18</span>
+        </li>
+        <li class="rate-item">
+          <span class="rate-districts">La Molina, San Miguel, San Luis</span>
+          <span class="rate-price">S/. 20</span>
+        </li>
+        <li class="rate-item">
+          <span class="rate-districts">La Victoria, Breña, Callao, Ate, Santa Anita, Cercado de Lima, Rímac, Chorrillos, Independencia, El Agustino</span>
+          <span class="rate-price">S/. 35</span>
+        </li>
+        <li class="rate-item">
+          <span class="rate-districts">San Juan de Lurigancho, San Martín de Porres, Los Olivos, San Juan de Miraflores, Villa María del Triunfo, Villa El Salvador</span>
+          <span class="rate-price">S/. 40</span>
+        </li>
+        <li class="rate-item">
+          <span class="rate-districts">Comas</span>
+          <span class="rate-price">S/. 80</span>
+        </li>
+        <li class="rate-item">
+          <span class="rate-districts">Zonas alejadas: Chaclacayo, Cieneguilla, Huachipa, Lurín, Pachacámac, Puente Piedra, Ventanilla, Punta Negra, Punta Hermosa, San Bartolo, Pucusana, Ancón</span>
+          <span class="rate-price">S/. 120</span>
+        </li>
+        <li class="rate-item">
+          <span class="rate-districts">Playas de Asia</span>
+          <span class="rate-price">S/. 200</span>
+        </li>
+      </ul>
+
+      <p class="rate-special-note">
+        Si su distrito no se encuentra en la lista favor comunicarse al <a href="https://wa.me/51975369266?text=¡Hola%20Carlos!%20🌸%20Quisiera%20consultar%20la%20tarifa%20de%20delivery%20para%20mi%20distrito." target="_blank">+51 975369266</a> para poder brindarle una tarifa y horario exclusivo.
+      </p>
+    </div>
+  </section>
+
+  <!-- 7. CTA FINAL -->
+  <section class="final-cta-section">
+    <div style="font-family:var(--font-serif); font-size:1.5rem; color:#ffffff; margin-bottom:12px;">
+      ¿Deseas personalizar tu ramo o coordinar un pedido especial?
+    </div>
+    <p style="color:var(--text-dim); font-size:0.9rem; margin-bottom:24px;">
+      Escríbenos directamente para asesorarte con la paleta de flores perfecta y programar tu entrega en Lima.
+    </p>
+    <a href="https://wa.me/51975369266?text=¡Hola%20Carlos!%20🌸%20Quiero%20hacer%20un%20pedido%20personalizado%20de%20flores%20en%20ADORA." target="_blank" class="final-cta-btn">
+      💬 Coordinar Pedido por WhatsApp (975369266)
+    </a>
+  </section>
+
+  <!-- BOTTOM SHEET DETALLE -->
+  <div class="sheet-overlay" id="sheetOverlay" onclick="closeSheet()"></div>
+  <div class="bottom-sheet" id="bottomSheet">
+    <div style="display:flex; justify-content:center; padding:12px; cursor:pointer;" onclick="closeSheet()">
+      <div style="width:40px; height:4px; border-radius:9999px; background:rgba(255,255,255,0.2);"></div>
+    </div>
+    <div class="sheet-body">
+      <div class="sheet-img-wrap">
+        <img id="sheetImg" src="" alt="Detalle" />
+      </div>
+      <div>
+        <div style="font-size:0.75rem; letter-spacing:0.1em; color:var(--text-muted); text-transform:uppercase;" id="sheetSub">SKU</div>
+        <h2 style="font-family:var(--font-serif); font-size:1.3rem; margin-top:2px;" id="sheetTitle">Nombre</h2>
+        <div style="font-size:1.2rem; font-weight:700; color:#fb923c; margin-top:4px;" id="sheetPrice">S/ 0.00</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); padding:14px; border-radius:8px; font-size:0.85rem;">
+        <div style="font-weight:700; color:#fb923c; margin-bottom:4px; font-size:0.75rem; text-transform:uppercase;">🌾 Receta Botánica (Acho)</div>
+        <p style="color:#d1d5db;" id="sheetRecipe"></p>
+        <div style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">
+          📦 Envoltura coreana bicapa lisa + fajín horizontal + lazo de satén largo.
+        </div>
+      </div>
+      <a id="sheetWaLink" href="#" target="_blank" class="btn-wa-sheet">
+        💬 Pedir este Ramo por WhatsApp
+      </a>
+    </div>
+  </div>
+
   <script>
-    const PRODUCTS = window.ADORA_PRODUCTS || [{"id":"HP-01","sku":"HP-01","name":"El Rugido Escarlata (Gryffindor)","collection":"Harry Potter","categoryTag":"Harry Potter","badgeColor":"gold","persona":"Fans de Harry Potter, parejas jóvenes, amantes del romance valiente","recipe":"5 Rosas rojas terciopelo (S/12.5) + 3 Rosas amarillas mostaza (S/9) + 2 Alstroemerias doradas (S/3) + Eucalipto (S/2.5)","costFlower":"27.00","costPack":"7.50","cogs":"221.05","pvp":"79.00","margin":"-179.8%","imageLocal":"./images/01_Gryffindor_El_Rugido_Escarlata.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1qlfJmQuL6KX-6NLsQ09-BrYOHbtOL3k4","driveUrl":"https://drive.google.com/file/d/1qlfJmQuL6KX-6NLsQ09-BrYOHbtOL3k4/view","votes":4,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_HP-01_Gryffindor_El_Rugido_Escarlata.jpg"},{"id":"HP-02","sku":"HP-02","name":"La Ambición Esmeralda (Slytherin)","collection":"Harry Potter","categoryTag":"Harry Potter","badgeColor":"gold","persona":"Público que busca sofisticación, elegancia oscura, tonos fríos","recipe":"5 Rosas tintadas verde jade (S/22.5) + 3 Rosas blancas Mondial (S/9) + 2 Calas blancas (S/6) + Helecho oscuro (S/2.5)","costFlower":"40.00","costPack":"8.00","cogs":"331.05","pvp":"99.00","margin":"-234.4%","imageLocal":"./images/02_Slytherin_La_Ambicion_Esmeralda.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1-sbzaZherjjVnPsAUMVWAKFIeBKOOP6X","driveUrl":"https://drive.google.com/file/d/1-sbzaZherjjVnPsAUMVWAKFIeBKOOP6X/view","votes":4,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_HP-02_Slytherin_La_Ambicion_Esmeralda.jpg"},{"id":"POP-06","sku":"POP-06","name":"Monocromo Nevermore (Merlina Addams)","collection":"Gótico & Terror","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Universitarias y adolescentes de estilo gótico clásico","recipe":"5 Rosas tintadas negras (S/22.5) + 3 Rosas blancas Mondial (S/9) + 2 Crisantemos blancos (S/3.6) + Ruscus (S/2)","costFlower":"37.10","costPack":"7.50","cogs":"14141.05","pvp":"99.00","margin":"-14183.9%","imageLocal":"./images/06_Merlina_Addams.jpg","imageOnline":"https://lh3.googleusercontent.com/d/179Ju3tNMs-sNS3hVEV_ERkngECdymitA","driveUrl":"https://drive.google.com/file/d/179Ju3tNMs-sNS3hVEV_ERkngECdymitA/view","votes":3,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-06_Merlina_Addams_Monocromo.jpg"},{"id":"HW-01","sku":"HW-01","name":"Spooky Chic (Pack 1)","collection":"Halloween Tradicional","categoryTag":"Halloween Tradicional","badgeColor":"purple","persona":"Regalo festivo de oficina y reuniones de amigos","recipe":"4 Rosas naranjas (S/12.8) + 3 Rosas tintadas negras (S/13.5) + 3 Claveles oscuros (S/5.4) + Follaje (S/2)","costFlower":"33.70","costPack":"6.50","cogs":"661.05","pvp":"85.00","margin":"-677.7%","imageLocal":"./images/01_Halloween_Spooky_Chic.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1uXKbo_3OWpUa1o41FQDzHD3_I6vUeFvu","driveUrl":"https://drive.google.com/file/d/1uXKbo_3OWpUa1o41FQDzHD3_I6vUeFvu/view","votes":4,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_HW-01_Halloween_Spooky_Chic.jpg"},{"id":"HW-02","sku":"HW-02","name":"Mystery Bloom (Pack 2 - Best Seller)","collection":"Halloween Tradicional","categoryTag":"Halloween Tradicional","badgeColor":"purple","persona":"Parejas jóvenes, regalos románticos con toque misterioso","recipe":"5 Rosas rojas clásicas (S/12.5) + 3 Statice morado (S/7.5) + 2 Calas blancas (S/6) + Eucalipto (S/2.5)","costFlower":"28.50","costPack":"6.50","cogs":"771.05","pvp":"79.00","margin":"-876.0%","imageLocal":"./images/02_Halloween_Mystery_Bloom.jpg","imageOnline":"https://lh3.googleusercontent.com/d/15CDLEuPq-odi0bjHFh5INEyGyMRQLBG7","driveUrl":"https://drive.google.com/file/d/15CDLEuPq-odi0bjHFh5INEyGyMRQLBG7/view","votes":3,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_HW-02_Halloween_Mystery_Bloom.jpg"},{"id":"POP-01","sku":"POP-01","name":"Dúo Hechizo: Elphaba & Glinda (Wicked)","collection":"Cine & Streaming","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Fans de teatro musical, Wicked movie 2024/2025, amigas inseparables","recipe":"4 Rosas rosadas baby (S/12) + 3 Pompones verde esmeralda (S/6) + 3 Alstroemerias blancas (S/4.5) + Gypsophila (S/2.5)","costFlower":"25.00","costPack":"6.50","cogs":"991.05","pvp":"75.00","margin":"-1221.4%","imageLocal":"./images/01_Wicked_Elphaba_Glinda.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1ExFi1qVVLlzIgM3WcQgry1459PAriSpj","driveUrl":"https://drive.google.com/file/d/1ExFi1qVVLlzIgM3WcQgry1459PAriSpj/view","votes":4,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-01_D_o_Hechizo_Elphaba_Glinda_Wicked_.jpg"},{"id":"POP-03","sku":"POP-03","name":"La Respiración de Fuego (Demon Slayer)","collection":"Anime & Shonen","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Comunidad otaku masiva en Lima, fans de Tanjiro & Nezuko","recipe":"4 Rosas rojas clásicas (S/10) + 3 Rosas rosadas baby (S/9) + 3 Alstroemerias rojas (S/4.5) + Ruscus verde (S/2.5)","costFlower":"26.00","costPack":"6.50","cogs":"11111.05","pvp":"75.00","margin":"-14714.7%","imageLocal":"./images/03_Demon_Slayer.jpg","imageOnline":"https://lh3.googleusercontent.com/d/17vwhp4uOUZhUa5_euFcmNwyrODz9s7ke","driveUrl":"https://drive.google.com/file/d/17vwhp4uOUZhUa5_euFcmNwyrODz9s7ke/view","votes":9,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-03_DemonSlayer_Tanjiro_Respiracion_Fuego.jpg"},{"id":"POP-17","sku":"POP-17","name":"El Infinito / Seis Ojos: Satoru Gojo (Jujutsu Kaisen)","collection":"Anime & Shonen","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Comunidad masiva otaku de Lima, novios y fans de Jujutsu","recipe":"5 Rosas blancas puras (S/15) + 4 Statice morado/azul (S/10) + Gypsophila (S/2.5) + Eucalipto (S/2.5)","costFlower":"30.00","costPack":"7.00","cogs":"25251.05","pvp":"85.00","margin":"-29607.1%","imageLocal":"./images/17_Jujutsu_Gojo.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1ZVKKsCJ9nYCCieXacUk1MNxwS77xatNC","driveUrl":"https://drive.google.com/file/d/1ZVKKsCJ9nYCCieXacUk1MNxwS77xatNC/view","votes":7,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-17_Jujutsu_Gojo_El_Infinito.jpg"},{"id":"POP-13","sku":"POP-13","name":"Mercenario Bocón: Wade (Deadpool)","collection":"Cine & Streaming","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Fans de Marvel y novios frikis con sentido del humor","recipe":"6 Rosas rojas clásicas (S/15) + 4 Claveles rojos (S/7.2) + Ruscus verde (S/2)","costFlower":"24.20","costPack":"6.00","cogs":"21211.05","pvp":"69.00","margin":"-30640.7%","imageLocal":"./images/13_Deadpool.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1gcqo3nsMAJ__qlIsP78RQWz_fK8SqKGJ","driveUrl":"https://drive.google.com/file/d/1gcqo3nsMAJ__qlIsP78RQWz_fK8SqKGJ/view","votes":3,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-13_Mercenario_Boc_n_Wade_Deadpool_.jpg"},{"id":"POP-05","sku":"POP-05","name":"El Sombrero de Paja: Luffy (One Piece)","collection":"Anime & Shonen","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Fans incondicionales de One Piece, chicos y parejas aventureras","recipe":"2 Girasoles tradicionales (S/9) + 4 Rosas rojas clásicas (S/10) + 4 Claveles rojos (S/7.2) + Eucalipto (S/2.5)","costFlower":"28.70","costPack":"6.50","cogs":"13131.05","pvp":"79.00","margin":"-16521.6%","imageLocal":"./images/05_One_Piece.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1L71iMtC60bZjI71XL_bIclnEHQTpQT96","driveUrl":"https://drive.google.com/file/d/1L71iMtC60bZjI71XL_bIclnEHQTpQT96/view","votes":5,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-05_El_Sombrero_de_Paja_Luffy_One_Piece_.jpg"},{"id":"POP-22","sku":"POP-22","name":"Waku Waku Peanut: Anya Forger (Spy x Family)","collection":"Anime & Shonen","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Público tierno, parejas jóvenes y regalos de cariño","recipe":"5 Rosas rosadas baby (S/15) + 3 Alstroemerias blancas (S/4.5) + 2 Margaritas blancas (S/3.6) + Gypsophila (S/2.5)","costFlower":"25.60","costPack":"6.00","cogs":"30301.05","pvp":"69.00","margin":"-43814.6%","imageLocal":"./images/22_SpyFamily_Anya.jpg","imageOnline":"https://lh3.googleusercontent.com/d/18xCaJBH6VBbGjS1u8c9OmrWKmXBmlihS","driveUrl":"https://drive.google.com/file/d/18xCaJBH6VBbGjS1u8c9OmrWKmXBmlihS/view","votes":7,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-22_SpyFamily_Anya_Waku_Waku.jpg"},{"id":"POP-29","sku":"POP-29","name":"Voto Eterno: Emily (La Novia Cadáver)","collection":"Gótico & Terror","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Top ventas Halloween para novias/enamoradas, estilo gótico romántico","recipe":"5 Rosas blancas (S/15) + 4 Statice morado/azul (S/10) + Gypsophila (S/2.5) + Eucalipto (S/2.5)","costFlower":"30.00","costPack":"7.00","cogs":"37371.05","pvp":"85.00","margin":"-43865.9%","imageLocal":"./images/29_NoviaCadaver_Emily.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1v1M9x4fdYLMT7VAn2fm39qRcekLZMyM7","driveUrl":"https://drive.google.com/file/d/1v1M9x4fdYLMT7VAn2fm39qRcekLZMyM7/view","votes":5,"hasCharacter":false,"characterImg":null},{"id":"POP-04","sku":"POP-04","name":"Pikachu & Gengar Spooky Bloom (Pokemon)","collection":"Gaming & Pop Icons","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Gamers, novias tiernas, fans de Nintendo y Pokemon Go","recipe":"2 Girasoles medianos (S/9) + 4 Rosas amarillas (S/12) + 4 Statice morado (S/10) + Gypsophila (S/2.5)","costFlower":"33.50","costPack":"6.50","cogs":"12121.05","pvp":"85.00","margin":"-14160.1%","imageLocal":"./images/04_Pokemon_Spooky.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1fnkfkFX4Hmn5nVa7jd392TEzPc9osDby","driveUrl":"https://drive.google.com/file/d/1fnkfkFX4Hmn5nVa7jd392TEzPc9osDby/view","votes":4,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-04_Pikachu_Gengar_Spooky_Bloom_Pokemon_.jpg"},{"id":"HP-03","sku":"HP-03","name":"El Vuelo del Intelecto (Ravenclaw)","collection":"Harry Potter","categoryTag":"Harry Potter","badgeColor":"gold","persona":"Estudiantes universitarios, personalidades analíticas, amantes del azul","recipe":"4 Rosas tintadas azul zafiro (S/18) + 3 Rosas blancas Mondial (S/9) + 3 Eryngium / Statice azul (S/7.5) + Eucalipto (S/2.5)","costFlower":"37.00","costPack":"7.50","cogs":"441.05","pvp":"95.00","margin":"-364.3%","imageLocal":"./images/03_Ravenclaw_El_Vuelo_Del_Intelecto.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1KSZlVxZVKA4eNomhLbkFCPcoU9waS3b0","driveUrl":"https://drive.google.com/file/d/1KSZlVxZVKA4eNomhLbkFCPcoU9waS3b0/view","votes":7,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_HP-03_Ravenclaw_El_Vuelo_Del_Intelecto.jpg"},{"id":"HP-04","sku":"HP-04","name":"La Lealtad Dorada (Hufflepuff)","collection":"Harry Potter","categoryTag":"Harry Potter","badgeColor":"gold","persona":"Parejas cálidas, amigos leales, amantes de girasoles y estilo rústico","recipe":"3 Girasoles grandes (S/13.5) + 4 Rosas amarillas (S/12) + 3 Alstroemerias amarillas (S/4.5) + Gypsophila (S/2.5)","costFlower":"32.50","costPack":"6.50","cogs":"551.05","pvp":"85.00","margin":"-548.3%","imageLocal":"./images/04_Hufflepuff_La_Lealtad_Dorada.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1s-Oue80XLeLYrraufj4Qf3-aaaHdCA-N","driveUrl":"https://drive.google.com/file/d/1s-Oue80XLeLYrraufj4Qf3-aaaHdCA-N/view","votes":3,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_HP-04_Hufflepuff_La_Lealtad_Dorada.jpg"},{"id":"HW-03","sku":"HW-03","name":"Detalle Dark (Pack 3 - Entrada)","collection":"Halloween Tradicional","categoryTag":"Halloween Tradicional","badgeColor":"purple","persona":"Regalo accesible, detalle rápido, amigos secretos","recipe":"3 Rosas rojas oscuras (S/7.5) + 2 Claveles tintados negros (S/4) + Gypsophila (S/2)","costFlower":"13.50","costPack":"4.50","cogs":"881.05","pvp":"45.00","margin":"-1857.9%","imageLocal":"./images/03_Halloween_Detalle_Dark_Cono.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1UOaplsJyQvnzH1wAnabieSkbxOIP1SRl","driveUrl":"https://drive.google.com/file/d/1UOaplsJyQvnzH1wAnabieSkbxOIP1SRl/view","votes":9,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_HW-03_Halloween_Detalle_Dark.jpg"},{"id":"POP-02","sku":"POP-02","name":"Mystery Violet (K-Pop Demon Hunters)","collection":"Cine & Streaming","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Público femenino 16-28; fans K-Pop y dramas coreanos","recipe":"5 Rosas blancas tradicionales (S/15) + 3 Statice morado (S/7.5) + 2 Claveles blancos (S/3.6) + Eucalipto (S/2.5)","costFlower":"28.60","costPack":"6.50","cogs":"10101.05","pvp":"79.00","margin":"-12686.1%","imageLocal":"./images/02_Kpop_Demon_Hunters.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1t1lQFkpc9tvU275Rvj_QiCPMD9F1SLij","driveUrl":"https://drive.google.com/file/d/1t1lQFkpc9tvU275Rvj_QiCPMD9F1SLij/view","votes":8,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-02_Mystery_Violet_K_Pop_Demon_Hunters_.jpg"},{"id":"POP-07","sku":"POP-07","name":"Plus Ultra: Deku vs Bakugo (Boku no Hero)","collection":"Anime & Shonen","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Jóvenes otakus y parejas afines","recipe":"4 Rosas naranjas (S/12.8) + 3 Rosas blancas (S/9) + 3 Alstroemerias amarillas (S/4.5) + Ruscus vivo (S/3)","costFlower":"29.30","costPack":"6.50","cogs":"15151.05","pvp":"79.00","margin":"-19078.5%","imageLocal":"./images/07_Boku_No_Hero.jpg","imageOnline":"https://lh3.googleusercontent.com/d/12NzLEhiWyBVqFsK-SjDeU4iQ_i1wQVaJ","driveUrl":"https://drive.google.com/file/d/12NzLEhiWyBVqFsK-SjDeU4iQ_i1wQVaJ/view","votes":9,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-07_Plus_Ultra_Deku_vs_Bakugo_Boku_no_Hero_.jpg"},{"id":"POP-08","sku":"POP-08","name":"El Amuleto Mágico (Miraculous Ladybug)","collection":"Gaming & Pop Icons","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Público familiar, niñas, adolescentes y mamás","recipe":"6 Rosas rojas clásicas (S/15) + 4 Claveles blancos (S/7.2) + Gypsophila (S/2.5) + Ruscus (S/2)","costFlower":"26.70","costPack":"6.00","cogs":"16161.05","pvp":"69.00","margin":"-23321.8%","imageLocal":"./images/08_Ladybug.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1jeNn8h1qqjOHCquu4qqQr7ageKSbV9f-","driveUrl":"https://drive.google.com/file/d/1jeNn8h1qqjOHCquu4qqQr7ageKSbV9f-/view","votes":7,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-08_El_Amuleto_M_gico_Miraculous_Ladybug_.jpg"},{"id":"POP-09","sku":"POP-09","name":"Toro Negro Antimagia: Asta (Black Clover)","collection":"Anime & Shonen","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Fans shonen; superación, perseverancia y fuerza","recipe":"5 Rosas rojas oscuras (S/12.5) + 3 Claveles tintados vino (S/5.4) + 2 Crisantemos vino (S/3.6) + Eucalipto (S/2.5)","costFlower":"24.00","costPack":"6.00","cogs":"17171.05","pvp":"69.00","margin":"-24785.6%","imageLocal":"./images/09_Black_Clover.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1t2d8YwtgkqXtOkDGXMIdHAoAMEBhGqde","driveUrl":"https://drive.google.com/file/d/1t2d8YwtgkqXtOkDGXMIdHAoAMEBhGqde/view","votes":8,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-09_Toro_Negro_Antimagia_Asta_Black_Clover_.jpg"},{"id":"POP-10","sku":"POP-10","name":"Bloque Dorado: Creeper & Gold (Minecraft)","collection":"Gaming & Pop Icons","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Gamers, streamers, adolescentes y niños","recipe":"2 Girasoles tradicionales (S/9) + 4 Pompones amarillos (S/7.2) + 4 Rosas blancas (S/12) + Follaje verde (S/3)","costFlower":"31.20","costPack":"6.50","cogs":"18181.05","pvp":"79.00","margin":"-22914.0%","imageLocal":"./images/10_Minecraft.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1_aQh_QB3utNCV_lQacb7v5yx72a_4Pbt","driveUrl":"https://drive.google.com/file/d/1_aQh_QB3utNCV_lQacb7v5yx72a_4Pbt/view","votes":4,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-10_Bloque_Dorado_Creeper_Gold_Minecraft_.jpg"},{"id":"POP-11","sku":"POP-11","name":"Vestido de Novia Rojo: Lydia Deetz (Beetlejuice 2)","collection":"Cine & Streaming","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Fans de Tim Burton y gótico chic romántico","recipe":"5 Rosas rojas terciopelo (S/12.5) + 3 Claveles rojos (S/5.4) + 2 Alstroemerias rojas (S/3) + Eucalipto (S/2.5)","costFlower":"23.40","costPack":"6.50","cogs":"19191.05","pvp":"69.00","margin":"-27713.1%","imageLocal":"./images/11_Beetlejuice_Lydia.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1WHwtvRhAXOyC2W4JYNmwDFBcQMlCkAfZ","driveUrl":"https://drive.google.com/file/d/1WHwtvRhAXOyC2W4JYNmwDFBcQMlCkAfZ/view","votes":9,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-11_Vestido_de_Novia_Rojo_Lydia_Deetz_Beetlejuice_2_.jpg"},{"id":"POP-12","sku":"POP-12","name":"Rayas Fantasma: El Bio-Exorcista (Beetlejuice)","collection":"Cine & Streaming","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Parejas y amigos que buscan algo cómico y extravagante","recipe":"4 Rosas blancas (S/12) + 4 Crisantemos blancos (S/7.2) + 2 Pompones verdes (S/4) + Follaje (S/2.5)","costFlower":"25.70","costPack":"6.50","cogs":"20201.05","pvp":"75.00","margin":"-26834.7%","imageLocal":"./images/12_Beetlejuice_Stripes.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1rFcN6MFzZ7d2JPcLl8iFFlNGBTGHRm3c","driveUrl":"https://drive.google.com/file/d/1rFcN6MFzZ7d2JPcLl8iFFlNGBTGHRm3c/view","votes":4,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-12_Rayas_Fantasma_El_Bio_Exorcista_Beetlejuice_.jpg"},{"id":"POP-14","sku":"POP-14","name":"Garras Amarillas: Logan (Wolverine)","collection":"Cine & Streaming","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Regalo de fuerza, carácter y hermandad masculina","recipe":"3 Girasoles grandes (S/13.5) + 4 Rosas amarillas (S/12) + 3 Alstroemerias amarillas (S/4.5) + Eucalipto (S/2.5)","costFlower":"32.50","costPack":"6.50","cogs":"22221.05","pvp":"85.00","margin":"-26042.4%","imageLocal":"./images/14_Wolverine.jpg","imageOnline":"https://lh3.googleusercontent.com/d/12746TkEgr7B_hHPNV2utcxfhwuTSjA4T","driveUrl":"https://drive.google.com/file/d/12746TkEgr7B_hHPNV2utcxfhwuTSjA4T/view","votes":4,"hasCharacter":false,"characterImg":null},{"id":"POP-15","sku":"POP-15","name":"Torbellino Naranja: Ansiedad (Intensamente 2)","collection":"Cine & Streaming","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Jóvenes universitarias y regalos de empatía emocional","recipe":"4 Rosas naranjas (S/12.8) + 3 Alstroemerias naranjas (S/4.5) + 3 Claveles naranja (S/5.4) + Follaje (S/2.5)","costFlower":"25.20","costPack":"6.00","cogs":"23231.05","pvp":"69.00","margin":"-33568.2%","imageLocal":"./images/15_InsideOut_Anxiety.jpg","imageOnline":"https://lh3.googleusercontent.com/d/12dK4BgRZFkwLFwWrq6gi01e9aFeNf29J","driveUrl":"https://drive.google.com/file/d/12dK4BgRZFkwLFwWrq6gi01e9aFeNf29J/view","votes":5,"hasCharacter":false,"characterImg":null},{"id":"POP-16","sku":"POP-16","name":"Menta & Brillo: Envidia (Intensamente 2)","collection":"Cine & Streaming","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Amigas que aprecian tonos pastel, frescura y ternura","recipe":"4 Rosas blancas (S/12) + 3 Pompones verde pastel (S/6) + 3 Alstroemerias blancas (S/4.5) + Gypsophila (S/2.5)","costFlower":"25.00","costPack":"6.50","cogs":"24241.05","pvp":"72.00","margin":"-33568.1%","imageLocal":"./images/16_InsideOut_Envy.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1NC4Y0EZohh5IDP8RvEC9wmM4OQjWvy7x","driveUrl":"https://drive.google.com/file/d/1NC4Y0EZohh5IDP8RvEC9wmM4OQjWvy7x/view","votes":7,"hasCharacter":false,"characterImg":null},{"id":"POP-18","sku":"POP-18","name":"El Rey de las Maldiciones: Sukuna (Jujutsu Kaisen)","collection":"Anime & Shonen","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Regalo de impacto para novios, estilo gótico dominante","recipe":"6 Rosas rojas clásicas (S/15) + 4 Claveles rojos oscuros (S/7.2) + Follaje oscuro (S/2.5)","costFlower":"24.70","costPack":"6.50","cogs":"26261.05","pvp":"75.00","margin":"-34914.7%","imageLocal":"./images/18_Jujutsu_Sukuna.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1HsonaLVNNfRvjP4EOrXoB-G6iIegUizV","driveUrl":"https://drive.google.com/file/d/1HsonaLVNNfRvjP4EOrXoB-G6iIegUizV/view","votes":4,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-18_Jujutsu_Sukuna_Rey_Maldiciones.jpg"},{"id":"POP-19","sku":"POP-19","name":"El Control Carmesí: Makima (Chainsaw Man)","collection":"Anime & Shonen","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Estilo sobrio, elegante y dominante; novias sofisticadas","recipe":"6 Rosas rojas de exportación (S/18) + 4 Claveles blancos (S/7.2) + Ruscus (S/2)","costFlower":"27.20","costPack":"7.00","cogs":"27271.05","pvp":"95.00","margin":"-28606.4%","imageLocal":"./images/19_Chainsaw_Makima.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1dyKrz5lfcproGYp6Sz5c6VNybXuyk8Ip","driveUrl":"https://drive.google.com/file/d/1dyKrz5lfcproGYp6Sz5c6VNybXuyk8Ip/view","votes":7,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-19_Chainsaw_Makima_Control_Carmesi.jpg"},{"id":"POP-20","sku":"POP-20","name":"El Demonio de Sangre: Power (Chainsaw Man)","collection":"Anime & Shonen","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Chicas enérgicas, divertidas y espontáneas","recipe":"4 Rosas rosadas baby (S/12) + 3 Rosas rojas (S/7.5) + 3 Alstroemerias rosas (S/4.5) + Gypsophila (S/2.5)","costFlower":"26.50","costPack":"6.00","cogs":"28281.05","pvp":"72.00","margin":"-39179.2%","imageLocal":"./images/20_Chainsaw_Power.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1xVmqZj8yFEWqwGp9do7wKFunslVZyABq","driveUrl":"https://drive.google.com/file/d/1xVmqZj8yFEWqwGp9do7wKFunslVZyABq/view","votes":6,"hasCharacter":true,"characterImg":"./images/contexto/SLIDE2_POP-20_Chainsaw_Power_Demonio_Sangre.jpg"},{"id":"POP-21","sku":"POP-21","name":"Cuervos & Nubes Rojas: Itachi Akatsuki (Naruto)","collection":"Anime & Shonen","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Fans nostálgicos de Naruto (20-35 años)","recipe":"6 Rosas rojas nacionales (S/15) + 4 Claveles tintados negros (S/8) + Eucalipto (S/2.5)","costFlower":"25.50","costPack":"6.50","cogs":"29291.05","pvp":"75.00","margin":"-38954.7%","imageLocal":"./images/21_Naruto_Itachi.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1gXSeWAyNCOs5Ok9YJYoRPSnn_CyVY0Ql","driveUrl":"https://drive.google.com/file/d/1gXSeWAyNCOs5Ok9YJYoRPSnn_CyVY0Ql/view","votes":2,"hasCharacter":false,"characterImg":null},{"id":"POP-23","sku":"POP-23","name":"Thorn Princess: Yor Forger (Spy x Family)","collection":"Anime & Shonen","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Mujeres elegantes con gusto por rosas rojas clásicas","recipe":"6 Rosas rojas clásicas (S/15) + 4 Rosas blancas (S/12) + Ruscus verde (S/2)","costFlower":"29.00","costPack":"6.50","cogs":"31311.05","pvp":"79.00","margin":"-39534.2%","imageLocal":"./images/23_SpyFamily_Yor.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1nuxTQXDsa0pJrJMsU9KBzNXY2PMTqBbc","driveUrl":"https://drive.google.com/file/d/1nuxTQXDsa0pJrJMsU9KBzNXY2PMTqBbc/view","votes":8,"hasCharacter":false,"characterImg":null},{"id":"POP-24","sku":"POP-24","name":"Super Mega Cohete: Jinx (Arcane)","collection":"Gaming & Pop Icons","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Gamers y fans de Arcane 2 en Netflix","recipe":"5 Rosas blancas (S/15) + 3 Statice morado (S/7.5) + 2 Pompones tintados azul (S/5) + Gypsophila (S/2.5)","costFlower":"30.00","costPack":"7.00","cogs":"32321.05","pvp":"85.00","margin":"-37924.8%","imageLocal":"./images/24_Arcane_Jinx.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1XvuEwxjjeIDlLC5z41Z_g5w8keHukciQ","driveUrl":"https://drive.google.com/file/d/1XvuEwxjjeIDlLC5z41Z_g5w8keHukciQ/view","votes":5,"hasCharacter":false,"characterImg":null},{"id":"POP-25","sku":"POP-25","name":"Defensora de Piltóver: Vi (Arcane)","collection":"Gaming & Pop Icons","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Regalo de fuerza, lealtad y personalidad fuerte","recipe":"4 Rosas rojas (S/10) + 3 Rosas rosadas baby (S/9) + 3 Claveles rojos (S/5.4) + Eucalipto (S/2.5)","costFlower":"26.90","costPack":"6.50","cogs":"33331.05","pvp":"75.00","margin":"-44341.4%","imageLocal":"./images/25_Arcane_Vi.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1gVFY2ISPWI_9iTTmyUdAGPFnvvtaa6Ns","driveUrl":"https://drive.google.com/file/d/1gVFY2ISPWI_9iTTmyUdAGPFnvvtaa6Ns/view","votes":9,"hasCharacter":false,"characterImg":null},{"id":"POP-26","sku":"POP-26","name":"Castillo Champiñón: Princesa Peach (Super Mario)","collection":"Gaming & Pop Icons","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Regalo dulce, romántico y tradicional para enamoradas","recipe":"6 Rosas rosadas baby (S/18) + 4 Alstroemerias blancas (S/6) + Gypsophila (S/2.5)","costFlower":"26.50","costPack":"6.50","cogs":"34341.05","pvp":"75.00","margin":"-45688.1%","imageLocal":"./images/26_Mario_Peach.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1SuqIbx-yy41GWvVw3K0PaMvC8rbujNoY","driveUrl":"https://drive.google.com/file/d/1SuqIbx-yy41GWvVw3K0PaMvC8rbujNoY/view","votes":6,"hasCharacter":false,"characterImg":null},{"id":"POP-27","sku":"POP-27","name":"La Noche del Terror: Freddy Fazbear (FNAF)","collection":"Gaming & Pop Icons","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Adolescentes fans de videojuegos de terror","recipe":"4 Rosas rojas oscuras (S/10) + 3 Claveles amarillos (S/5.4) + 3 Alstroemerias (S/4.5) + Follaje (S/2.5)","costFlower":"22.40","costPack":"6.00","cogs":"35351.05","pvp":"65.00","margin":"-54286.2%","imageLocal":"./images/27_FNAF_Freddy.jpg","imageOnline":"https://lh3.googleusercontent.com/d/15sFMPYvhyeiSKkmcKhEE5AAHiSvfJgAX","driveUrl":"https://drive.google.com/file/d/15sFMPYvhyeiSKkmcKhEE5AAHiSvfJgAX/view","votes":8,"hasCharacter":false,"characterImg":null},{"id":"POP-28","sku":"POP-28","name":"La Guía del Más Allá: Hu Tao (Genshin Impact)","collection":"Gaming & Pop Icons","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Comunidad otaku gamer de Lima, fans de Genshin","recipe":"4 Rosas rojas clásicas (S/10) + 3 Margaritas blancas (S/5.4) + 3 Alstroemerias rojas (S/4.5) + Eucalipto (S/2.5)","costFlower":"22.40","costPack":"6.00","cogs":"36361.05","pvp":"69.00","margin":"-52597.2%","imageLocal":"./images/28_Genshin_HuTao.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1VtEsYDmrqmLlKu2NMampS_DmNVbTjZTc","driveUrl":"https://drive.google.com/file/d/1VtEsYDmrqmLlKu2NMampS_DmNVbTjZTc/view","votes":2,"hasCharacter":false,"characterImg":null},{"id":"POP-30","sku":"POP-30","name":"Puntadas de Amor: Sally (Pesadilla Antes de Navidad)","collection":"Gótico & Terror","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Parejas que aman Halloween y Navidad juntos","recipe":"3 Girasoles medianos (S/13.5) + 4 Rosas rojas (S/10) + 3 Statice morado (S/7.5) + Follaje (S/2.5)","costFlower":"33.50","costPack":"6.50","cogs":"38381.05","pvp":"89.00","margin":"-43024.8%","imageLocal":"./images/30_Jack_Sally.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1-FNUU4yNiJUsoCE7qxoUrAtFMFg_ALJX","driveUrl":"https://drive.google.com/file/d/1-FNUU4yNiJUsoCE7qxoUrAtFMFg_ALJX/view","votes":7,"hasCharacter":false,"characterImg":null},{"id":"POP-31","sku":"POP-31","name":"¿Cuál es tu flor favorita?: Ghostface (Scream)","collection":"Gótico & Terror","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Fans de cine de terror slasher de los 90s/2000s","recipe":"6 Rosas rojas clásicas (S/15) + 4 Claveles blancos (S/7.2) + Ruscus (S/2)","costFlower":"24.20","costPack":"6.00","cogs":"39391.05","pvp":"69.00","margin":"-56988.5%","imageLocal":"./images/31_Scream_Ghostface.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1VBPNko0hojXxfflaeJdShp2dnhDmXLlD","driveUrl":"https://drive.google.com/file/d/1VBPNko0hojXxfflaeJdShp2dnhDmXLlD/view","votes":5,"hasCharacter":false,"characterImg":null},{"id":"POP-32","sku":"POP-32","name":"Todos Flotan Aquí: Pennywise (IT El Payaso)","collection":"Gótico & Terror","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Impacto visual fuerte para bromas, cinéfilos y Halloween","recipe":"6 Rosas rojas clásicas (S/15) + 4 Crisantemos blancos (S/7.2) + Gypsophila (S/2.5)","costFlower":"24.70","costPack":"6.50","cogs":"40401.05","pvp":"75.00","margin":"-53768.1%","imageLocal":"./images/32_IT_Pennywise.jpg","imageOnline":"https://lh3.googleusercontent.com/d/19VEKjw5G0APpCG3D1_HxHwP931xA8-_0","driveUrl":"https://drive.google.com/file/d/19VEKjw5G0APpCG3D1_HxHwP931xA8-_0/view","votes":4,"hasCharacter":false,"characterImg":null},{"id":"POP-33","sku":"POP-33","name":"Belleza Venenosa: Morticia Addams","collection":"Gótico & Terror","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Mujeres elegantes, aniversarios góticos, estilo dark luxury","recipe":"8 Rosas rojas clásicas de tallo largo (S/20) + 2 Claveles negros (S/4) + Ruscus (S/2)","costFlower":"26.00","costPack":"7.00","cogs":"41411.05","pvp":"79.00","margin":"-52319.1%","imageLocal":"./images/33_Addams_Morticia.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1NVHIUvdqbFJFEfGlET4nqC-3fbojAd47","driveUrl":"https://drive.google.com/file/d/1NVHIUvdqbFJFEfGlET4nqC-3fbojAd47/view","votes":2,"hasCharacter":false,"characterImg":null},{"id":"POP-34","sku":"POP-34","name":"Día de Muertos & Halloween: La Catrina Tradicional","collection":"Gótico & Terror","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Top ventas para quienes celebran la vida, colores vivos y tradición","recipe":"3 Girasoles grandes (S/13.5) + 4 Rosas rojas (S/10) + 3 Pompones amarillos (S/5.4) + Follaje (S/2.5)","costFlower":"31.40","costPack":"6.50","cogs":"42421.05","pvp":"85.00","margin":"-49807.1%","imageLocal":"./images/34_Catrina_Mexicana.jpg","imageOnline":"https://lh3.googleusercontent.com/d/13vx2cFHcYPsv2WEeDS7S_DB0SA80CUkR","driveUrl":"https://drive.google.com/file/d/13vx2cFHcYPsv2WEeDS7S_DB0SA80CUkR/view","votes":8,"hasCharacter":false,"characterImg":null},{"id":"POP-35","sku":"POP-35","name":"Amor Asesino: Chucky & Tiffany (Dúo)","collection":"Gótico & Terror","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Parejas que se regalan en Halloween con humor negro","recipe":"4 Rosas rojas (S/10) + 3 Rosas blancas (S/9) + 3 Claveles rojos (S/5.4) + Ruscus (S/2)","costFlower":"26.40","costPack":"6.50","cogs":"43431.05","pvp":"75.00","margin":"-57808.1%","imageLocal":"./images/35_Chucky_Tiffany.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1X010mo-TO0KXoYeDuNVVcnxx8scebSU6","driveUrl":"https://drive.google.com/file/d/1X010mo-TO0KXoYeDuNVVcnxx8scebSU6/view","votes":4,"hasCharacter":false,"characterImg":null},{"id":"POP-36","sku":"POP-36","name":"Gracia Oscura: Ángel Caído / Ángel Negro","collection":"Gótico & Terror","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Chicas que van a fiestas de disfraces, estética dark fairy","recipe":"5 Rosas tintadas negras (S/22.5) + 5 Ramas de Gypsophila blanca (S/12.5) + Eucalipto (S/2.5)","costFlower":"37.50","costPack":"6.50","cogs":"44441.05","pvp":"95.00","margin":"-46680.1%","imageLocal":"./images/36_Angel_Caido.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1aCnEJ09mfKhNrNwL7u7fJmrv3lwOLii-","driveUrl":"https://drive.google.com/file/d/1aCnEJ09mfKhNrNwL7u7fJmrv3lwOLii-/view","votes":7,"hasCharacter":false,"characterImg":null},{"id":"POP-37","sku":"POP-37","name":"Tentación Dulce: Diablita Coquette","collection":"Gótico & Terror","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Regalo coqueto para novias/salientes, tendencia coquette dark","recipe":"6 Rosas rojas comunes (S/15) + 4 Alstroemerias rojas (S/6) + Gypsophila (S/2.5)","costFlower":"23.50","costPack":"6.00","cogs":"45451.05","pvp":"69.00","margin":"-65771.1%","imageLocal":"./images/37_Diablita_Coquette.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1cnXSm8mA7ZZ8o2MxDzh1Nt5I4RK8qrKU","driveUrl":"https://drive.google.com/file/d/1cnXSm8mA7ZZ8o2MxDzh1Nt5I4RK8qrKU/view","votes":6,"hasCharacter":false,"characterImg":null},{"id":"POP-38","sku":"POP-38","name":"Deseo Concedido: Cosmo & Wanda (Los Padrinos Mágicos)","collection":"Retro & Dúos","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Parejas jóvenes con humor y nostalgia de los 2000s","recipe":"4 Rosas rosadas baby (S/12) + 3 Pompones verdes (S/6) + 3 Alstroemerias blancas (S/4.5) + Gypsophila (S/2.5)","costFlower":"25.00","costPack":"6.50","cogs":"46461.05","pvp":"72.00","margin":"-64429.2%","imageLocal":"./images/38_Cosmo_Wanda.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1MVA-WW6g5sUjGLt7334RTethBXjTbOIo","driveUrl":"https://drive.google.com/file/d/1MVA-WW6g5sUjGLt7334RTethBXjTbOIo/view","votes":3,"hasCharacter":false,"characterImg":null},{"id":"POP-39","sku":"POP-39","name":"Misterio a la Orden: Vilma & Daphne (Scooby Doo)","collection":"Retro & Dúos","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Amigas inseparables, disfraces en dúo, regalos de cumpleaños en octubre","recipe":"3 Girasoles medianos (S/13.5) + 4 Rosas naranjas (S/12.8) + 3 Statice morado (S/7.5) + Eucalipto (S/2.5)","costFlower":"36.30","costPack":"6.50","cogs":"47471.05","pvp":"95.00","margin":"-49869.5%","imageLocal":"./images/39_Scooby_Doo.jpg","imageOnline":"https://lh3.googleusercontent.com/d/12Bj50IK8L-LAuYNXEDaxvMn76g5X7GKo","driveUrl":"https://drive.google.com/file/d/12Bj50IK8L-LAuYNXEDaxvMn76g5X7GKo/view","votes":6,"hasCharacter":false,"characterImg":null},{"id":"POP-40","sku":"POP-40","name":"Rosa Perfecto: Barbie & Ken Roller","collection":"Retro & Dúos","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Público femenino y novias coquette, amantes del rosa absoluto","recipe":"6 Rosas rosadas baby (S/18) + 4 Claveles blancos (S/7.2) + Gypsophila (S/2.5)","costFlower":"27.70","costPack":"6.50","cogs":"48481.05","pvp":"79.00","margin":"-61268.4%","imageLocal":"./images/40_Barbie_Ken.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1oclVcvZ-exI_LDK9mtFaZ0gQDF-gyju_","driveUrl":"https://drive.google.com/file/d/1oclVcvZ-exI_LDK9mtFaZ0gQDF-gyju_/view","votes":6,"hasCharacter":false,"characterImg":null},{"id":"POP-41","sku":"POP-41","name":"Amor en el Pantano: Shrek & Fiona","collection":"Retro & Dúos","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Parejas con sentido del humor y amor verdadero desinteresado","recipe":"3 Girasoles grandes (S/13.5) + 4 Pompones verdes (S/8) + 3 Rosas blancas (S/9) + Eucalipto (S/2.5)","costFlower":"33.00","costPack":"6.50","cogs":"49491.05","pvp":"89.00","margin":"-55507.9%","imageLocal":"./images/41_Shrek_Fiona.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1peAZcJLfBFtFqYl2TP2XkFOjxf4Ez0IR","driveUrl":"https://drive.google.com/file/d/1peAZcJLfBFtFqYl2TP2XkFOjxf4Ez0IR/view","votes":4,"hasCharacter":false,"characterImg":null},{"id":"POP-42","sku":"POP-42","name":"Pintando las Rosas de Rojo: Reina de Corazones (Alicia)","collection":"Retro & Dúos","categoryTag":"Pop Culture & Gaming","badgeColor":"amber","persona":"Clásico de Disney / Tim Burton, novias con personalidad fuerte","recipe":"5 Rosas rojas clásicas (S/12.5) + 5 Rosas blancas puras (S/15) + Ruscus verde (S/2)","costFlower":"29.50","costPack":"6.50","cogs":"50501.05","pvp":"82.00","margin":"-61486.6%","imageLocal":"./images/42_Reina_Corazones.jpg","imageOnline":"https://lh3.googleusercontent.com/d/1W37UqNC9XDDzI43IvtjNA8NiXCYP9aQ-","driveUrl":"https://drive.google.com/file/d/1W37UqNC9XDDzI43IvtjNA8NiXCYP9aQ-/view","votes":8,"hasCharacter":false,"characterImg":null}];
+    const CATALOG = [
+  {
+    "id": "CLS-01",
+    "sku": "CLS-01",
+    "name": "Bouquet Coreano Minimal (Rosas & Eucalipto)",
+    "collection": "Clásicos ADORA",
+    "categoryTag": "Clásicos ADORA",
+    "badgeColor": "gold",
+    "persona": "Detalle romántico casual, mesarios, regalo de oficina elegante sin estridencias",
+    "recipe": "6 Rosas de exportación (Mondial o Rojas terciopelo) + Eucalipto cinerea generoso + Follaje baby blue",
+    "pvp": "59.00",
+    "hasCharacter": false,
+    "characterImg": null,
+    "imageLocal": "./images/01_Halloween_Spooky_Chic.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1uXKbo_3OWpUa1o41FQDzHD3_I6vUeFvu"
+  },
+  {
+    "id": "CLS-02",
+    "sku": "CLS-02",
+    "name": "Mix Silvestre Boutique (Girasoles & Rosas)",
+    "collection": "Clásicos ADORA",
+    "categoryTag": "Clásicos ADORA",
+    "badgeColor": "gold",
+    "persona": "Cumpleaños, aniversarios importantes, regalo alegre y de alto volumen visual",
+    "recipe": "2 Girasoles seleccionados + 6 Rosas marfil/amarillas + 4 varas de Alstroemerias doradas + Eucalipto",
+    "pvp": "95.00",
+    "hasCharacter": false,
+    "characterImg": null,
+    "imageLocal": "./images/04_Hufflepuff_La_Lealtad_Dorada.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1s-Oue80XLeLYrraufj4Qf3-aaaHdCA-N"
+  },
+  {
+    "id": "CLS-03",
+    "sku": "CLS-03",
+    "name": "The Classic Luxury Monocromático (24 Rosas)",
+    "collection": "Clásicos ADORA",
+    "categoryTag": "Clásicos ADORA",
+    "badgeColor": "gold",
+    "persona": "Declaraciones de amor, San Valentín, bodas, aniversarios de alto impacto",
+    "recipe": "24 Rosas rojas terciopelo seleccionadas de primera calidad + Ruscus italiano + Eucalipto en abanico",
+    "pvp": "165.00",
+    "hasCharacter": false,
+    "characterImg": null,
+    "imageLocal": "./images/01_Gryffindor_El_Rugido_Escarlata.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1qlfJmQuL6KX-6NLsQ09-BrYOHbtOL3k4"
+  },
+  {
+    "id": "CLS-04",
+    "sku": "CLS-04",
+    "name": "Cono Floral On-the-Go (Pre-hidratado)",
+    "collection": "Clásicos ADORA",
+    "categoryTag": "Clásicos ADORA",
+    "badgeColor": "gold",
+    "persona": "Entregas en restaurantes y oficinas; listo para lucir sin necesidad de florero inmediato",
+    "recipe": "Mini bouquet de 4 Rosas + Alstroemerias + Clavelinas en cono rígido con base de esponja oasis pre-hidratada",
+    "pvp": "65.00",
+    "hasCharacter": false,
+    "characterImg": null,
+    "imageLocal": "./images/03_Halloween_Detalle_Dark_Cono.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/15CDLEuPq-odi0bjHFh5INEyGyMRQLBG7"
+  },
+  {
+    "id": "HP-01",
+    "sku": "HP-01",
+    "name": "El Rugido Escarlata (Gryffindor)",
+    "collection": "Harry Potter",
+    "categoryTag": "Harry Potter",
+    "badgeColor": "gold",
+    "persona": "Fans de Harry Potter, parejas jóvenes, amantes del romance valiente",
+    "recipe": "5 Rosas rojas terciopelo (S/12.5) + 3 Rosas amarillas mostaza (S/9) + 2 Alstroemerias doradas (S/3) + Eucalipto (S/2.5)",
+    "costFlower": "27.00",
+    "costPack": "7.50",
+    "cogs": "221.05",
+    "pvp": "79.00",
+    "margin": "-179.8%",
+    "imageLocal": "./images/01_Gryffindor_El_Rugido_Escarlata.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1qlfJmQuL6KX-6NLsQ09-BrYOHbtOL3k4",
+    "driveUrl": "https://drive.google.com/file/d/1qlfJmQuL6KX-6NLsQ09-BrYOHbtOL3k4/view",
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HP-01_Gryffindor_El_Rugido_Escarlata.jpg"
+  },
+  {
+    "id": "HP-02",
+    "sku": "HP-02",
+    "name": "La Ambición Esmeralda (Slytherin)",
+    "collection": "Harry Potter",
+    "categoryTag": "Harry Potter",
+    "badgeColor": "gold",
+    "persona": "Público que busca sofisticación, elegancia oscura, tonos fríos",
+    "recipe": "5 Rosas tintadas verde jade (S/22.5) + 3 Rosas blancas Mondial (S/9) + 2 Calas blancas (S/6) + Helecho oscuro (S/2.5)",
+    "costFlower": "40.00",
+    "costPack": "8.00",
+    "cogs": "331.05",
+    "pvp": "99.00",
+    "margin": "-234.4%",
+    "imageLocal": "./images/02_Slytherin_La_Ambicion_Esmeralda.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1-sbzaZherjjVnPsAUMVWAKFIeBKOOP6X",
+    "driveUrl": "https://drive.google.com/file/d/1-sbzaZherjjVnPsAUMVWAKFIeBKOOP6X/view",
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HP-02_Slytherin_La_Ambicion_Esmeralda.jpg"
+  },
+  {
+    "id": "POP-06",
+    "sku": "POP-06",
+    "name": "Monocromo Nevermore (Merlina Addams)",
+    "collection": "Gótico & Terror",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Universitarias y adolescentes de estilo gótico clásico",
+    "recipe": "5 Rosas tintadas negras (S/22.5) + 3 Rosas blancas Mondial (S/9) + 2 Crisantemos blancos (S/3.6) + Ruscus (S/2)",
+    "costFlower": "37.10",
+    "costPack": "7.50",
+    "cogs": "14141.05",
+    "pvp": "99.00",
+    "margin": "-14183.9%",
+    "imageLocal": "./images/06_Merlina_Addams.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/179Ju3tNMs-sNS3hVEV_ERkngECdymitA",
+    "driveUrl": "https://drive.google.com/file/d/179Ju3tNMs-sNS3hVEV_ERkngECdymitA/view",
+    "votes": 3,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-06_Merlina_Addams_Monocromo.jpg"
+  },
+  {
+    "id": "HW-01",
+    "sku": "HW-01",
+    "name": "Spooky Chic (Pack 1)",
+    "collection": "Halloween Tradicional",
+    "categoryTag": "Halloween Tradicional",
+    "badgeColor": "purple",
+    "persona": "Regalo festivo de oficina y reuniones de amigos",
+    "recipe": "4 Rosas naranjas (S/12.8) + 3 Rosas tintadas negras (S/13.5) + 3 Claveles oscuros (S/5.4) + Follaje (S/2)",
+    "costFlower": "33.70",
+    "costPack": "6.50",
+    "cogs": "661.05",
+    "pvp": "85.00",
+    "margin": "-677.7%",
+    "imageLocal": "./images/01_Halloween_Spooky_Chic.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1uXKbo_3OWpUa1o41FQDzHD3_I6vUeFvu",
+    "driveUrl": "https://drive.google.com/file/d/1uXKbo_3OWpUa1o41FQDzHD3_I6vUeFvu/view",
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HW-01_Halloween_Spooky_Chic.jpg"
+  },
+  {
+    "id": "HW-02",
+    "sku": "HW-02",
+    "name": "Mystery Bloom (Pack 2 - Best Seller)",
+    "collection": "Halloween Tradicional",
+    "categoryTag": "Halloween Tradicional",
+    "badgeColor": "purple",
+    "persona": "Parejas jóvenes, regalos románticos con toque misterioso",
+    "recipe": "5 Rosas rojas clásicas (S/12.5) + 3 Statice morado (S/7.5) + 2 Calas blancas (S/6) + Eucalipto (S/2.5)",
+    "costFlower": "28.50",
+    "costPack": "6.50",
+    "cogs": "771.05",
+    "pvp": "79.00",
+    "margin": "-876.0%",
+    "imageLocal": "./images/02_Halloween_Mystery_Bloom.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/15CDLEuPq-odi0bjHFh5INEyGyMRQLBG7",
+    "driveUrl": "https://drive.google.com/file/d/15CDLEuPq-odi0bjHFh5INEyGyMRQLBG7/view",
+    "votes": 3,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HW-02_Halloween_Mystery_Bloom.jpg"
+  },
+  {
+    "id": "POP-01",
+    "sku": "POP-01",
+    "name": "Dúo Hechizo: Elphaba & Glinda (Wicked)",
+    "collection": "Cine & Streaming",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Fans de teatro musical, Wicked movie 2024/2025, amigas inseparables",
+    "recipe": "4 Rosas rosadas baby (S/12) + 3 Pompones verde esmeralda (S/6) + 3 Alstroemerias blancas (S/4.5) + Gypsophila (S/2.5)",
+    "costFlower": "25.00",
+    "costPack": "6.50",
+    "cogs": "991.05",
+    "pvp": "75.00",
+    "margin": "-1221.4%",
+    "imageLocal": "./images/01_Wicked_Elphaba_Glinda.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1ExFi1qVVLlzIgM3WcQgry1459PAriSpj",
+    "driveUrl": "https://drive.google.com/file/d/1ExFi1qVVLlzIgM3WcQgry1459PAriSpj/view",
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-01_D_o_Hechizo_Elphaba_Glinda_Wicked_.jpg"
+  },
+  {
+    "id": "POP-03",
+    "sku": "POP-03",
+    "name": "La Respiración de Fuego (Demon Slayer)",
+    "collection": "Anime & Shonen",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Comunidad otaku masiva en Lima, fans de Tanjiro & Nezuko",
+    "recipe": "4 Rosas rojas clásicas (S/10) + 3 Rosas rosadas baby (S/9) + 3 Alstroemerias rojas (S/4.5) + Ruscus verde (S/2.5)",
+    "costFlower": "26.00",
+    "costPack": "6.50",
+    "cogs": "11111.05",
+    "pvp": "75.00",
+    "margin": "-14714.7%",
+    "imageLocal": "./images/03_Demon_Slayer.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/17vwhp4uOUZhUa5_euFcmNwyrODz9s7ke",
+    "driveUrl": "https://drive.google.com/file/d/17vwhp4uOUZhUa5_euFcmNwyrODz9s7ke/view",
+    "votes": 9,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-03_DemonSlayer_Tanjiro_Respiracion_Fuego.jpg"
+  },
+  {
+    "id": "POP-17",
+    "sku": "POP-17",
+    "name": "El Infinito / Seis Ojos: Satoru Gojo (Jujutsu Kaisen)",
+    "collection": "Anime & Shonen",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Comunidad masiva otaku de Lima, novios y fans de Jujutsu",
+    "recipe": "5 Rosas blancas puras (S/15) + 4 Statice morado/azul (S/10) + Gypsophila (S/2.5) + Eucalipto (S/2.5)",
+    "costFlower": "30.00",
+    "costPack": "7.00",
+    "cogs": "25251.05",
+    "pvp": "85.00",
+    "margin": "-29607.1%",
+    "imageLocal": "./images/17_Jujutsu_Gojo.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1ZVKKsCJ9nYCCieXacUk1MNxwS77xatNC",
+    "driveUrl": "https://drive.google.com/file/d/1ZVKKsCJ9nYCCieXacUk1MNxwS77xatNC/view",
+    "votes": 7,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-17_Jujutsu_Gojo_El_Infinito.jpg"
+  },
+  {
+    "id": "POP-13",
+    "sku": "POP-13",
+    "name": "Mercenario Bocón: Wade (Deadpool)",
+    "collection": "Cine & Streaming",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Fans de Marvel y novios frikis con sentido del humor",
+    "recipe": "6 Rosas rojas clásicas (S/15) + 4 Claveles rojos (S/7.2) + Ruscus verde (S/2)",
+    "costFlower": "24.20",
+    "costPack": "6.00",
+    "cogs": "21211.05",
+    "pvp": "69.00",
+    "margin": "-30640.7%",
+    "imageLocal": "./images/13_Deadpool.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1gcqo3nsMAJ__qlIsP78RQWz_fK8SqKGJ",
+    "driveUrl": "https://drive.google.com/file/d/1gcqo3nsMAJ__qlIsP78RQWz_fK8SqKGJ/view",
+    "votes": 3,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-13_Mercenario_Boc_n_Wade_Deadpool_.jpg"
+  },
+  {
+    "id": "POP-05",
+    "sku": "POP-05",
+    "name": "El Sombrero de Paja: Luffy (One Piece)",
+    "collection": "Anime & Shonen",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Fans incondicionales de One Piece, chicos y parejas aventureras",
+    "recipe": "2 Girasoles tradicionales (S/9) + 4 Rosas rojas clásicas (S/10) + 4 Claveles rojos (S/7.2) + Eucalipto (S/2.5)",
+    "costFlower": "28.70",
+    "costPack": "6.50",
+    "cogs": "13131.05",
+    "pvp": "79.00",
+    "margin": "-16521.6%",
+    "imageLocal": "./images/05_One_Piece.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1L71iMtC60bZjI71XL_bIclnEHQTpQT96",
+    "driveUrl": "https://drive.google.com/file/d/1L71iMtC60bZjI71XL_bIclnEHQTpQT96/view",
+    "votes": 5,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-05_El_Sombrero_de_Paja_Luffy_One_Piece_.jpg"
+  },
+  {
+    "id": "POP-22",
+    "sku": "POP-22",
+    "name": "Waku Waku Peanut: Anya Forger (Spy x Family)",
+    "collection": "Anime & Shonen",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Público tierno, parejas jóvenes y regalos de cariño",
+    "recipe": "5 Rosas rosadas baby (S/15) + 3 Alstroemerias blancas (S/4.5) + 2 Margaritas blancas (S/3.6) + Gypsophila (S/2.5)",
+    "costFlower": "25.60",
+    "costPack": "6.00",
+    "cogs": "30301.05",
+    "pvp": "69.00",
+    "margin": "-43814.6%",
+    "imageLocal": "./images/22_SpyFamily_Anya.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/18xCaJBH6VBbGjS1u8c9OmrWKmXBmlihS",
+    "driveUrl": "https://drive.google.com/file/d/18xCaJBH6VBbGjS1u8c9OmrWKmXBmlihS/view",
+    "votes": 7,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-22_SpyFamily_Anya_Waku_Waku.jpg"
+  },
+  {
+    "id": "POP-29",
+    "sku": "POP-29",
+    "name": "Voto Eterno: Emily (La Novia Cadáver)",
+    "collection": "Gótico & Terror",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Top ventas Halloween para novias/enamoradas, estilo gótico romántico",
+    "recipe": "5 Rosas blancas (S/15) + 4 Statice morado/azul (S/10) + Gypsophila (S/2.5) + Eucalipto (S/2.5)",
+    "costFlower": "30.00",
+    "costPack": "7.00",
+    "cogs": "37371.05",
+    "pvp": "85.00",
+    "margin": "-43865.9%",
+    "imageLocal": "./images/29_NoviaCadaver_Emily.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1v1M9x4fdYLMT7VAn2fm39qRcekLZMyM7",
+    "driveUrl": "https://drive.google.com/file/d/1v1M9x4fdYLMT7VAn2fm39qRcekLZMyM7/view",
+    "votes": 5,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-04",
+    "sku": "POP-04",
+    "name": "Pikachu & Gengar Spooky Bloom (Pokemon)",
+    "collection": "Gaming & Pop Icons",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Gamers, novias tiernas, fans de Nintendo y Pokemon Go",
+    "recipe": "2 Girasoles medianos (S/9) + 4 Rosas amarillas (S/12) + 4 Statice morado (S/10) + Gypsophila (S/2.5)",
+    "costFlower": "33.50",
+    "costPack": "6.50",
+    "cogs": "12121.05",
+    "pvp": "85.00",
+    "margin": "-14160.1%",
+    "imageLocal": "./images/04_Pokemon_Spooky.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1fnkfkFX4Hmn5nVa7jd392TEzPc9osDby",
+    "driveUrl": "https://drive.google.com/file/d/1fnkfkFX4Hmn5nVa7jd392TEzPc9osDby/view",
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-04_Pikachu_Gengar_Spooky_Bloom_Pokemon_.jpg"
+  },
+  {
+    "id": "HP-03",
+    "sku": "HP-03",
+    "name": "El Vuelo del Intelecto (Ravenclaw)",
+    "collection": "Harry Potter",
+    "categoryTag": "Harry Potter",
+    "badgeColor": "gold",
+    "persona": "Estudiantes universitarios, personalidades analíticas, amantes del azul",
+    "recipe": "4 Rosas tintadas azul zafiro (S/18) + 3 Rosas blancas Mondial (S/9) + 3 Eryngium / Statice azul (S/7.5) + Eucalipto (S/2.5)",
+    "costFlower": "37.00",
+    "costPack": "7.50",
+    "cogs": "441.05",
+    "pvp": "95.00",
+    "margin": "-364.3%",
+    "imageLocal": "./images/03_Ravenclaw_El_Vuelo_Del_Intelecto.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1KSZlVxZVKA4eNomhLbkFCPcoU9waS3b0",
+    "driveUrl": "https://drive.google.com/file/d/1KSZlVxZVKA4eNomhLbkFCPcoU9waS3b0/view",
+    "votes": 7,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HP-03_Ravenclaw_El_Vuelo_Del_Intelecto.jpg"
+  },
+  {
+    "id": "HP-04",
+    "sku": "HP-04",
+    "name": "La Lealtad Dorada (Hufflepuff)",
+    "collection": "Harry Potter",
+    "categoryTag": "Harry Potter",
+    "badgeColor": "gold",
+    "persona": "Parejas cálidas, amigos leales, amantes de girasoles y estilo rústico",
+    "recipe": "3 Girasoles grandes (S/13.5) + 4 Rosas amarillas (S/12) + 3 Alstroemerias amarillas (S/4.5) + Gypsophila (S/2.5)",
+    "costFlower": "32.50",
+    "costPack": "6.50",
+    "cogs": "551.05",
+    "pvp": "85.00",
+    "margin": "-548.3%",
+    "imageLocal": "./images/04_Hufflepuff_La_Lealtad_Dorada.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1s-Oue80XLeLYrraufj4Qf3-aaaHdCA-N",
+    "driveUrl": "https://drive.google.com/file/d/1s-Oue80XLeLYrraufj4Qf3-aaaHdCA-N/view",
+    "votes": 3,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HP-04_Hufflepuff_La_Lealtad_Dorada.jpg"
+  },
+  {
+    "id": "HW-03",
+    "sku": "HW-03",
+    "name": "Detalle Dark (Pack 3 - Entrada)",
+    "collection": "Halloween Tradicional",
+    "categoryTag": "Halloween Tradicional",
+    "badgeColor": "purple",
+    "persona": "Regalo accesible, detalle rápido, amigos secretos",
+    "recipe": "3 Rosas rojas oscuras (S/7.5) + 2 Claveles tintados negros (S/4) + Gypsophila (S/2)",
+    "costFlower": "13.50",
+    "costPack": "4.50",
+    "cogs": "881.05",
+    "pvp": "45.00",
+    "margin": "-1857.9%",
+    "imageLocal": "./images/03_Halloween_Detalle_Dark_Cono.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1UOaplsJyQvnzH1wAnabieSkbxOIP1SRl",
+    "driveUrl": "https://drive.google.com/file/d/1UOaplsJyQvnzH1wAnabieSkbxOIP1SRl/view",
+    "votes": 9,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_HW-03_Halloween_Detalle_Dark.jpg"
+  },
+  {
+    "id": "POP-02",
+    "sku": "POP-02",
+    "name": "Mystery Violet (K-Pop Demon Hunters)",
+    "collection": "Cine & Streaming",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Público femenino 16-28; fans K-Pop y dramas coreanos",
+    "recipe": "5 Rosas blancas tradicionales (S/15) + 3 Statice morado (S/7.5) + 2 Claveles blancos (S/3.6) + Eucalipto (S/2.5)",
+    "costFlower": "28.60",
+    "costPack": "6.50",
+    "cogs": "10101.05",
+    "pvp": "79.00",
+    "margin": "-12686.1%",
+    "imageLocal": "./images/02_Kpop_Demon_Hunters.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1t1lQFkpc9tvU275Rvj_QiCPMD9F1SLij",
+    "driveUrl": "https://drive.google.com/file/d/1t1lQFkpc9tvU275Rvj_QiCPMD9F1SLij/view",
+    "votes": 8,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-02_Mystery_Violet_K_Pop_Demon_Hunters_.jpg"
+  },
+  {
+    "id": "POP-07",
+    "sku": "POP-07",
+    "name": "Plus Ultra: Deku vs Bakugo (Boku no Hero)",
+    "collection": "Anime & Shonen",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Jóvenes otakus y parejas afines",
+    "recipe": "4 Rosas naranjas (S/12.8) + 3 Rosas blancas (S/9) + 3 Alstroemerias amarillas (S/4.5) + Ruscus vivo (S/3)",
+    "costFlower": "29.30",
+    "costPack": "6.50",
+    "cogs": "15151.05",
+    "pvp": "79.00",
+    "margin": "-19078.5%",
+    "imageLocal": "./images/07_Boku_No_Hero.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/12NzLEhiWyBVqFsK-SjDeU4iQ_i1wQVaJ",
+    "driveUrl": "https://drive.google.com/file/d/12NzLEhiWyBVqFsK-SjDeU4iQ_i1wQVaJ/view",
+    "votes": 9,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-07_Plus_Ultra_Deku_vs_Bakugo_Boku_no_Hero_.jpg"
+  },
+  {
+    "id": "POP-08",
+    "sku": "POP-08",
+    "name": "El Amuleto Mágico (Miraculous Ladybug)",
+    "collection": "Gaming & Pop Icons",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Público familiar, niñas, adolescentes y mamás",
+    "recipe": "6 Rosas rojas clásicas (S/15) + 4 Claveles blancos (S/7.2) + Gypsophila (S/2.5) + Ruscus (S/2)",
+    "costFlower": "26.70",
+    "costPack": "6.00",
+    "cogs": "16161.05",
+    "pvp": "69.00",
+    "margin": "-23321.8%",
+    "imageLocal": "./images/08_Ladybug.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1jeNn8h1qqjOHCquu4qqQr7ageKSbV9f-",
+    "driveUrl": "https://drive.google.com/file/d/1jeNn8h1qqjOHCquu4qqQr7ageKSbV9f-/view",
+    "votes": 7,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-08_El_Amuleto_M_gico_Miraculous_Ladybug_.jpg"
+  },
+  {
+    "id": "POP-09",
+    "sku": "POP-09",
+    "name": "Toro Negro Antimagia: Asta (Black Clover)",
+    "collection": "Anime & Shonen",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Fans shonen; superación, perseverancia y fuerza",
+    "recipe": "5 Rosas rojas oscuras (S/12.5) + 3 Claveles tintados vino (S/5.4) + 2 Crisantemos vino (S/3.6) + Eucalipto (S/2.5)",
+    "costFlower": "24.00",
+    "costPack": "6.00",
+    "cogs": "17171.05",
+    "pvp": "69.00",
+    "margin": "-24785.6%",
+    "imageLocal": "./images/09_Black_Clover.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1t2d8YwtgkqXtOkDGXMIdHAoAMEBhGqde",
+    "driveUrl": "https://drive.google.com/file/d/1t2d8YwtgkqXtOkDGXMIdHAoAMEBhGqde/view",
+    "votes": 8,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-09_Toro_Negro_Antimagia_Asta_Black_Clover_.jpg"
+  },
+  {
+    "id": "POP-10",
+    "sku": "POP-10",
+    "name": "Bloque Dorado: Creeper & Gold (Minecraft)",
+    "collection": "Gaming & Pop Icons",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Gamers, streamers, adolescentes y niños",
+    "recipe": "2 Girasoles tradicionales (S/9) + 4 Pompones amarillos (S/7.2) + 4 Rosas blancas (S/12) + Follaje verde (S/3)",
+    "costFlower": "31.20",
+    "costPack": "6.50",
+    "cogs": "18181.05",
+    "pvp": "79.00",
+    "margin": "-22914.0%",
+    "imageLocal": "./images/10_Minecraft.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1_aQh_QB3utNCV_lQacb7v5yx72a_4Pbt",
+    "driveUrl": "https://drive.google.com/file/d/1_aQh_QB3utNCV_lQacb7v5yx72a_4Pbt/view",
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-10_Bloque_Dorado_Creeper_Gold_Minecraft_.jpg"
+  },
+  {
+    "id": "POP-11",
+    "sku": "POP-11",
+    "name": "Vestido de Novia Rojo: Lydia Deetz (Beetlejuice 2)",
+    "collection": "Cine & Streaming",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Fans de Tim Burton y gótico chic romántico",
+    "recipe": "5 Rosas rojas terciopelo (S/12.5) + 3 Claveles rojos (S/5.4) + 2 Alstroemerias rojas (S/3) + Eucalipto (S/2.5)",
+    "costFlower": "23.40",
+    "costPack": "6.50",
+    "cogs": "19191.05",
+    "pvp": "69.00",
+    "margin": "-27713.1%",
+    "imageLocal": "./images/11_Beetlejuice_Lydia.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1WHwtvRhAXOyC2W4JYNmwDFBcQMlCkAfZ",
+    "driveUrl": "https://drive.google.com/file/d/1WHwtvRhAXOyC2W4JYNmwDFBcQMlCkAfZ/view",
+    "votes": 9,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-11_Vestido_de_Novia_Rojo_Lydia_Deetz_Beetlejuice_2_.jpg"
+  },
+  {
+    "id": "POP-12",
+    "sku": "POP-12",
+    "name": "Rayas Fantasma: El Bio-Exorcista (Beetlejuice)",
+    "collection": "Cine & Streaming",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Parejas y amigos que buscan algo cómico y extravagante",
+    "recipe": "4 Rosas blancas (S/12) + 4 Crisantemos blancos (S/7.2) + 2 Pompones verdes (S/4) + Follaje (S/2.5)",
+    "costFlower": "25.70",
+    "costPack": "6.50",
+    "cogs": "20201.05",
+    "pvp": "75.00",
+    "margin": "-26834.7%",
+    "imageLocal": "./images/12_Beetlejuice_Stripes.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1rFcN6MFzZ7d2JPcLl8iFFlNGBTGHRm3c",
+    "driveUrl": "https://drive.google.com/file/d/1rFcN6MFzZ7d2JPcLl8iFFlNGBTGHRm3c/view",
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-12_Rayas_Fantasma_El_Bio_Exorcista_Beetlejuice_.jpg"
+  },
+  {
+    "id": "POP-14",
+    "sku": "POP-14",
+    "name": "Garras Amarillas: Logan (Wolverine)",
+    "collection": "Cine & Streaming",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Regalo de fuerza, carácter y hermandad masculina",
+    "recipe": "3 Girasoles grandes (S/13.5) + 4 Rosas amarillas (S/12) + 3 Alstroemerias amarillas (S/4.5) + Eucalipto (S/2.5)",
+    "costFlower": "32.50",
+    "costPack": "6.50",
+    "cogs": "22221.05",
+    "pvp": "85.00",
+    "margin": "-26042.4%",
+    "imageLocal": "./images/14_Wolverine.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/12746TkEgr7B_hHPNV2utcxfhwuTSjA4T",
+    "driveUrl": "https://drive.google.com/file/d/12746TkEgr7B_hHPNV2utcxfhwuTSjA4T/view",
+    "votes": 4,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-15",
+    "sku": "POP-15",
+    "name": "Torbellino Naranja: Ansiedad (Intensamente 2)",
+    "collection": "Cine & Streaming",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Jóvenes universitarias y regalos de empatía emocional",
+    "recipe": "4 Rosas naranjas (S/12.8) + 3 Alstroemerias naranjas (S/4.5) + 3 Claveles naranja (S/5.4) + Follaje (S/2.5)",
+    "costFlower": "25.20",
+    "costPack": "6.00",
+    "cogs": "23231.05",
+    "pvp": "69.00",
+    "margin": "-33568.2%",
+    "imageLocal": "./images/15_InsideOut_Anxiety.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/12dK4BgRZFkwLFwWrq6gi01e9aFeNf29J",
+    "driveUrl": "https://drive.google.com/file/d/12dK4BgRZFkwLFwWrq6gi01e9aFeNf29J/view",
+    "votes": 5,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-16",
+    "sku": "POP-16",
+    "name": "Menta & Brillo: Envidia (Intensamente 2)",
+    "collection": "Cine & Streaming",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Amigas que aprecian tonos pastel, frescura y ternura",
+    "recipe": "4 Rosas blancas (S/12) + 3 Pompones verde pastel (S/6) + 3 Alstroemerias blancas (S/4.5) + Gypsophila (S/2.5)",
+    "costFlower": "25.00",
+    "costPack": "6.50",
+    "cogs": "24241.05",
+    "pvp": "72.00",
+    "margin": "-33568.1%",
+    "imageLocal": "./images/16_InsideOut_Envy.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1NC4Y0EZohh5IDP8RvEC9wmM4OQjWvy7x",
+    "driveUrl": "https://drive.google.com/file/d/1NC4Y0EZohh5IDP8RvEC9wmM4OQjWvy7x/view",
+    "votes": 7,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-18",
+    "sku": "POP-18",
+    "name": "El Rey de las Maldiciones: Sukuna (Jujutsu Kaisen)",
+    "collection": "Anime & Shonen",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Regalo de impacto para novios, estilo gótico dominante",
+    "recipe": "6 Rosas rojas clásicas (S/15) + 4 Claveles rojos oscuros (S/7.2) + Follaje oscuro (S/2.5)",
+    "costFlower": "24.70",
+    "costPack": "6.50",
+    "cogs": "26261.05",
+    "pvp": "75.00",
+    "margin": "-34914.7%",
+    "imageLocal": "./images/18_Jujutsu_Sukuna.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1HsonaLVNNfRvjP4EOrXoB-G6iIegUizV",
+    "driveUrl": "https://drive.google.com/file/d/1HsonaLVNNfRvjP4EOrXoB-G6iIegUizV/view",
+    "votes": 4,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-18_Jujutsu_Sukuna_Rey_Maldiciones.jpg"
+  },
+  {
+    "id": "POP-19",
+    "sku": "POP-19",
+    "name": "El Control Carmesí: Makima (Chainsaw Man)",
+    "collection": "Anime & Shonen",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Estilo sobrio, elegante y dominante; novias sofisticadas",
+    "recipe": "6 Rosas rojas de exportación (S/18) + 4 Claveles blancos (S/7.2) + Ruscus (S/2)",
+    "costFlower": "27.20",
+    "costPack": "7.00",
+    "cogs": "27271.05",
+    "pvp": "95.00",
+    "margin": "-28606.4%",
+    "imageLocal": "./images/19_Chainsaw_Makima.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1dyKrz5lfcproGYp6Sz5c6VNybXuyk8Ip",
+    "driveUrl": "https://drive.google.com/file/d/1dyKrz5lfcproGYp6Sz5c6VNybXuyk8Ip/view",
+    "votes": 7,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-19_Chainsaw_Makima_Control_Carmesi.jpg"
+  },
+  {
+    "id": "POP-20",
+    "sku": "POP-20",
+    "name": "El Demonio de Sangre: Power (Chainsaw Man)",
+    "collection": "Anime & Shonen",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Chicas enérgicas, divertidas y espontáneas",
+    "recipe": "4 Rosas rosadas baby (S/12) + 3 Rosas rojas (S/7.5) + 3 Alstroemerias rosas (S/4.5) + Gypsophila (S/2.5)",
+    "costFlower": "26.50",
+    "costPack": "6.00",
+    "cogs": "28281.05",
+    "pvp": "72.00",
+    "margin": "-39179.2%",
+    "imageLocal": "./images/20_Chainsaw_Power.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1xVmqZj8yFEWqwGp9do7wKFunslVZyABq",
+    "driveUrl": "https://drive.google.com/file/d/1xVmqZj8yFEWqwGp9do7wKFunslVZyABq/view",
+    "votes": 6,
+    "hasCharacter": true,
+    "characterImg": "./images/contexto/SLIDE2_POP-20_Chainsaw_Power_Demonio_Sangre.jpg"
+  },
+  {
+    "id": "POP-21",
+    "sku": "POP-21",
+    "name": "Cuervos & Nubes Rojas: Itachi Akatsuki (Naruto)",
+    "collection": "Anime & Shonen",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Fans nostálgicos de Naruto (20-35 años)",
+    "recipe": "6 Rosas rojas nacionales (S/15) + 4 Claveles tintados negros (S/8) + Eucalipto (S/2.5)",
+    "costFlower": "25.50",
+    "costPack": "6.50",
+    "cogs": "29291.05",
+    "pvp": "75.00",
+    "margin": "-38954.7%",
+    "imageLocal": "./images/21_Naruto_Itachi.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1gXSeWAyNCOs5Ok9YJYoRPSnn_CyVY0Ql",
+    "driveUrl": "https://drive.google.com/file/d/1gXSeWAyNCOs5Ok9YJYoRPSnn_CyVY0Ql/view",
+    "votes": 2,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-23",
+    "sku": "POP-23",
+    "name": "Thorn Princess: Yor Forger (Spy x Family)",
+    "collection": "Anime & Shonen",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Mujeres elegantes con gusto por rosas rojas clásicas",
+    "recipe": "6 Rosas rojas clásicas (S/15) + 4 Rosas blancas (S/12) + Ruscus verde (S/2)",
+    "costFlower": "29.00",
+    "costPack": "6.50",
+    "cogs": "31311.05",
+    "pvp": "79.00",
+    "margin": "-39534.2%",
+    "imageLocal": "./images/23_SpyFamily_Yor.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1nuxTQXDsa0pJrJMsU9KBzNXY2PMTqBbc",
+    "driveUrl": "https://drive.google.com/file/d/1nuxTQXDsa0pJrJMsU9KBzNXY2PMTqBbc/view",
+    "votes": 8,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-24",
+    "sku": "POP-24",
+    "name": "Super Mega Cohete: Jinx (Arcane)",
+    "collection": "Gaming & Pop Icons",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Gamers y fans de Arcane 2 en Netflix",
+    "recipe": "5 Rosas blancas (S/15) + 3 Statice morado (S/7.5) + 2 Pompones tintados azul (S/5) + Gypsophila (S/2.5)",
+    "costFlower": "30.00",
+    "costPack": "7.00",
+    "cogs": "32321.05",
+    "pvp": "85.00",
+    "margin": "-37924.8%",
+    "imageLocal": "./images/24_Arcane_Jinx.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1XvuEwxjjeIDlLC5z41Z_g5w8keHukciQ",
+    "driveUrl": "https://drive.google.com/file/d/1XvuEwxjjeIDlLC5z41Z_g5w8keHukciQ/view",
+    "votes": 5,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-25",
+    "sku": "POP-25",
+    "name": "Defensora de Piltóver: Vi (Arcane)",
+    "collection": "Gaming & Pop Icons",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Regalo de fuerza, lealtad y personalidad fuerte",
+    "recipe": "4 Rosas rojas (S/10) + 3 Rosas rosadas baby (S/9) + 3 Claveles rojos (S/5.4) + Eucalipto (S/2.5)",
+    "costFlower": "26.90",
+    "costPack": "6.50",
+    "cogs": "33331.05",
+    "pvp": "75.00",
+    "margin": "-44341.4%",
+    "imageLocal": "./images/25_Arcane_Vi.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1gVFY2ISPWI_9iTTmyUdAGPFnvvtaa6Ns",
+    "driveUrl": "https://drive.google.com/file/d/1gVFY2ISPWI_9iTTmyUdAGPFnvvtaa6Ns/view",
+    "votes": 9,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-26",
+    "sku": "POP-26",
+    "name": "Castillo Champiñón: Princesa Peach (Super Mario)",
+    "collection": "Gaming & Pop Icons",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Regalo dulce, romántico y tradicional para enamoradas",
+    "recipe": "6 Rosas rosadas baby (S/18) + 4 Alstroemerias blancas (S/6) + Gypsophila (S/2.5)",
+    "costFlower": "26.50",
+    "costPack": "6.50",
+    "cogs": "34341.05",
+    "pvp": "75.00",
+    "margin": "-45688.1%",
+    "imageLocal": "./images/26_Mario_Peach.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1SuqIbx-yy41GWvVw3K0PaMvC8rbujNoY",
+    "driveUrl": "https://drive.google.com/file/d/1SuqIbx-yy41GWvVw3K0PaMvC8rbujNoY/view",
+    "votes": 6,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-27",
+    "sku": "POP-27",
+    "name": "La Noche del Terror: Freddy Fazbear (FNAF)",
+    "collection": "Gaming & Pop Icons",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Adolescentes fans de videojuegos de terror",
+    "recipe": "4 Rosas rojas oscuras (S/10) + 3 Claveles amarillos (S/5.4) + 3 Alstroemerias (S/4.5) + Follaje (S/2.5)",
+    "costFlower": "22.40",
+    "costPack": "6.00",
+    "cogs": "35351.05",
+    "pvp": "65.00",
+    "margin": "-54286.2%",
+    "imageLocal": "./images/27_FNAF_Freddy.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/15sFMPYvhyeiSKkmcKhEE5AAHiSvfJgAX",
+    "driveUrl": "https://drive.google.com/file/d/15sFMPYvhyeiSKkmcKhEE5AAHiSvfJgAX/view",
+    "votes": 8,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-28",
+    "sku": "POP-28",
+    "name": "La Guía del Más Allá: Hu Tao (Genshin Impact)",
+    "collection": "Gaming & Pop Icons",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Comunidad otaku gamer de Lima, fans de Genshin",
+    "recipe": "4 Rosas rojas clásicas (S/10) + 3 Margaritas blancas (S/5.4) + 3 Alstroemerias rojas (S/4.5) + Eucalipto (S/2.5)",
+    "costFlower": "22.40",
+    "costPack": "6.00",
+    "cogs": "36361.05",
+    "pvp": "69.00",
+    "margin": "-52597.2%",
+    "imageLocal": "./images/28_Genshin_HuTao.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1VtEsYDmrqmLlKu2NMampS_DmNVbTjZTc",
+    "driveUrl": "https://drive.google.com/file/d/1VtEsYDmrqmLlKu2NMampS_DmNVbTjZTc/view",
+    "votes": 2,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-30",
+    "sku": "POP-30",
+    "name": "Puntadas de Amor: Sally (Pesadilla Antes de Navidad)",
+    "collection": "Gótico & Terror",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Parejas que aman Halloween y Navidad juntos",
+    "recipe": "3 Girasoles medianos (S/13.5) + 4 Rosas rojas (S/10) + 3 Statice morado (S/7.5) + Follaje (S/2.5)",
+    "costFlower": "33.50",
+    "costPack": "6.50",
+    "cogs": "38381.05",
+    "pvp": "89.00",
+    "margin": "-43024.8%",
+    "imageLocal": "./images/30_Jack_Sally.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1-FNUU4yNiJUsoCE7qxoUrAtFMFg_ALJX",
+    "driveUrl": "https://drive.google.com/file/d/1-FNUU4yNiJUsoCE7qxoUrAtFMFg_ALJX/view",
+    "votes": 7,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-31",
+    "sku": "POP-31",
+    "name": "¿Cuál es tu flor favorita?: Ghostface (Scream)",
+    "collection": "Gótico & Terror",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Fans de cine de terror slasher de los 90s/2000s",
+    "recipe": "6 Rosas rojas clásicas (S/15) + 4 Claveles blancos (S/7.2) + Ruscus (S/2)",
+    "costFlower": "24.20",
+    "costPack": "6.00",
+    "cogs": "39391.05",
+    "pvp": "69.00",
+    "margin": "-56988.5%",
+    "imageLocal": "./images/31_Scream_Ghostface.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1VBPNko0hojXxfflaeJdShp2dnhDmXLlD",
+    "driveUrl": "https://drive.google.com/file/d/1VBPNko0hojXxfflaeJdShp2dnhDmXLlD/view",
+    "votes": 5,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-32",
+    "sku": "POP-32",
+    "name": "Todos Flotan Aquí: Pennywise (IT El Payaso)",
+    "collection": "Gótico & Terror",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Impacto visual fuerte para bromas, cinéfilos y Halloween",
+    "recipe": "6 Rosas rojas clásicas (S/15) + 4 Crisantemos blancos (S/7.2) + Gypsophila (S/2.5)",
+    "costFlower": "24.70",
+    "costPack": "6.50",
+    "cogs": "40401.05",
+    "pvp": "75.00",
+    "margin": "-53768.1%",
+    "imageLocal": "./images/32_IT_Pennywise.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/19VEKjw5G0APpCG3D1_HxHwP931xA8-_0",
+    "driveUrl": "https://drive.google.com/file/d/19VEKjw5G0APpCG3D1_HxHwP931xA8-_0/view",
+    "votes": 4,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-33",
+    "sku": "POP-33",
+    "name": "Belleza Venenosa: Morticia Addams",
+    "collection": "Gótico & Terror",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Mujeres elegantes, aniversarios góticos, estilo dark luxury",
+    "recipe": "8 Rosas rojas clásicas de tallo largo (S/20) + 2 Claveles negros (S/4) + Ruscus (S/2)",
+    "costFlower": "26.00",
+    "costPack": "7.00",
+    "cogs": "41411.05",
+    "pvp": "79.00",
+    "margin": "-52319.1%",
+    "imageLocal": "./images/33_Addams_Morticia.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1NVHIUvdqbFJFEfGlET4nqC-3fbojAd47",
+    "driveUrl": "https://drive.google.com/file/d/1NVHIUvdqbFJFEfGlET4nqC-3fbojAd47/view",
+    "votes": 2,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-34",
+    "sku": "POP-34",
+    "name": "Día de Muertos & Halloween: La Catrina Tradicional",
+    "collection": "Gótico & Terror",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Top ventas para quienes celebran la vida, colores vivos y tradición",
+    "recipe": "3 Girasoles grandes (S/13.5) + 4 Rosas rojas (S/10) + 3 Pompones amarillos (S/5.4) + Follaje (S/2.5)",
+    "costFlower": "31.40",
+    "costPack": "6.50",
+    "cogs": "42421.05",
+    "pvp": "85.00",
+    "margin": "-49807.1%",
+    "imageLocal": "./images/34_Catrina_Mexicana.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/13vx2cFHcYPsv2WEeDS7S_DB0SA80CUkR",
+    "driveUrl": "https://drive.google.com/file/d/13vx2cFHcYPsv2WEeDS7S_DB0SA80CUkR/view",
+    "votes": 8,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-35",
+    "sku": "POP-35",
+    "name": "Amor Asesino: Chucky & Tiffany (Dúo)",
+    "collection": "Gótico & Terror",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Parejas que se regalan en Halloween con humor negro",
+    "recipe": "4 Rosas rojas (S/10) + 3 Rosas blancas (S/9) + 3 Claveles rojos (S/5.4) + Ruscus (S/2)",
+    "costFlower": "26.40",
+    "costPack": "6.50",
+    "cogs": "43431.05",
+    "pvp": "75.00",
+    "margin": "-57808.1%",
+    "imageLocal": "./images/35_Chucky_Tiffany.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1X010mo-TO0KXoYeDuNVVcnxx8scebSU6",
+    "driveUrl": "https://drive.google.com/file/d/1X010mo-TO0KXoYeDuNVVcnxx8scebSU6/view",
+    "votes": 4,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-36",
+    "sku": "POP-36",
+    "name": "Gracia Oscura: Ángel Caído / Ángel Negro",
+    "collection": "Gótico & Terror",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Chicas que van a fiestas de disfraces, estética dark fairy",
+    "recipe": "5 Rosas tintadas negras (S/22.5) + 5 Ramas de Gypsophila blanca (S/12.5) + Eucalipto (S/2.5)",
+    "costFlower": "37.50",
+    "costPack": "6.50",
+    "cogs": "44441.05",
+    "pvp": "95.00",
+    "margin": "-46680.1%",
+    "imageLocal": "./images/36_Angel_Caido.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1aCnEJ09mfKhNrNwL7u7fJmrv3lwOLii-",
+    "driveUrl": "https://drive.google.com/file/d/1aCnEJ09mfKhNrNwL7u7fJmrv3lwOLii-/view",
+    "votes": 7,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-37",
+    "sku": "POP-37",
+    "name": "Tentación Dulce: Diablita Coquette",
+    "collection": "Gótico & Terror",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Regalo coqueto para novias/salientes, tendencia coquette dark",
+    "recipe": "6 Rosas rojas comunes (S/15) + 4 Alstroemerias rojas (S/6) + Gypsophila (S/2.5)",
+    "costFlower": "23.50",
+    "costPack": "6.00",
+    "cogs": "45451.05",
+    "pvp": "69.00",
+    "margin": "-65771.1%",
+    "imageLocal": "./images/37_Diablita_Coquette.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1cnXSm8mA7ZZ8o2MxDzh1Nt5I4RK8qrKU",
+    "driveUrl": "https://drive.google.com/file/d/1cnXSm8mA7ZZ8o2MxDzh1Nt5I4RK8qrKU/view",
+    "votes": 6,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-38",
+    "sku": "POP-38",
+    "name": "Deseo Concedido: Cosmo & Wanda (Los Padrinos Mágicos)",
+    "collection": "Retro & Dúos",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Parejas jóvenes con humor y nostalgia de los 2000s",
+    "recipe": "4 Rosas rosadas baby (S/12) + 3 Pompones verdes (S/6) + 3 Alstroemerias blancas (S/4.5) + Gypsophila (S/2.5)",
+    "costFlower": "25.00",
+    "costPack": "6.50",
+    "cogs": "46461.05",
+    "pvp": "72.00",
+    "margin": "-64429.2%",
+    "imageLocal": "./images/38_Cosmo_Wanda.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1MVA-WW6g5sUjGLt7334RTethBXjTbOIo",
+    "driveUrl": "https://drive.google.com/file/d/1MVA-WW6g5sUjGLt7334RTethBXjTbOIo/view",
+    "votes": 3,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-39",
+    "sku": "POP-39",
+    "name": "Misterio a la Orden: Vilma & Daphne (Scooby Doo)",
+    "collection": "Retro & Dúos",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Amigas inseparables, disfraces en dúo, regalos de cumpleaños en octubre",
+    "recipe": "3 Girasoles medianos (S/13.5) + 4 Rosas naranjas (S/12.8) + 3 Statice morado (S/7.5) + Eucalipto (S/2.5)",
+    "costFlower": "36.30",
+    "costPack": "6.50",
+    "cogs": "47471.05",
+    "pvp": "95.00",
+    "margin": "-49869.5%",
+    "imageLocal": "./images/39_Scooby_Doo.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/12Bj50IK8L-LAuYNXEDaxvMn76g5X7GKo",
+    "driveUrl": "https://drive.google.com/file/d/12Bj50IK8L-LAuYNXEDaxvMn76g5X7GKo/view",
+    "votes": 6,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-40",
+    "sku": "POP-40",
+    "name": "Rosa Perfecto: Barbie & Ken Roller",
+    "collection": "Retro & Dúos",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Público femenino y novias coquette, amantes del rosa absoluto",
+    "recipe": "6 Rosas rosadas baby (S/18) + 4 Claveles blancos (S/7.2) + Gypsophila (S/2.5)",
+    "costFlower": "27.70",
+    "costPack": "6.50",
+    "cogs": "48481.05",
+    "pvp": "79.00",
+    "margin": "-61268.4%",
+    "imageLocal": "./images/40_Barbie_Ken.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1oclVcvZ-exI_LDK9mtFaZ0gQDF-gyju_",
+    "driveUrl": "https://drive.google.com/file/d/1oclVcvZ-exI_LDK9mtFaZ0gQDF-gyju_/view",
+    "votes": 6,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-41",
+    "sku": "POP-41",
+    "name": "Amor en el Pantano: Shrek & Fiona",
+    "collection": "Retro & Dúos",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Parejas con sentido del humor y amor verdadero desinteresado",
+    "recipe": "3 Girasoles grandes (S/13.5) + 4 Pompones verdes (S/8) + 3 Rosas blancas (S/9) + Eucalipto (S/2.5)",
+    "costFlower": "33.00",
+    "costPack": "6.50",
+    "cogs": "49491.05",
+    "pvp": "89.00",
+    "margin": "-55507.9%",
+    "imageLocal": "./images/41_Shrek_Fiona.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1peAZcJLfBFtFqYl2TP2XkFOjxf4Ez0IR",
+    "driveUrl": "https://drive.google.com/file/d/1peAZcJLfBFtFqYl2TP2XkFOjxf4Ez0IR/view",
+    "votes": 4,
+    "hasCharacter": false,
+    "characterImg": null
+  },
+  {
+    "id": "POP-42",
+    "sku": "POP-42",
+    "name": "Pintando las Rosas de Rojo: Reina de Corazones (Alicia)",
+    "collection": "Retro & Dúos",
+    "categoryTag": "Pop Culture & Gaming",
+    "badgeColor": "amber",
+    "persona": "Clásico de Disney / Tim Burton, novias con personalidad fuerte",
+    "recipe": "5 Rosas rojas clásicas (S/12.5) + 5 Rosas blancas puras (S/15) + Ruscus verde (S/2)",
+    "costFlower": "29.50",
+    "costPack": "6.50",
+    "cogs": "50501.05",
+    "pvp": "82.00",
+    "margin": "-61486.6%",
+    "imageLocal": "./images/42_Reina_Corazones.jpg",
+    "imageOnline": "https://lh3.googleusercontent.com/d/1W37UqNC9XDDzI43IvtjNA8NiXCYP9aQ-",
+    "driveUrl": "https://drive.google.com/file/d/1W37UqNC9XDDzI43IvtjNA8NiXCYP9aQ-/view",
+    "votes": 8,
+    "hasCharacter": false,
+    "characterImg": null
+  }
+];
+    let activeCollection = 'halloween'; // 'halloween' | 'classics' | 'all'
 
-    // Slide state tracking per SKU: 0 = Personaje (first), 1 = Ramo Floral
-    const cardSlides = {};
-    PRODUCTS.forEach(p => {
-      cardSlides[p.sku] = 0;
-    });
-
-    let activeSheetProduct = null;
-    let activeSheetSlide = 0;
-
-    // Generate exact WhatsApp prefilled link to Carlos (975369266)
-    function buildWhatsAppUrl(p) {
-      const pvpFormatted = parseFloat(p.pvp).toFixed(2);
-      const msg = '¡Hola Carlos! 🌸 Quiero pedir el ramo ' + p.name + ' (' + p.sku + ') de S/. ' + pvpFormatted + ' para delivery en Lima.';
-      return 'https://wa.me/51975369266?text=' + encodeURIComponent(msg);
+    function switchCollection(col) {
+      activeCollection = col;
+      document.getElementById('tabHalloween').classList.toggle('active', col === 'halloween');
+      document.getElementById('tabClassics').classList.toggle('active', col === 'classics');
+      document.getElementById('tabAll').classList.toggle('active', col === 'all');
+      renderCatalog();
     }
 
-    // Render Grid
-    function renderGrid() {
+    function renderCatalog() {
       const grid = document.getElementById('productsGrid');
-      const category = document.getElementById('collectionSelect').value;
-      const search = document.getElementById('searchInput').value.toLowerCase().trim();
+      const subCat = document.getElementById('subCategorySelect').value;
 
-      const filtered = PRODUCTS.filter(p => {
-        const matchesCat = (category === 'all') || (p.collection === category);
-        const matchesSearch = !search || 
-          p.name.toLowerCase().includes(search) ||
-          p.sku.toLowerCase().includes(search) ||
-          p.recipe.toLowerCase().includes(search) ||
-          p.collection.toLowerCase().includes(search);
-        return matchesCat && matchesSearch;
+      const filtered = CATALOG.filter(p => {
+        let matchCol = true;
+        if (activeCollection === 'halloween') matchCol = p.collection !== 'Clásicos ADORA';
+        else if (activeCollection === 'classics') matchCol = p.collection === 'Clásicos ADORA';
+
+        let matchSub = true;
+        if (subCat !== 'all') {
+          matchSub = p.collection === subCat || p.categoryTag === subCat;
+        }
+
+        return matchCol && matchSub;
       });
 
-      document.getElementById('resultsLabel').textContent = 'Mostrando ' + filtered.length + ' de ' + PRODUCTS.length + ' ramos';
-
-      if (filtered.length === 0) {
-        grid.innerHTML = '<div style="grid-column: 1 / -1; text-align:center; padding:50px 20px; color:var(--text-dim);">' +
-          '<div style="font-size:2rem; margin-bottom:8px;">🎃</div>' +
-          '<p style="font-size:0.95rem; font-weight:600;">No encontramos ramos con esa búsqueda.</p>' +
-          '</div>';
-        return;
-      }
+      document.getElementById('catalogCount').textContent = 'Mostrando ' + filtered.length + ' ramos';
 
       grid.innerHTML = filtered.map(p => {
-        const hasChar = p.hasCharacter && p.characterImg;
-        const currentSlide = cardSlides[p.sku] !== undefined ? cardSlides[p.sku] : 0;
-        
-        // Slide 0 = character, Slide 1 = arrangement
-        const imgSrc = (hasChar && currentSlide === 0) ? p.characterImg : p.imageLocal;
-        const fallbackSrc = p.imageOnline;
+        const hasPair = p.hasCharacter && p.characterImg;
         const pvpFormatted = parseFloat(p.pvp).toFixed(2);
-        const waUrl = buildWhatsAppUrl(p);
+        
+        // Exact WhatsApp text
+        const waText = '¡Hola Carlos! 🌸 Quiero pedir el ramo ' + p.name + ' (' + p.sku + ') de S/. ' + pvpFormatted + ' para delivery en Lima.';
+        const waUrl = 'https://wa.me/51975369266?text=' + encodeURIComponent(waText);
 
         return `
-        <article class="card" id="card-${p.sku}">
-          <!-- MEDIA AREA WITH TAP TO FLIP -->
-          <div class="card-media" onclick="toggleCardSlide('${p.sku}')">
-            <span class="card-tag">${p.sku}</span>
-
-            <img 
-              id="img-${p.sku}" 
-              src="${imgSrc}" 
-              alt="${p.name}" 
-              loading="lazy"
-              onerror="this.onerror=null; this.src='${fallbackSrc}';"
-            />
-
-            <div class="card-carousel-bar">
-              <span class="slide-label" id="label-${p.sku}">
-                ${hasChar ? (currentSlide === 0 ? '👤 Personaje' : '💐 Ramo') : '💐 Ramo'}
-              </span>
-              ${hasChar ? `
-                <div class="dots-container">
-                  <div class="dot ${currentSlide === 0 ? 'active' : ''}"></div>
-                  <div class="dot ${currentSlide === 1 ? 'active' : ''}"></div>
-                </div>
-              ` : ''}
-            </div>
+        <div class="product-item" id="item-${p.sku}">
+          <!-- MEDIA CON HOVER AUTOMÁTICO -->
+          <div class="product-media" onclick="handleMediaTouch('${p.sku}')">
+            <span class="sku-badge">${p.sku}</span>
+            
+            ${hasPair ? `
+              <!-- Slide 1: Personaje -->
+              <img 
+                class="media-primary has-pair" 
+                id="prim-${p.sku}"
+                src="${p.characterImg}" 
+                alt="${p.name} - Personaje" 
+                loading="lazy"
+              />
+              <!-- Slide 2: Ramo Floral (Visible al hacer hover en desktop) -->
+              <img 
+                class="media-secondary has-pair" 
+                id="sec-${p.sku}"
+                src="${p.imageLocal}" 
+                alt="${p.name} - Ramo" 
+                loading="lazy"
+                onerror="this.onerror=null; this.src='${p.imageOnline}';"
+              />
+              <span class="hover-hint">Hover / Toca</span>
+            ` : `
+              <!-- Solo Ramo -->
+              <img 
+                src="${p.imageLocal}" 
+                alt="${p.name}" 
+                loading="lazy"
+                onerror="this.onerror=null; this.src='${p.imageOnline}';"
+              />
+            `}
           </div>
 
-          <!-- CARD INFO -->
-          <div class="card-info">
-            <div class="card-title-group" onclick="openSheet('${p.sku}')">
-              <h3 class="card-title">${p.name}</h3>
-              <div class="card-collection">${p.collection}</div>
-            </div>
-
-            <div class="card-action-row">
-              <div class="card-price" onclick="openSheet('${p.sku}')">
-                <span>S/</span>${pvpFormatted}
-              </div>
-
-              <a href="${waUrl}" target="_blank" class="btn-wa-card">
-                💬 Pedir
-              </a>
-            </div>
+          <!-- DETALLES EDITORIALES AL AIRE (SIN MARCOS RECTANGULARES) -->
+          <div class="product-details">
+            <div class="product-collection-label">${p.collection}</div>
+            <h3 class="product-name" onclick="openDetailSheet('${p.sku}')">${p.name}</h3>
+            <div class="product-price">S/ ${pvpFormatted}</div>
+            <a href="${waUrl}" target="_blank" class="btn-wa-compact">
+              💬 Pedir por WhatsApp
+            </a>
           </div>
-        </article>
+        </div>
         `;
       }).join('');
     }
 
-    // Toggle card image between Character & Floral Arrangement
-    function toggleCardSlide(sku) {
-      const p = PRODUCTS.find(item => item.sku === sku);
-      if (!p || !p.hasCharacter) {
-        // If it doesn't have character, open sheet directly on tap
-        openSheet(sku);
-        return;
-      }
-
-      cardSlides[sku] = cardSlides[sku] === 0 ? 1 : 0;
-      const current = cardSlides[sku];
-
-      const img = document.getElementById('img-' + sku);
-      const label = document.getElementById('label-' + sku);
-      const card = document.getElementById('card-' + sku);
-
-      if (img) {
-        img.style.opacity = '0.5';
-        setTimeout(() => {
-          img.src = current === 0 ? p.characterImg : p.imageLocal;
-          img.onerror = () => { img.src = p.imageOnline; };
-          img.style.opacity = '1';
-        }, 120);
-      }
-
-      if (label) {
-        label.textContent = current === 0 ? '👤 Personaje' : '💐 Ramo';
-      }
-
-      if (card) {
-        const dots = card.querySelectorAll('.dot');
-        dots.forEach((dot, idx) => {
-          dot.classList.toggle('active', idx === current);
-        });
+    // Touch support para móviles
+    function handleMediaTouch(sku) {
+      const prim = document.getElementById('prim-' + sku);
+      const sec = document.getElementById('sec-' + sku);
+      if (prim && sec) {
+        prim.classList.toggle('active-touch');
+        sec.classList.toggle('active-touch');
+      } else {
+        openDetailSheet(sku);
       }
     }
 
-    // Filter Trigger
-    function handleFilterChange() {
-      renderGrid();
-    }
-
-    // Bottom Sheet (Mobile native feel)
-    function openSheet(sku) {
-      const p = PRODUCTS.find(item => item.sku === sku);
+    // Detail Bottom Sheet
+    function openDetailSheet(sku) {
+      const p = CATALOG.find(x => x.sku === sku);
       if (!p) return;
-
-      activeSheetProduct = p;
-      activeSheetSlide = cardSlides[sku] || 0;
 
       document.getElementById('sheetSub').textContent = p.sku + ' • ' + p.collection;
       document.getElementById('sheetTitle').textContent = p.name;
+      document.getElementById('sheetPrice').textContent = 'S/ ' + parseFloat(p.pvp).toFixed(2);
       document.getElementById('sheetRecipe').textContent = p.recipe;
-      document.getElementById('sheetPersona').textContent = p.persona || 'Detalle exclusivo para regalo o celebración de Halloween.';
-      document.getElementById('sheetPrice').innerHTML = '<span>S/</span> ' + parseFloat(p.pvp).toFixed(2);
       
-      const waBtn = document.getElementById('sheetWaBtn');
-      waBtn.href = buildWhatsAppUrl(p);
+      const pvpFormatted = parseFloat(p.pvp).toFixed(2);
+      const waText = '¡Hola Carlos! 🌸 Quiero pedir el ramo ' + p.name + ' (' + p.sku + ') de S/. ' + pvpFormatted + ' para delivery en Lima.';
+      document.getElementById('sheetWaLink').href = 'https://wa.me/51975369266?text=' + encodeURIComponent(waText);
 
-      const pills = document.getElementById('sheetTogglePills');
-      if (p.hasCharacter && p.characterImg) {
-        pills.style.display = 'flex';
-        updateSheetMedia();
-      } else {
-        pills.style.display = 'none';
-        const img = document.getElementById('sheetImg');
-        img.src = p.imageLocal;
-        img.onerror = () => { img.src = p.imageOnline; };
-      }
+      // Prefer arrangement photo in sheet
+      document.getElementById('sheetImg').src = p.imageLocal;
+      document.getElementById('sheetImg').onerror = () => {
+        document.getElementById('sheetImg').src = p.imageOnline;
+      };
 
       document.getElementById('sheetOverlay').classList.add('active');
       document.getElementById('bottomSheet').classList.add('active');
       document.body.style.overflow = 'hidden';
-    }
-
-    function updateSheetMedia() {
-      if (!activeSheetProduct) return;
-      const p = activeSheetProduct;
-      const img = document.getElementById('sheetImg');
-      const tabChar = document.getElementById('sheetTabChar');
-      const tabArr = document.getElementById('sheetTabArr');
-
-      if (activeSheetSlide === 0 && p.hasCharacter) {
-        img.src = p.characterImg;
-        if (tabChar) tabChar.classList.add('active');
-        if (tabArr) tabArr.classList.remove('active');
-      } else {
-        img.src = p.imageLocal;
-        img.onerror = () => { img.src = p.imageOnline; };
-        if (tabChar) tabChar.classList.remove('active');
-        if (tabArr) tabArr.classList.add('active');
-      }
-    }
-
-    function switchSheetSlide(type) {
-      activeSheetSlide = (type === 'char') ? 0 : 1;
-      updateSheetMedia();
-    }
-
-    function toggleSheetSlide() {
-      if (!activeSheetProduct || !activeSheetProduct.hasCharacter) return;
-      activeSheetSlide = activeSheetSlide === 0 ? 1 : 0;
-      updateSheetMedia();
     }
 
     function closeSheet() {
@@ -948,13 +2068,12 @@
       document.body.style.overflow = '';
     }
 
-    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeSheet();
     });
 
-    // Initial render
-    renderGrid();
+    // Start
+    renderCatalog();
   </script>
 </body>
 </html>
