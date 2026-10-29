@@ -13,7 +13,7 @@
 
   <style>
     /* =========================================================
-       SISTEMA DE DISEÑO ADORA — PALETA DE AUTOR & ARMONÍA PASTEL
+       SISTEMA DE DISEÑO EDITORIAL ADORA — ARMONÍA Y ALTA GAMA
        ========================================================= */
     :root {
       /* MODO CLÁSICO (ALABASTRO, MARFIL, ROSAS & TINTA NEGRA) */
@@ -26,9 +26,9 @@
       --text-muted: #71717a;
       --border: #e7e5e0;
       --border-subtle: #f0eee8;
-      --accent-main: #991b1b; /* Carmín sobrio */
-      --accent-soft: #d4a373; /* Arena / Champaña pastel */
-      --price-color: #18181b; /* Precio monocromático elegante */
+      --accent-main: #18181b;
+      --accent-soft: #c49a6c;
+      --price-color: #18181b;
       --nav-bg: rgba(252, 251, 249, 0.95);
       --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
       --banner-bg: #18181b;
@@ -37,12 +37,13 @@
       --chip-text: #3f3f46;
       --chip-border: #e4e2db;
       --chip-active-bg: #18181b;
+      --chip-active-border: #18181b;
       --chip-active-text: #ffffff;
       --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
       --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
 
-    /* MODO HALLOWEEN (NOCTURNO SOFISTICADO: TERRACOTA PASTEL & LUZ DE VELA CALMA) */
+    /* MODO HALLOWEEN (NOCTURNO DE AUTOR: TERRACOTA PASTEL & LUZ DE VELA CALMA) */
     body.theme-halloween {
       --bg: #0b0c10;
       --bg-surface: #12141a;
@@ -53,9 +54,9 @@
       --text-muted: #71717a;
       --border: rgba(255, 255, 255, 0.09);
       --border-subtle: rgba(255, 255, 255, 0.05);
-      --accent-main: #cf7b56; /* Terracota / Calabaza pastel suave (cero estridencias) */
-      --accent-soft: #d8a27a; /* Albaricoque nude pastel */
-      --price-color: #d4a373; /* Arena cálido suave y noble */
+      --accent-main: #cf7b56;
+      --accent-soft: #d8a27a;
+      --price-color: #d4a373;
       --nav-bg: rgba(11, 12, 16, 0.95);
       --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
       --banner-bg: #000000;
@@ -224,7 +225,6 @@
       padding: 0 20px;
     }
 
-    /* HERO CLÁSICO: FOTO DE CAMPO DE ROSAS (CON TARJETA DE CRISTAL DESPEJADA) */
     .hero-classic {
       background-image: url('./images/brand/hero_classic_gemini.jpg');
       background-size: cover;
@@ -320,7 +320,6 @@
       border-color: var(--accent-main);
     }
 
-    /* HERO HALLOWEEN: FOTO GÓTICA NOCTURNA CON TONOS PASTEL DE AUTOR */
     .hero-halloween {
       background-image: url('./images/brand/hero_halloween_gemini.jpg');
       background-size: cover;
@@ -372,7 +371,6 @@
       text-shadow: 0 1px 8px rgba(0,0,0,0.8);
     }
 
-    /* BOTÓN HERO: TONO PASTEL ARMONIOSO Y ELEGANTE */
     .hero-single-cta {
       background: var(--accent-main);
       color: #ffffff !important;
@@ -395,7 +393,7 @@
       box-shadow: 0 8px 24px rgba(0,0,0,0.35);
     }
 
-    /* 4. BARRA DE CATEGORÍAS (COLORES PASTEL SOSEGADOS & SCROLL INVISIBLE) */
+    /* 4. BARRA DE CATEGORÍAS (SCROLL INVISIBLE) */
     .filter-bar-container {
       max-width: 1240px;
       margin: 28px auto 14px auto;
@@ -435,7 +433,7 @@
     }
 
     .cat-chip:hover {
-      border-color: var(--accent-main);
+      border-color: var(--accent-soft);
     }
 
     .cat-chip.active {
@@ -451,10 +449,10 @@
       opacity: 0.75;
     }
 
-    /* 5. GRILLA DE PRODUCTOS EDITORIAL (SIN ETIQUETAS DEBAJO DE LA FOTO) */
+    /* 5. GRILLA DE PRODUCTOS EDITORIAL (ESPACIADO NOBLE) */
     .catalog-section {
       max-width: 1240px;
-      margin: 10px auto 60px auto;
+      margin: 10px auto 70px auto;
       padding: 0 20px;
     }
 
@@ -484,7 +482,7 @@
     .products-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 22px 14px;
+      gap: 26px 16px;
     }
 
     @media (min-width: 768px) {
@@ -513,7 +511,7 @@
       position: relative;
       width: 100%;
       aspect-ratio: 9/13;
-      border-radius: 10px;
+      border-radius: 12px;
       overflow: hidden;
       background: var(--bg-alt);
       box-shadow: var(--card-shadow);
@@ -528,7 +526,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      transition: opacity 0.4s ease, transform 0.5s ease;
+      transition: opacity 0.45s ease, transform 0.5s ease;
     }
 
     .card-img-primary {
@@ -543,11 +541,11 @@
 
     @media (hover: hover) {
       .product-card:hover .card-img-primary {
-        transform: scale(1.04);
+        transform: scale(1.03);
       }
       .product-card:hover .card-img-secondary {
         opacity: 1;
-        transform: scale(1.04);
+        transform: scale(1.03);
       }
     }
 
@@ -556,11 +554,11 @@
       bottom: 8px;
       right: 8px;
       z-index: 3;
-      background: rgba(0, 0, 0, 0.60);
+      background: rgba(0, 0, 0, 0.55);
       color: #f4f4f6;
-      backdrop-filter: blur(4px);
-      padding: 3px 8px;
-      border-radius: 4px;
+      backdrop-filter: blur(6px);
+      padding: 3px 9px;
+      border-radius: 9999px;
       font-size: 0.65rem;
       letter-spacing: 0.05em;
       text-transform: uppercase;
@@ -568,11 +566,11 @@
       pointer-events: none;
     }
 
-    /* METADATOS LIMPIOS: CERO ETIQUETAS MULTICOLOR DE CATEGORÍA */
     .card-meta {
       display: flex;
       flex-direction: column;
       gap: 5px;
+      padding: 2px 2px;
     }
 
     .card-title {
@@ -788,7 +786,7 @@
     }
 
     .rate-notice a {
-      color: var(--accent-main);
+      color: var(--accent-soft);
       font-weight: 700;
       text-decoration: underline;
     }
@@ -960,42 +958,55 @@
       cursor: pointer;
     }
 
-    /* 10. MASCOTA ADORO FLOTANTE (TONOS SUAVES NO INVASIVOS) */
-    .adoro-floating-mascot {
+    /* =========================================================
+       10. WIDGET UNIFICADO: ADORO MASCOTA + BOTÓN FLOTANTE WHATSAPP
+       ========================================================= */
+    .floating-companion-wrap {
       position: fixed;
-      bottom: 18px;
-      left: 18px;
+      bottom: 20px;
+      left: 20px;
       z-index: 180;
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+      pointer-events: none;
+    }
+
+    .companion-adoro-col {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      pointer-events: none;
-      transition: transform 0.3s ease, opacity 0.3s ease;
+      pointer-events: auto;
     }
 
     .adoro-bubble {
       background: var(--bg-surface);
       color: var(--text);
       border: 1px solid var(--border);
-      padding: 7px 12px;
-      border-radius: 12px;
-      font-size: 0.73rem;
+      padding: 8px 14px;
+      border-radius: 14px;
+      font-size: 0.74rem;
       font-weight: 600;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.18);
       margin-bottom: 6px;
-      max-width: 170px;
+      max-width: 180px;
       line-height: 1.35;
       position: relative;
-      pointer-events: auto;
       cursor: pointer;
       animation: bubblePulse 3.5s ease-in-out infinite;
+    }
+
+    body.theme-halloween .adoro-bubble {
+      background: rgba(18, 20, 28, 0.95);
+      border-color: rgba(207, 123, 86, 0.35);
+      color: #f4f4f6;
     }
 
     .adoro-bubble::after {
       content: '';
       position: absolute;
       bottom: -6px;
-      left: 20px;
+      left: 24px;
       width: 8px;
       height: 8px;
       background: var(--bg-surface);
@@ -1004,9 +1015,13 @@
       transform: rotate(45deg);
     }
 
+    body.theme-halloween .adoro-bubble::after {
+      background: #12141c;
+      border-color: rgba(207, 123, 86, 0.35);
+    }
+
     .adoro-avatar-wrap {
       position: relative;
-      pointer-events: auto;
       cursor: pointer;
       display: inline-block;
       animation: mascotHover 4s ease-in-out infinite;
@@ -1016,12 +1031,60 @@
       width: 72px;
       height: auto;
       display: block;
-      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+      filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.25));
       transition: transform 0.2s ease;
     }
 
+    body.theme-halloween .adoro-avatar-img {
+      filter: drop-shadow(0 4px 16px rgba(207, 123, 86, 0.3));
+    }
+
     .adoro-avatar-wrap:hover .adoro-avatar-img {
-      transform: scale(1.06);
+      transform: scale(1.08);
+    }
+
+    /* BOTÓN FLOTANTE DE WHATSAPP INTEGRADO */
+    .btn-floating-wa {
+      background: #25d366;
+      color: #052e16 !important;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      padding: 12px 18px;
+      border-radius: 9999px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      pointer-events: auto;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-floating-wa:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+    }
+
+    @media (max-width: 600px) {
+      .floating-companion-wrap {
+        bottom: 16px;
+        left: 14px;
+        gap: 8px;
+      }
+      .adoro-avatar-img {
+        width: 62px;
+      }
+      .adoro-bubble {
+        font-size: 0.68rem;
+        max-width: 140px;
+        padding: 6px 10px;
+      }
+      .btn-floating-wa {
+        font-size: 0.74rem;
+        padding: 10px 14px;
+      }
     }
 
     @keyframes mascotHover {
@@ -1121,7 +1184,7 @@
 
   </div>
 
-  <!-- 4. BARRA DE FILTROS EN CHIPS HORIZONTALES (COLORES PASTEL SOSEGADOS) -->
+  <!-- 4. BARRA DE FILTROS EN CHIPS HORIZONTALES (MAPEO 100% VALIDADO) -->
   <div class="filter-bar-container" id="filterBarWrap" style="display: none;">
     <div class="filter-chips-scroll" id="chipsScroll">
       <button type="button" class="cat-chip active" data-cat="all" onclick="filterCategory('all')">
@@ -1151,7 +1214,7 @@
     </div>
   </div>
 
-  <!-- 5. GRILLA DE PRODUCTOS EDITORIAL (SIN ETIQUETAS DEBAJO DE LA FOTO) -->
+  <!-- 5. GRILLA DE PRODUCTOS EDITORIAL -->
   <section class="catalog-section" id="catalogo">
     <div class="catalog-header-bar">
       <h2 class="catalog-header-title" id="gridTitle">Colección Clásica de Rosas de Exportación</h2>
@@ -1321,14 +1384,21 @@
     </div>
   </div>
 
-  <!-- 10. MASCOTA ADORO FLOTANTE (TONOS SUAVES NO INVASIVOS) -->
-  <aside class="adoro-floating-mascot" id="adoroMascotWidget">
-    <div class="adoro-bubble" id="adoroBubble" onclick="cycleAdoroThought()">
-      <span id="adoroThoughtText">¿Cuál ramo te hace suspirar hoy? 💭</span>
+  <!-- 10. COMPAÑERO FLOTANTE UNIFICADO: ADORO MASCOTA + BOTÓN FLOTANTE WHATSAPP -->
+  <aside class="floating-companion-wrap" id="floatingCompanion">
+    <div class="companion-adoro-col">
+      <div class="adoro-bubble" id="adoroBubble" onclick="cycleAdoroThought()">
+        <span id="adoroThoughtText">¿Cuál ramo te hace suspirar hoy? 💭</span>
+      </div>
+      <div class="adoro-avatar-wrap" onclick="cycleAdoroThought()">
+        <img src="./images/brand/adoro_mascota_pensando.png" alt="Adoro Pensativo" class="adoro-avatar-img" />
+      </div>
     </div>
-    <div class="adoro-avatar-wrap" onclick="cycleAdoroThought()">
-      <img src="./images/brand/adoro_mascota_pensando.png" alt="Adoro Pensativo" class="adoro-avatar-img" />
-    </div>
+
+    <!-- BOTÓN DE WHATSAPP SIEMPRE PRESENTE JUNTO A ADORO -->
+    <a href="https://wa.me/51975369266?text=%C2%A1Hola%20Carlos!%20%F0%9F%8C%B8%20Vi%20el%20cat%C3%A1logo%20de%20ADORA%20y%20quisiera%20hacer%20un%20pedido%20programado." target="_blank" class="btn-floating-wa" title="Chatear con Carlos">
+      <span>💬 Pedir por WhatsApp</span>
+    </a>
   </aside>
 
   <!-- 11. FOOTER -->
@@ -1338,7 +1408,7 @@
     <p style="opacity: 0.6; font-size: 0.72rem; margin-top: 4px;">&copy; 2026 ADORA. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- JAVASCRIPT: DATA & INTERACTIVIDAD -->
+  <!-- JAVASCRIPT: DATA & INTERACTIVIDAD ROBUSTA -->
   <script>
     const CLASSICS_DATA = [
   {
@@ -1406,7 +1476,8 @@
     "driveUrl": "https://drive.google.com/file/d/1qlfJmQuL6KX-6NLsQ09-BrYOHbtOL3k4/view",
     "votes": 4,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_HP-01_Gryffindor_El_Rugido_Escarlata.jpg"
+    "characterImg": "./images/contexto/SLIDE2_HP-01_Gryffindor_El_Rugido_Escarlata.jpg",
+    "filterCategory": "Harry Potter"
   },
   {
     "id": "HP-02",
@@ -1427,7 +1498,8 @@
     "driveUrl": "https://drive.google.com/file/d/1-sbzaZherjjVnPsAUMVWAKFIeBKOOP6X/view",
     "votes": 4,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_HP-02_Slytherin_La_Ambicion_Esmeralda.jpg"
+    "characterImg": "./images/contexto/SLIDE2_HP-02_Slytherin_La_Ambicion_Esmeralda.jpg",
+    "filterCategory": "Harry Potter"
   },
   {
     "id": "POP-06",
@@ -1448,7 +1520,8 @@
     "driveUrl": "https://drive.google.com/file/d/179Ju3tNMs-sNS3hVEV_ERkngECdymitA/view",
     "votes": 3,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-06_Merlina_Addams_Monocromo.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-06_Merlina_Addams_Monocromo.jpg",
+    "filterCategory": "Gótico & Terror"
   },
   {
     "id": "HW-01",
@@ -1469,7 +1542,8 @@
     "driveUrl": "https://drive.google.com/file/d/1uXKbo_3OWpUa1o41FQDzHD3_I6vUeFvu/view",
     "votes": 4,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_HW-01_Halloween_Spooky_Chic.jpg"
+    "characterImg": "./images/contexto/SLIDE2_HW-01_Halloween_Spooky_Chic.jpg",
+    "filterCategory": "Halloween Tradicional"
   },
   {
     "id": "HW-02",
@@ -1490,7 +1564,8 @@
     "driveUrl": "https://drive.google.com/file/d/15CDLEuPq-odi0bjHFh5INEyGyMRQLBG7/view",
     "votes": 3,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_HW-02_Halloween_Mystery_Bloom.jpg"
+    "characterImg": "./images/contexto/SLIDE2_HW-02_Halloween_Mystery_Bloom.jpg",
+    "filterCategory": "Halloween Tradicional"
   },
   {
     "id": "POP-01",
@@ -1511,7 +1586,8 @@
     "driveUrl": "https://drive.google.com/file/d/1ExFi1qVVLlzIgM3WcQgry1459PAriSpj/view",
     "votes": 4,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-01_D_o_Hechizo_Elphaba_Glinda_Wicked_.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-01_D_o_Hechizo_Elphaba_Glinda_Wicked_.jpg",
+    "filterCategory": "Cine & Streaming"
   },
   {
     "id": "POP-03",
@@ -1532,7 +1608,8 @@
     "driveUrl": "https://drive.google.com/file/d/17vwhp4uOUZhUa5_euFcmNwyrODz9s7ke/view",
     "votes": 9,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-03_DemonSlayer_Tanjiro_Respiracion_Fuego.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-03_DemonSlayer_Tanjiro_Respiracion_Fuego.jpg",
+    "filterCategory": "Anime & Shonen"
   },
   {
     "id": "POP-17",
@@ -1553,7 +1630,8 @@
     "driveUrl": "https://drive.google.com/file/d/1ZVKKsCJ9nYCCieXacUk1MNxwS77xatNC/view",
     "votes": 7,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-17_Jujutsu_Gojo_El_Infinito.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-17_Jujutsu_Gojo_El_Infinito.jpg",
+    "filterCategory": "Anime & Shonen"
   },
   {
     "id": "POP-13",
@@ -1574,7 +1652,8 @@
     "driveUrl": "https://drive.google.com/file/d/1gcqo3nsMAJ__qlIsP78RQWz_fK8SqKGJ/view",
     "votes": 3,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-13_Mercenario_Boc_n_Wade_Deadpool_.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-13_Mercenario_Boc_n_Wade_Deadpool_.jpg",
+    "filterCategory": "Cine & Streaming"
   },
   {
     "id": "POP-05",
@@ -1595,7 +1674,8 @@
     "driveUrl": "https://drive.google.com/file/d/1L71iMtC60bZjI71XL_bIclnEHQTpQT96/view",
     "votes": 5,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-05_El_Sombrero_de_Paja_Luffy_One_Piece_.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-05_El_Sombrero_de_Paja_Luffy_One_Piece_.jpg",
+    "filterCategory": "Anime & Shonen"
   },
   {
     "id": "POP-22",
@@ -1616,7 +1696,8 @@
     "driveUrl": "https://drive.google.com/file/d/18xCaJBH6VBbGjS1u8c9OmrWKmXBmlihS/view",
     "votes": 7,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-22_SpyFamily_Anya_Waku_Waku.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-22_SpyFamily_Anya_Waku_Waku.jpg",
+    "filterCategory": "Anime & Shonen"
   },
   {
     "id": "POP-29",
@@ -1637,7 +1718,8 @@
     "driveUrl": "https://drive.google.com/file/d/1v1M9x4fdYLMT7VAn2fm39qRcekLZMyM7/view",
     "votes": 5,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gótico & Terror"
   },
   {
     "id": "POP-04",
@@ -1658,7 +1740,8 @@
     "driveUrl": "https://drive.google.com/file/d/1fnkfkFX4Hmn5nVa7jd392TEzPc9osDby/view",
     "votes": 4,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-04_Pikachu_Gengar_Spooky_Bloom_Pokemon_.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-04_Pikachu_Gengar_Spooky_Bloom_Pokemon_.jpg",
+    "filterCategory": "Gaming & Pop"
   },
   {
     "id": "HP-03",
@@ -1679,7 +1762,8 @@
     "driveUrl": "https://drive.google.com/file/d/1KSZlVxZVKA4eNomhLbkFCPcoU9waS3b0/view",
     "votes": 7,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_HP-03_Ravenclaw_El_Vuelo_Del_Intelecto.jpg"
+    "characterImg": "./images/contexto/SLIDE2_HP-03_Ravenclaw_El_Vuelo_Del_Intelecto.jpg",
+    "filterCategory": "Harry Potter"
   },
   {
     "id": "HP-04",
@@ -1700,7 +1784,8 @@
     "driveUrl": "https://drive.google.com/file/d/1s-Oue80XLeLYrraufj4Qf3-aaaHdCA-N/view",
     "votes": 3,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_HP-04_Hufflepuff_La_Lealtad_Dorada.jpg"
+    "characterImg": "./images/contexto/SLIDE2_HP-04_Hufflepuff_La_Lealtad_Dorada.jpg",
+    "filterCategory": "Harry Potter"
   },
   {
     "id": "HW-03",
@@ -1721,7 +1806,8 @@
     "driveUrl": "https://drive.google.com/file/d/1UOaplsJyQvnzH1wAnabieSkbxOIP1SRl/view",
     "votes": 9,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_HW-03_Halloween_Detalle_Dark.jpg"
+    "characterImg": "./images/contexto/SLIDE2_HW-03_Halloween_Detalle_Dark.jpg",
+    "filterCategory": "Halloween Tradicional"
   },
   {
     "id": "POP-02",
@@ -1742,7 +1828,8 @@
     "driveUrl": "https://drive.google.com/file/d/1t1lQFkpc9tvU275Rvj_QiCPMD9F1SLij/view",
     "votes": 8,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-02_Mystery_Violet_K_Pop_Demon_Hunters_.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-02_Mystery_Violet_K_Pop_Demon_Hunters_.jpg",
+    "filterCategory": "Cine & Streaming"
   },
   {
     "id": "POP-07",
@@ -1763,7 +1850,8 @@
     "driveUrl": "https://drive.google.com/file/d/12NzLEhiWyBVqFsK-SjDeU4iQ_i1wQVaJ/view",
     "votes": 9,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-07_Plus_Ultra_Deku_vs_Bakugo_Boku_no_Hero_.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-07_Plus_Ultra_Deku_vs_Bakugo_Boku_no_Hero_.jpg",
+    "filterCategory": "Anime & Shonen"
   },
   {
     "id": "POP-08",
@@ -1784,7 +1872,8 @@
     "driveUrl": "https://drive.google.com/file/d/1jeNn8h1qqjOHCquu4qqQr7ageKSbV9f-/view",
     "votes": 7,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-08_El_Amuleto_M_gico_Miraculous_Ladybug_.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-08_El_Amuleto_M_gico_Miraculous_Ladybug_.jpg",
+    "filterCategory": "Gaming & Pop"
   },
   {
     "id": "POP-09",
@@ -1805,7 +1894,8 @@
     "driveUrl": "https://drive.google.com/file/d/1t2d8YwtgkqXtOkDGXMIdHAoAMEBhGqde/view",
     "votes": 8,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-09_Toro_Negro_Antimagia_Asta_Black_Clover_.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-09_Toro_Negro_Antimagia_Asta_Black_Clover_.jpg",
+    "filterCategory": "Anime & Shonen"
   },
   {
     "id": "POP-10",
@@ -1826,7 +1916,8 @@
     "driveUrl": "https://drive.google.com/file/d/1_aQh_QB3utNCV_lQacb7v5yx72a_4Pbt/view",
     "votes": 4,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-10_Bloque_Dorado_Creeper_Gold_Minecraft_.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-10_Bloque_Dorado_Creeper_Gold_Minecraft_.jpg",
+    "filterCategory": "Gaming & Pop"
   },
   {
     "id": "POP-11",
@@ -1847,7 +1938,8 @@
     "driveUrl": "https://drive.google.com/file/d/1WHwtvRhAXOyC2W4JYNmwDFBcQMlCkAfZ/view",
     "votes": 9,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-11_Vestido_de_Novia_Rojo_Lydia_Deetz_Beetlejuice_2_.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-11_Vestido_de_Novia_Rojo_Lydia_Deetz_Beetlejuice_2_.jpg",
+    "filterCategory": "Cine & Streaming"
   },
   {
     "id": "POP-12",
@@ -1868,7 +1960,8 @@
     "driveUrl": "https://drive.google.com/file/d/1rFcN6MFzZ7d2JPcLl8iFFlNGBTGHRm3c/view",
     "votes": 4,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-12_Rayas_Fantasma_El_Bio_Exorcista_Beetlejuice_.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-12_Rayas_Fantasma_El_Bio_Exorcista_Beetlejuice_.jpg",
+    "filterCategory": "Cine & Streaming"
   },
   {
     "id": "POP-14",
@@ -1889,7 +1982,8 @@
     "driveUrl": "https://drive.google.com/file/d/12746TkEgr7B_hHPNV2utcxfhwuTSjA4T/view",
     "votes": 4,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Cine & Streaming"
   },
   {
     "id": "POP-15",
@@ -1910,7 +2004,8 @@
     "driveUrl": "https://drive.google.com/file/d/12dK4BgRZFkwLFwWrq6gi01e9aFeNf29J/view",
     "votes": 5,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Cine & Streaming"
   },
   {
     "id": "POP-16",
@@ -1931,7 +2026,8 @@
     "driveUrl": "https://drive.google.com/file/d/1NC4Y0EZohh5IDP8RvEC9wmM4OQjWvy7x/view",
     "votes": 7,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Cine & Streaming"
   },
   {
     "id": "POP-18",
@@ -1952,7 +2048,8 @@
     "driveUrl": "https://drive.google.com/file/d/1HsonaLVNNfRvjP4EOrXoB-G6iIegUizV/view",
     "votes": 4,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-18_Jujutsu_Sukuna_Rey_Maldiciones.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-18_Jujutsu_Sukuna_Rey_Maldiciones.jpg",
+    "filterCategory": "Anime & Shonen"
   },
   {
     "id": "POP-19",
@@ -1973,7 +2070,8 @@
     "driveUrl": "https://drive.google.com/file/d/1dyKrz5lfcproGYp6Sz5c6VNybXuyk8Ip/view",
     "votes": 7,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-19_Chainsaw_Makima_Control_Carmesi.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-19_Chainsaw_Makima_Control_Carmesi.jpg",
+    "filterCategory": "Anime & Shonen"
   },
   {
     "id": "POP-20",
@@ -1994,7 +2092,8 @@
     "driveUrl": "https://drive.google.com/file/d/1xVmqZj8yFEWqwGp9do7wKFunslVZyABq/view",
     "votes": 6,
     "hasCharacter": true,
-    "characterImg": "./images/contexto/SLIDE2_POP-20_Chainsaw_Power_Demonio_Sangre.jpg"
+    "characterImg": "./images/contexto/SLIDE2_POP-20_Chainsaw_Power_Demonio_Sangre.jpg",
+    "filterCategory": "Anime & Shonen"
   },
   {
     "id": "POP-21",
@@ -2015,7 +2114,8 @@
     "driveUrl": "https://drive.google.com/file/d/1gXSeWAyNCOs5Ok9YJYoRPSnn_CyVY0Ql/view",
     "votes": 2,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Anime & Shonen"
   },
   {
     "id": "POP-23",
@@ -2036,7 +2136,8 @@
     "driveUrl": "https://drive.google.com/file/d/1nuxTQXDsa0pJrJMsU9KBzNXY2PMTqBbc/view",
     "votes": 8,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Anime & Shonen"
   },
   {
     "id": "POP-24",
@@ -2057,7 +2158,8 @@
     "driveUrl": "https://drive.google.com/file/d/1XvuEwxjjeIDlLC5z41Z_g5w8keHukciQ/view",
     "votes": 5,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gaming & Pop"
   },
   {
     "id": "POP-25",
@@ -2078,7 +2180,8 @@
     "driveUrl": "https://drive.google.com/file/d/1gVFY2ISPWI_9iTTmyUdAGPFnvvtaa6Ns/view",
     "votes": 9,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gaming & Pop"
   },
   {
     "id": "POP-26",
@@ -2099,7 +2202,8 @@
     "driveUrl": "https://drive.google.com/file/d/1SuqIbx-yy41GWvVw3K0PaMvC8rbujNoY/view",
     "votes": 6,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gaming & Pop"
   },
   {
     "id": "POP-27",
@@ -2120,7 +2224,8 @@
     "driveUrl": "https://drive.google.com/file/d/15sFMPYvhyeiSKkmcKhEE5AAHiSvfJgAX/view",
     "votes": 8,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gaming & Pop"
   },
   {
     "id": "POP-28",
@@ -2141,7 +2246,8 @@
     "driveUrl": "https://drive.google.com/file/d/1VtEsYDmrqmLlKu2NMampS_DmNVbTjZTc/view",
     "votes": 2,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gaming & Pop"
   },
   {
     "id": "POP-30",
@@ -2162,7 +2268,8 @@
     "driveUrl": "https://drive.google.com/file/d/1-FNUU4yNiJUsoCE7qxoUrAtFMFg_ALJX/view",
     "votes": 7,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gótico & Terror"
   },
   {
     "id": "POP-31",
@@ -2183,7 +2290,8 @@
     "driveUrl": "https://drive.google.com/file/d/1VBPNko0hojXxfflaeJdShp2dnhDmXLlD/view",
     "votes": 5,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gótico & Terror"
   },
   {
     "id": "POP-32",
@@ -2204,7 +2312,8 @@
     "driveUrl": "https://drive.google.com/file/d/19VEKjw5G0APpCG3D1_HxHwP931xA8-_0/view",
     "votes": 4,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gótico & Terror"
   },
   {
     "id": "POP-33",
@@ -2225,7 +2334,8 @@
     "driveUrl": "https://drive.google.com/file/d/1NVHIUvdqbFJFEfGlET4nqC-3fbojAd47/view",
     "votes": 2,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gótico & Terror"
   },
   {
     "id": "POP-34",
@@ -2246,7 +2356,8 @@
     "driveUrl": "https://drive.google.com/file/d/13vx2cFHcYPsv2WEeDS7S_DB0SA80CUkR/view",
     "votes": 8,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gótico & Terror"
   },
   {
     "id": "POP-35",
@@ -2267,7 +2378,8 @@
     "driveUrl": "https://drive.google.com/file/d/1X010mo-TO0KXoYeDuNVVcnxx8scebSU6/view",
     "votes": 4,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gótico & Terror"
   },
   {
     "id": "POP-36",
@@ -2288,7 +2400,8 @@
     "driveUrl": "https://drive.google.com/file/d/1aCnEJ09mfKhNrNwL7u7fJmrv3lwOLii-/view",
     "votes": 7,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gótico & Terror"
   },
   {
     "id": "POP-37",
@@ -2309,7 +2422,8 @@
     "driveUrl": "https://drive.google.com/file/d/1cnXSm8mA7ZZ8o2MxDzh1Nt5I4RK8qrKU/view",
     "votes": 6,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Gótico & Terror"
   },
   {
     "id": "POP-38",
@@ -2330,7 +2444,8 @@
     "driveUrl": "https://drive.google.com/file/d/1MVA-WW6g5sUjGLt7334RTethBXjTbOIo/view",
     "votes": 3,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Retro & Dúos"
   },
   {
     "id": "POP-39",
@@ -2351,7 +2466,8 @@
     "driveUrl": "https://drive.google.com/file/d/12Bj50IK8L-LAuYNXEDaxvMn76g5X7GKo/view",
     "votes": 6,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Retro & Dúos"
   },
   {
     "id": "POP-40",
@@ -2372,7 +2488,8 @@
     "driveUrl": "https://drive.google.com/file/d/1oclVcvZ-exI_LDK9mtFaZ0gQDF-gyju_/view",
     "votes": 6,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Retro & Dúos"
   },
   {
     "id": "POP-41",
@@ -2393,7 +2510,8 @@
     "driveUrl": "https://drive.google.com/file/d/1peAZcJLfBFtFqYl2TP2XkFOjxf4Ez0IR/view",
     "votes": 4,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Retro & Dúos"
   },
   {
     "id": "POP-42",
@@ -2414,7 +2532,8 @@
     "driveUrl": "https://drive.google.com/file/d/1W37UqNC9XDDzI43IvtjNA8NiXCYP9aQ-/view",
     "votes": 8,
     "hasCharacter": false,
-    "characterImg": null
+    "characterImg": null,
+    "filterCategory": "Retro & Dúos"
   }
 ];
 
@@ -2426,13 +2545,13 @@
       "¿Cuál ramo te hace suspirar hoy? 💭",
       "Tallos frescos seleccionados en Acho 🌸",
       "Cada rosa cuenta una historia de amor ✨",
-      "¿Deseas programar tu pedido con Carlos? 💬"
+      "¡Escríbenos para programar tu fecha! 💬"
     ];
     const THOUGHTS_HALLOWEEN = [
       "¿Cuál personaje es tu favorito? 🎃",
       "49 Ramos de autor de edición limitada ⚡",
       "Flores frescas con misterio botánico 🖤",
-      "¡Tocá cualquier ramo para ver su receta! 💐"
+      "¡Toca cualquier ramo para ver su receta! 💐"
     ];
     let thoughtIndex = 0;
 
@@ -2502,6 +2621,7 @@
       }
     }
 
+    /* FILTRO DE CATEGORÍAS 100% CORREGIDO Y VALIDADO */
     function filterCategory(cat) {
       currentFilter = cat;
       document.querySelectorAll('.cat-chip').forEach(btn => {
@@ -2514,7 +2634,11 @@
 
       let filtered = HALLOWEEN_DATA;
       if (cat !== 'all') {
-        filtered = HALLOWEEN_DATA.filter(item => item.categoryTag === cat);
+        filtered = HALLOWEEN_DATA.filter(item => {
+          return item.filterCategory === cat || 
+                 item.collection === cat || 
+                 item.categoryTag === cat;
+        });
       }
 
       document.getElementById('gridCount').textContent = `Mostrando ${filtered.length} de ${HALLOWEEN_DATA.length} ramos`;
@@ -2533,7 +2657,6 @@
         const primaryImg = item.characterImg || item.imageLocal || item.imageOnline;
         const secondaryImg = item.imageLocal || item.imageOnline || item.characterImg;
 
-        // Tarjeta editorial limpia: SOLO foto, título y precio (sin etiquetas multicolor de categoría)
         card.innerHTML = `
           <div class="card-media-wrap">
             <img class="card-img-primary" src="${primaryImg}" alt="${item.name}" loading="lazy" />
