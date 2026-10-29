@@ -13,7 +13,7 @@
 
   <style>
     /* =========================================================
-       SISTEMA DE DISEÑO ADORA — LUJO EDITORIAL & ALTA GAMA
+       SISTEMA DE DISEÑO ADORA — ALTA GAMA & LA BOTÁNIKA
        ========================================================= */
     :root {
       /* MODO CLÁSICO (ALABASTRO, MARFIL, ROSAS & TINTA NEGRA) */
@@ -30,7 +30,6 @@
       --accent-gold: #9a6b2f;
       --nav-bg: rgba(252, 251, 249, 0.95);
       --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-      --card-hover-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
       --banner-bg: #18181b;
       --banner-text: #f4f4f5;
       --chip-bg: #f0eee8;
@@ -56,7 +55,6 @@
       --accent-gold: #f59e0b;
       --nav-bg: rgba(9, 10, 15, 0.95);
       --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
-      --card-hover-shadow: 0 12px 36px rgba(234, 88, 12, 0.22);
       --banner-bg: #000000;
       --banner-text: #fed7aa;
       --chip-bg: #1c2030;
@@ -126,7 +124,6 @@
       gap: 16px;
     }
 
-    /* BOTÓN PROGRAMAR PEDIDO (NO ENVÍOS INMEDIATOS DEL DÍA) */
     .btn-schedule-order {
       background: #18181b;
       color: #ffffff !important;
@@ -150,7 +147,7 @@
       border-color: #ea580c;
     }
 
-    /* LOGO OFICIAL ADORA EN IMAGEN (MÁS GRANDE, DESTACADO Y NÍTIDO) */
+    /* LOGO OFICIAL ADORA EN IMAGEN (AMPLIADO Y NÍTIDO) */
     .nav-logo-wrap {
       display: flex;
       align-items: center;
@@ -217,27 +214,45 @@
       padding: 0 20px;
     }
 
-    /* HERO CLÁSICO CON EL CAMPO DE ROSAS (FOTO SUBIDA POR CARLOS, ELEGANTE Y DESPEJADO) */
+    /* HERO CLÁSICO: FOTO DE CAMPO DE ROSAS GENERADA EN GEMINI CON TARJETA DE CRISTAL DESPEJADA */
     .hero-classic {
-      background-image: url('./images/brand/hero_classic_rosefields.jpg');
+      background-image: url('./images/brand/hero_classic_gemini.jpg');
       background-size: cover;
       background-position: center right;
       border: 1px solid var(--border);
       border-radius: 16px;
       padding: 44px 36px;
-      min-height: 380px;
+      min-height: 400px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 16px;
       position: relative;
       box-shadow: var(--card-shadow);
+      overflow: hidden;
+    }
+
+    .hero-classic-glass {
+      background: rgba(252, 251, 249, 0.90);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      border-radius: 14px;
+      padding: 32px 30px;
+      max-width: 620px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
     }
 
     @media (max-width: 768px) {
       .hero-classic {
-        padding: 32px 20px;
-        min-height: 320px;
+        padding: 20px 14px;
+        min-height: 340px;
+      }
+      .hero-classic-glass {
+        padding: 22px 18px;
       }
     }
 
@@ -254,34 +269,31 @@
 
     .hero-classic-title {
       font-family: var(--font-serif);
-      font-size: clamp(2rem, 3.8vw, 2.8rem);
+      font-size: clamp(2rem, 3.8vw, 2.7rem);
       font-weight: 600;
       line-height: 1.15;
       color: #18181b;
-      max-width: 660px;
     }
 
     .hero-classic-desc {
       color: #3f3f46;
-      font-size: 0.95rem;
+      font-size: 0.94rem;
       line-height: 1.65;
-      max-width: 580px;
     }
 
     .hero-actions-row {
       display: flex;
-      gap: 14px;
+      gap: 12px;
       flex-wrap: wrap;
       align-items: center;
-      margin-top: 6px;
+      margin-top: 4px;
     }
 
-    /* BANNER DESTACADO PARA NAVEGAR A HALLOWEEN (DESDE CLÁSICOS) */
     .banner-goto-halloween {
       background: #12141f;
       border: 1px solid rgba(234, 88, 12, 0.4);
       color: #fed7aa;
-      padding: 12px 20px;
+      padding: 12px 18px;
       border-radius: 9999px;
       text-decoration: none;
       font-size: 0.82rem;
@@ -298,13 +310,13 @@
       border-color: #ea580c;
     }
 
-    /* HERO HALLOWEEN: BANNER FOTOGRÁFICO FULL-BLEED LIMPIO */
+    /* HERO HALLOWEEN: FOTO GÓTICA NOCTURNA GENERADA EN GEMINI */
     .hero-halloween {
-      background-image: url('./images/brand/hero_halloween_banner.jpg');
+      background-image: url('./images/brand/hero_halloween_gemini.jpg');
       background-size: cover;
       background-position: center right;
       border-radius: 16px;
-      min-height: 380px;
+      min-height: 400px;
       padding: 44px 36px;
       display: flex;
       flex-direction: column;
@@ -316,8 +328,8 @@
 
     @media (max-width: 768px) {
       .hero-halloween {
-        min-height: 320px;
-        padding: 32px 20px;
+        min-height: 340px;
+        padding: 28px 18px;
       }
     }
 
@@ -338,16 +350,16 @@
       line-height: 1.1;
       margin-bottom: 12px;
       max-width: 580px;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      text-shadow: 0 2px 12px rgba(0,0,0,0.8);
     }
 
     .halloween-subtitle {
       color: #e2e8f0;
       font-size: 0.95rem;
       line-height: 1.6;
-      max-width: 520px;
+      max-width: 500px;
       margin-bottom: 22px;
-      text-shadow: 0 1px 6px rgba(0,0,0,0.6);
+      text-shadow: 0 1px 8px rgba(0,0,0,0.8);
     }
 
     .hero-single-cta {
@@ -777,7 +789,7 @@
       text-decoration: underline;
     }
 
-    /* 9. BOTTOM SHEET DE DETALLE (ÚNICO BOTÓN DE COMPRA) */
+    /* 9. BOTTOM SHEET DE DETALLE */
     .sheet-overlay {
       position: fixed;
       inset: 0;
@@ -944,7 +956,83 @@
       cursor: pointer;
     }
 
-    /* 10. PIE DE PÁGINA */
+    /* =========================================================
+       10. MASCOTA ADORO FLOTANTE ANIMADA (FIJA DURANTE SCROLL)
+       ========================================================= */
+    .adoro-floating-mascot {
+      position: fixed;
+      bottom: 18px;
+      left: 18px;
+      z-index: 180;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      pointer-events: none;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .adoro-bubble {
+      background: var(--bg-surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 7px 12px;
+      border-radius: 12px;
+      font-size: 0.73rem;
+      font-weight: 700;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      margin-bottom: 6px;
+      max-width: 170px;
+      line-height: 1.35;
+      position: relative;
+      pointer-events: auto;
+      cursor: pointer;
+      animation: bubblePulse 3.5s ease-in-out infinite;
+    }
+
+    .adoro-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 20px;
+      width: 8px;
+      height: 8px;
+      background: var(--bg-surface);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      transform: rotate(45deg);
+    }
+
+    .adoro-avatar-wrap {
+      position: relative;
+      pointer-events: auto;
+      cursor: pointer;
+      display: inline-block;
+      animation: mascotHover 4s ease-in-out infinite;
+    }
+
+    .adoro-avatar-img {
+      width: 76px;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+      transition: transform 0.2s ease;
+    }
+
+    .adoro-avatar-wrap:hover .adoro-avatar-img {
+      transform: scale(1.08);
+    }
+
+    @keyframes mascotHover {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(-1.5deg); }
+    }
+
+    @keyframes bubblePulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+
+    /* 11. PIE DE PÁGINA */
     .site-footer {
       border-top: 1px solid var(--border);
       background: var(--bg-surface);
@@ -970,12 +1058,11 @@
   <!-- 2. NAVBAR EDITORIAL -->
   <nav class="site-nav">
     <div class="nav-container">
-      <!-- BOTÓN PROGRAMAR PEDIDO -->
       <a href="https://wa.me/51975369266?text=%C2%A1Hola%20Carlos!%20%F0%9F%8C%B8%20Quisiera%20programar%20un%20pedido%20de%20flores%20a%20domicilio%20en%20Lima." target="_blank" class="btn-schedule-order">
         PROGRAMAR PEDIDO
       </a>
 
-      <!-- LOGO OFICIAL EN IMAGEN (PROPORCIONAL, MÁS GRANDE Y NÍTIDO) -->
+      <!-- LOGO OFICIAL EN IMAGEN (AMPLIADO Y NÍTIDO) -->
       <a href="#" class="nav-logo-wrap" onclick="toggleMode('classics', event)">
         <img src="./images/brand/logo_adora_negro.png" alt="ADORA" class="nav-logo-img logo-light-mode" />
         <img src="./images/brand/logo_adora_blanco.png" alt="ADORA" class="nav-logo-img logo-dark-mode" style="display:none;" />
@@ -993,35 +1080,36 @@
     </div>
   </nav>
 
-  <!-- 3. HEROES VISUALES -->
+  <!-- 3. HEROES VISUALES CON LAS FOTOS GENERADAS EN GEMINI -->
   <div class="hero-container">
 
-    <!-- HERO CLÁSICO: FOTO DE CAMPO DE ROSAS (ELEGANTE, DESPEJADO Y LUMINOSO) -->
+    <!-- HERO CLÁSICO: FOTO DE CAMPO DE ROSAS (CON TARJETA DE CRISTAL DESPEJADA) -->
     <header class="hero-classic" id="heroClassic">
-      <div class="hero-badge">🌸 EXPERIENCIAS BOTÁNICAS • LIMA, PERÚ</div>
-      <h1 class="hero-classic-title">Rosas de Alta Gama & Amor Eterno</h1>
-      <p class="hero-classic-desc">
-        Tallos seleccionados en su punto óptimo de apertura. Confección artesanal a pedido con envoltura coreana impermeable bicapa y entrega programada en Lima y Callao.
-      </p>
+      <div class="hero-classic-glass">
+        <div class="hero-badge">🌸 EXPERIENCIAS BOTÁNICAS • LIMA, PERÚ</div>
+        <h1 class="hero-classic-title">Rosas de Alta Gama & Amor Eterno</h1>
+        <p class="hero-classic-desc">
+          Tallos seleccionados en su punto óptimo de apertura. Confección artesanal en envoltura coreana impermeable bicapa y entrega programada en Lima y Callao.
+        </p>
 
-      <div class="hero-actions-row">
-        <a href="https://wa.me/51975369266?text=%C2%A1Hola%20Carlos!%20%F0%9F%8C%B8%20Deseo%20programar%20un%20ramo%20cl%C3%A1sico%20de%20rosas%20de%20alta%20gama." target="_blank" class="hero-single-cta">
-          💬 Programar Ramo por WhatsApp
-        </a>
+        <div class="hero-actions-row">
+          <a href="https://wa.me/51975369266?text=%C2%A1Hola%20Carlos!%20%F0%9F%8C%B8%20Deseo%20programar%20un%20ramo%20cl%C3%A1sico%20de%20rosas%20de%20alta%20gama." target="_blank" class="hero-single-cta">
+            💬 Programar Ramo por WhatsApp
+          </a>
 
-        <!-- ACCESO DESTACADO A HALLOWEEN -->
-        <a href="#halloween" class="banner-goto-halloween" onclick="toggleMode('halloween', event)">
-          🎃 Especial Halloween 2026: Ver 49 Ramos de Edición Limitada &rarr;
-        </a>
+          <a href="#halloween" class="banner-goto-halloween" onclick="toggleMode('halloween', event)">
+            🎃 Ver 49 Ramos Halloween &rarr;
+          </a>
+        </div>
       </div>
     </header>
 
-    <!-- HERO HALLOWEEN: BANNER FOTOGRÁFICO FULL-BLEED LIMPIO -->
+    <!-- HERO HALLOWEEN: FOTO GÓTICA NOCTURNA GENERADA EN GEMINI -->
     <header class="hero-halloween" id="heroHalloween" style="display: none;">
       <div class="halloween-eyebrow">🎃 EDICIÓN ESPECIAL LIMITADA 2026</div>
       <h1 class="halloween-title">Colección Halloween</h1>
       <p class="halloween-subtitle">
-        49 Ramos de autor inspirados en tus personajes favoritos y el misterio botánico. Flores frescas armadas artesanalmente para pedidos programados.
+        49 Ramos de autor inspirados en tus personajes favoritos y el misterio botánico. Confección artesanal para pedidos programados.
       </p>
 
       <a href="https://wa.me/51975369266?text=%C2%A1Hola%20Carlos!%20%F0%9F%8E%83%20Quiero%20programar%20un%20ramo%20de%20la%20colecci%C3%B3n%20Halloween%202026." target="_blank" class="hero-single-cta">
@@ -1062,7 +1150,7 @@
   </div>
 
   <!-- 5. GRILLA DE PRODUCTOS EDITORIAL -->
-  <section class="catalog-section">
+  <section class="catalog-section" id="catalogo">
     <div class="catalog-header-bar">
       <h2 class="catalog-header-title" id="gridTitle">Colección Clásica de Rosas de Exportación</h2>
       <span class="catalog-header-count" id="gridCount">4 Arreglos de Autor</span>
@@ -1235,7 +1323,17 @@
     </div>
   </div>
 
-  <!-- 10. FOOTER -->
+  <!-- 10. MASCOTA ADORO FLOTANTE ANIMADA (MINIATURA PENSATIVA DURANTE SCROLL) -->
+  <aside class="adoro-floating-mascot" id="adoroMascotWidget">
+    <div class="adoro-bubble" id="adoroBubble" onclick="cycleAdoroThought()">
+      <span id="adoroThoughtText">¿Cuál ramo te hace suspirar hoy? 💭</span>
+    </div>
+    <div class="adoro-avatar-wrap" onclick="cycleAdoroThought()">
+      <img src="./images/brand/adoro_mascota_pensando.png" alt="Adoro Pensativo" class="adoro-avatar-img" />
+    </div>
+  </aside>
+
+  <!-- 11. FOOTER -->
   <footer class="site-footer">
     <p><strong>ADORA • Florería Boutique & Experiencias Botánicas</strong></p>
     <p>Confección floral a pedido programado en Lima, Perú • Consultas directas al +51 975 369 266</p>
@@ -2330,6 +2428,20 @@
     let currentFilter = 'all';
     let currentActiveItem = null;
 
+    const THOUGHTS_CLASSICS = [
+      "¿Cuál ramo te hace suspirar hoy? 💭",
+      "Tallos frescos seleccionados en Acho 🌸",
+      "Cada rosa cuenta una historia de amor ✨",
+      "¿Deseas programar tu pedido con Carlos? 💬"
+    ];
+    const THOUGHTS_HALLOWEEN = [
+      "¿Cuál personaje es tu favorito? 🎃",
+      "49 Ramos de autor de edición limitada ⚡",
+      "Flores frescas con misterio botánico 🖤",
+      "¡Tocá cualquier ramo para ver su receta! 💐"
+    ];
+    let thoughtIndex = 0;
+
     document.addEventListener('DOMContentLoaded', () => {
       if (window.location.hash === '#halloween') {
         toggleMode('halloween');
@@ -2351,6 +2463,7 @@
       const gridTitle = document.getElementById('gridTitle');
       const gridCount = document.getElementById('gridCount');
       const valueHeadline = document.getElementById('valueHeadline');
+      const bubbleText = document.getElementById('adoroThoughtText');
 
       if (mode === 'classics') {
         body.classList.remove('theme-halloween');
@@ -2364,6 +2477,7 @@
         gridTitle.textContent = 'Colección Clásica de Rosas de Exportación';
         gridCount.textContent = '4 Arreglos de Autor';
         valueHeadline.textContent = 'Flores en Ocasiones Especiales';
+        bubbleText.textContent = THOUGHTS_CLASSICS[0];
 
         renderGrid(CLASSICS_DATA);
       } else {
@@ -2377,8 +2491,20 @@
 
         gridTitle.textContent = 'Colección Halloween 2026';
         valueHeadline.textContent = 'Flores en Halloween & Ocasiones Especiales';
+        bubbleText.textContent = THOUGHTS_HALLOWEEN[0];
 
         filterCategory(currentFilter);
+      }
+    }
+
+    function cycleAdoroThought() {
+      const thoughts = currentMode === 'halloween' ? THOUGHTS_HALLOWEEN : THOUGHTS_CLASSICS;
+      thoughtIndex = (thoughtIndex + 1) % thoughts.length;
+      const el = document.getElementById('adoroThoughtText');
+      el.textContent = thoughts[thoughtIndex];
+      const cat = document.getElementById('catalogo');
+      if (cat) {
+        cat.scrollIntoView({ behavior: 'smooth' });
       }
     }
 
