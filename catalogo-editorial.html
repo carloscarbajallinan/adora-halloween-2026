@@ -791,12 +791,13 @@
       text-decoration: underline;
     }
 
-    /* 9. BOTTOM SHEET DE DETALLE */
+    /* 9. MODAL EDITORIAL DE DETALLE (LUJO 2 COLUMNAS EN DESKTOP & BOTTOM SHEET EN MOBILE) */
     .sheet-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.7);
-      backdrop-filter: blur(4px);
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       z-index: 200;
       opacity: 0;
       pointer-events: none;
@@ -815,14 +816,14 @@
       right: 0;
       background: var(--bg-surface);
       border-top: 1px solid var(--border);
-      border-radius: 20px 20px 0 0;
+      border-radius: 24px 24px 0 0;
       z-index: 210;
-      max-height: 90vh;
+      max-height: 92vh;
       display: flex;
       flex-direction: column;
       transform: translateY(100%);
-      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-      box-shadow: 0 -10px 40px rgba(0,0,0,0.4);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+      box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5);
       max-width: 640px;
       margin: 0 auto;
     }
@@ -853,6 +854,20 @@
       gap: 16px;
     }
 
+    .sheet-left-col {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .sheet-right-col {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+    }
+
     .sheet-media-tabs {
       display: flex;
       gap: 8px;
@@ -863,43 +878,64 @@
       background: var(--bg-alt);
       border: 1px solid var(--border);
       color: var(--text-dim);
-      font-size: 0.75rem;
+      font-size: 0.78rem;
       font-weight: 700;
-      padding: 6px 14px;
+      padding: 7px 16px;
       border-radius: 9999px;
       cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
     }
 
     .sheet-tab-btn.active {
       background: var(--chip-active-bg);
       color: var(--chip-active-text);
       border-color: var(--chip-active-border, var(--chip-active-bg));
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
     }
 
+    /* CONTENEDOR DE IMAGEN CON PROTECCIÓN COMPLETA DE FOTOGRAFÍA (CERO CABEZAS CORTADAS) */
     .sheet-media-box {
       width: 100%;
-      max-width: 300px;
-      aspect-ratio: 9/13;
-      margin: 0 auto;
-      border-radius: 10px;
+      height: 360px;
+      flex-shrink: 0;
+      border-radius: 14px;
       overflow: hidden;
-      background: var(--bg-alt);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      background: #090a0f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      border: 1px solid var(--border);
+    }
+
+    body:not(.theme-halloween) .sheet-media-box {
+      background: #f4f2ec;
     }
 
     .sheet-media-box img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
+      object-position: center;
       display: block;
+    }
+
+    .modal-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
     }
 
     .sheet-item-title {
       font-family: var(--font-serif);
-      font-size: 1.45rem;
+      font-size: 1.55rem;
       font-weight: 600;
       color: var(--text);
-      line-height: 1.25;
+      line-height: 1.22;
     }
 
     .sheet-item-price {
@@ -907,23 +943,61 @@
       font-weight: 800;
       color: var(--price-color);
       margin-top: 4px;
+      letter-spacing: 0.02em;
+    }
+
+    .btn-modal-close-x {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      cursor: pointer;
+      line-height: 1;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .btn-modal-close-x:hover {
+      background: var(--chip-active-bg);
+      color: var(--chip-active-text);
+      transform: scale(1.05);
+    }
+
+    .sheet-craft-badge {
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: var(--accent-soft);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 8px;
+      align-self: flex-start;
     }
 
     .sheet-recipe-box {
       background: var(--bg-alt);
       border: 1px solid var(--border);
-      padding: 14px;
-      border-radius: 10px;
-      font-size: 0.85rem;
+      padding: 16px;
+      border-radius: 12px;
+      font-size: 0.88rem;
     }
 
     .sheet-recipe-title {
-      font-size: 0.72rem;
+      font-size: 0.74rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       font-weight: 700;
       color: var(--accent-soft);
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
 
     .btn-sheet-wa {
@@ -931,7 +1005,7 @@
       color: #052e16 !important;
       font-size: 1rem;
       font-weight: 800;
-      padding: 16px 20px;
+      padding: 16px 22px;
       border-radius: 9999px;
       text-align: center;
       text-decoration: none;
@@ -939,12 +1013,13 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35);
-      transition: transform 0.2s ease;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .btn-sheet-wa:active {
-      transform: scale(0.98);
+    .btn-sheet-wa:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
     }
 
     .btn-sheet-close {
@@ -953,9 +1028,76 @@
       color: var(--text-dim);
       font-size: 0.85rem;
       font-weight: 600;
-      padding: 10px;
+      padding: 11px;
       border-radius: 8px;
       cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .btn-sheet-close:hover {
+      background: var(--bg-alt);
+    }
+
+    /* VISTA DE ESCRITORIO (DESKTOP MODAL 2 COLUMNAS EDITORIAL DE ALTA GAMA) */
+    @media (min-width: 768px) {
+      .bottom-sheet {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        bottom: auto;
+        right: auto;
+        transform: translate(-50%, -46%) scale(0.96);
+        max-width: 880px;
+        width: 92%;
+        max-height: 88vh;
+        border-radius: 20px;
+        border: 1px solid var(--border);
+        box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .bottom-sheet.active {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .sheet-handle-row {
+        display: none;
+      }
+
+      .sheet-body {
+        display: grid;
+        grid-template-columns: 360px 1fr;
+        gap: 32px;
+        padding: 32px;
+        align-items: start;
+        max-height: 84vh;
+        overflow-y: auto;
+      }
+
+      .sheet-left-col {
+        position: sticky;
+        top: 0;
+      }
+
+      .sheet-media-box {
+        height: 440px;
+        border-radius: 14px;
+      }
+
+      .btn-modal-close-x {
+        display: flex;
+      }
+
+      .btn-sheet-close.mobile-only-close {
+        display: none;
+      }
+
+      .sheet-item-title {
+        font-size: 1.85rem;
+      }
     }
 
     /* =========================================================
@@ -1341,46 +1483,64 @@
     </div>
   </section>
 
-  <!-- 9. BOTTOM SHEET DE DETALLE -->
+  <!-- 9. MODAL EDITORIAL DE DETALLE -->
   <div class="sheet-overlay" id="sheetOverlay" onclick="closeDetail()"></div>
-  <div class="bottom-sheet" id="bottomSheet">
+  <div class="bottom-sheet" id="bottomSheet" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
     <div class="sheet-handle-row" onclick="closeDetail()">
       <div class="sheet-handle-pill"></div>
     </div>
+    
     <div class="sheet-body">
-      <div class="sheet-media-tabs" id="sheetMediaTabs">
-        <button type="button" class="sheet-tab-btn active" id="tabBtnCharacter" onclick="switchDetailMedia('character')">
-          👤 Personaje
-        </button>
-        <button type="button" class="sheet-tab-btn" id="tabBtnBouquet" onclick="switchDetailMedia('bouquet')">
-          💐 Ramo de Flores
-        </button>
-      </div>
+      <!-- COLUMNA IZQUIERDA: MEDIA & TABS -->
+      <div class="sheet-left-col">
+        <div class="sheet-media-tabs" id="sheetMediaTabs">
+          <button type="button" class="sheet-tab-btn active" id="tabBtnCharacter" onclick="switchDetailMedia('character')">
+            👤 Personaje
+          </button>
+          <button type="button" class="sheet-tab-btn" id="tabBtnBouquet" onclick="switchDetailMedia('bouquet')">
+            💐 Ramo de Flores
+          </button>
+        </div>
 
-      <div class="sheet-media-box">
-        <img id="detailImg" src="" alt="Detalle del Ramo" />
-      </div>
-
-      <div>
-        <h3 class="sheet-item-title" id="detailTitle">Nombre del Ramo</h3>
-        <div class="sheet-item-price" id="detailPrice">S/ 0.00</div>
-      </div>
-
-      <div class="sheet-recipe-box">
-        <div class="sheet-recipe-title">🌾 Composición Botánica & Confección</div>
-        <p style="color:var(--text-dim); line-height:1.5;" id="detailRecipe"></p>
-        <div style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">
-          📦 Envoltura coreana impermeable bicapa + fajín de diseño + lazo de satén + tarjeta de dedicatoria.
+        <div class="sheet-media-box">
+          <img id="detailImg" src="" alt="Detalle del Ramo" />
         </div>
       </div>
 
-      <a id="detailWaBtn" href="#" target="_blank" class="btn-sheet-wa">
-        💬 Programar Pedido por WhatsApp
-      </a>
+      <!-- COLUMNA DERECHA: INFORMACIÓN EDITORIAL & RESERVA WHATSAPP -->
+      <div class="sheet-right-col">
+        <div class="modal-header-row">
+          <div>
+            <h3 class="sheet-item-title" id="detailTitle">Nombre del Ramo</h3>
+            <div class="sheet-item-price" id="detailPrice">S/ 0.00</div>
+          </div>
+          <button type="button" class="btn-modal-close-x" onclick="closeDetail()" title="Cerrar modal">&times;</button>
+        </div>
 
-      <button type="button" class="btn-sheet-close" onclick="closeDetail()">
-        Cerrar Detalle
-      </button>
+        <div class="sheet-craft-badge">
+          🌸 Flores frescas de corte diario • Mercado de Acho
+        </div>
+
+        <div class="sheet-recipe-box">
+          <div class="sheet-recipe-title">🌾 Composición Botánica & Confección</div>
+          <p style="color:var(--text-dim); line-height:1.6;" id="detailRecipe"></p>
+          <div style="font-size:0.75rem; color:var(--text-muted); margin-top:10px; border-top:1px dashed var(--border); padding-top:8px;">
+            📦 Envoltura coreana impermeable bicapa + fajín de autor + lazo de satén + tarjeta con dedicatoria personalizada.
+          </div>
+        </div>
+
+        <div style="font-size:0.8rem; color:var(--text-dim); line-height:1.5;">
+          🗓️ <strong>Pedidos programados con anticipación:</strong> Entrega a domicilio en vehículo acondicionado en Lima y Callao.
+        </div>
+
+        <a id="detailWaBtn" href="#" target="_blank" class="btn-sheet-wa">
+          💬 Programar Pedido por WhatsApp
+        </a>
+
+        <button type="button" class="btn-sheet-close mobile-only-close" onclick="closeDetail()">
+          Cerrar Detalle
+        </button>
+      </div>
     </div>
   </div>
 
